@@ -1,0 +1,28 @@
+# NABirds image data (download separately; see nabirds/README)
+nabirds/images/
+nabirds.tar.gz
+*.tar.gz
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+
+# Training artifacts
+reports/milestone2/runs/
+**/*.pt
+**/*.pth
+**/*.ckpt
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Caches
+reports/.cache/
+.pytest_cache/
+.mypy_cache/

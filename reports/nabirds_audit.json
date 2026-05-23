@@ -1,0 +1,330 @@
+{
+  "summary": {
+    "dataset_root": "/Users/zhengjieyang/Downloads/NA_birds/nabirds",
+    "num_images": 48562,
+    "num_image_files": 48562,
+    "num_image_directories": 555,
+    "num_classes_in_taxonomy": 1011,
+    "num_used_visual_categories": 555,
+    "num_part_types": 11,
+    "split_counts": {
+      "test": 24633,
+      "train": 23929
+    },
+    "class_count_stats": {
+      "total": {
+        "min": 13.0,
+        "p25": 66.0,
+        "median": 91,
+        "mean": 87.5,
+        "p75": 114.0,
+        "max": 120.0
+      },
+      "train": {
+        "min": 4.0,
+        "p25": 32.0,
+        "median": 44,
+        "mean": 43.12,
+        "p75": 58.5,
+        "max": 60.0
+      },
+      "test": {
+        "min": 9.0,
+        "p25": 33.0,
+        "median": 46,
+        "mean": 44.38,
+        "p75": 59.0,
+        "max": 60.0
+      },
+      "max_to_min_ratio": 9.2308
+    },
+    "image_width_stats": {
+      "min": 90.0,
+      "p25": 800.0,
+      "median": 1024.0,
+      "mean": 898.51,
+      "p75": 1024.0,
+      "max": 1024.0
+    },
+    "image_height_stats": {
+      "min": 98.0,
+      "p25": 639.0,
+      "median": 683.0,
+      "mean": 712.34,
+      "p75": 780.0,
+      "max": 1024.0
+    },
+    "aspect_ratio_stats": {
+      "min": 0.4495,
+      "p25": 1.2442,
+      "median": 1.3509,
+      "mean": 1.2989,
+      "p75": 1.4993,
+      "max": 5.12
+    },
+    "bbox_area_ratio_stats": {
+      "min": 0.0036,
+      "p25": 0.1727,
+      "median": 0.2826,
+      "mean": 0.3066,
+      "p75": 0.4148,
+      "max": 1.0
+    },
+    "visible_parts_per_image_stats": {
+      "min": 0.0,
+      "p25": 8.0,
+      "median": 9.0,
+      "mean": 8.58,
+      "p75": 9.0,
+      "max": 11.0
+    },
+    "part_visibility": {
+      "bill": {
+        "visible": 47877,
+        "total": 48562,
+        "visible_fraction": 0.9859
+      },
+      "crown": {
+        "visible": 47468,
+        "total": 48562,
+        "visible_fraction": 0.9775
+      },
+      "nape": {
+        "visible": 45720,
+        "total": 48562,
+        "visible_fraction": 0.9415
+      },
+      "left eye": {
+        "visible": 25288,
+        "total": 48562,
+        "visible_fraction": 0.5207
+      },
+      "right eye": {
+        "visible": 24922,
+        "total": 48562,
+        "visible_fraction": 0.5132
+      },
+      "belly": {
+        "visible": 39877,
+        "total": 48562,
+        "visible_fraction": 0.8212
+      },
+      "breast": {
+        "visible": 44894,
+        "total": 48562,
+        "visible_fraction": 0.9245
+      },
+      "back": {
+        "visible": 39216,
+        "total": 48562,
+        "visible_fraction": 0.8075
+      },
+      "tail": {
+        "visible": 43790,
+        "total": 48562,
+        "visible_fraction": 0.9017
+      },
+      "left wing": {
+        "visible": 28973,
+        "total": 48562,
+        "visible_fraction": 0.5966
+      },
+      "right wing": {
+        "visible": 28511,
+        "total": 48562,
+        "visible_fraction": 0.5871
+      }
+    },
+    "largest_classes": [
+      {
+        "class_id": "299",
+        "class_index": 4,
+        "class_name": "Red-tailed Hawk (Light morph adult)",
+        "total": 120,
+        "train": 60,
+        "test": 60
+      },
+      {
+        "class_id": "314",
+        "class_index": 6,
+        "class_name": "Wood Duck (Breeding male)",
+        "total": 120,
+        "train": 60,
+        "test": 60
+      },
+      {
+        "class_id": "317",
+        "class_index": 9,
+        "class_name": "Mallard (Breeding male)",
+        "total": 120,
+        "train": 60,
+        "test": 60
+      },
+      {
+        "class_id": "320",
+        "class_index": 12,
+        "class_name": "Northern Shoveler (Breeding male)",
+        "total": 120,
+        "train": 60,
+        "test": 60
+      },
+      {
+        "class_id": "350",
+        "class_index": 42,
+        "class_name": "Little Blue Heron (Adult)",
+        "total": 120,
+        "train": 60,
+        "test": 60
+      },
+      {
+        "class_id": "352",
+        "class_index": 44,
+        "class_name": "Black-crowned Night-Heron (Adult)",
+        "total": 120,
+        "train": 60,
+        "test": 60
+      },
+      {
+        "class_id": "355",
+        "class_index": 47,
+        "class_name": "Bald Eagle (Adult, subadult)",
+        "total": 120,
+        "train": 60,
+        "test": 60
+      },
+      {
+        "class_id": "363",
+        "class_index": 55,
+        "class_name": "American Kestrel (Adult male)",
+        "total": 120,
+        "train": 60,
+        "test": 60
+      },
+      {
+        "class_id": "397",
+        "class_index": 80,
+        "class_name": "Ring-billed Gull (Adult)",
+        "total": 120,
+        "train": 60,
+        "test": 60
+      },
+      {
+        "class_id": "450",
+        "class_index": 90,
+        "class_name": "Common Tern",
+        "total": 120,
+        "train": 60,
+        "test": 60
+      }
+    ],
+    "smallest_classes": [
+      {
+        "class_id": "975",
+        "class_index": 519,
+        "class_name": "Dark-eyed Junco (White-winged)",
+        "total": 13,
+        "train": 4,
+        "test": 9
+      },
+      {
+        "class_id": "664",
+        "class_index": 267,
+        "class_name": "Purple Gallinule (Immature)",
+        "total": 21,
+        "train": 10,
+        "test": 11
+      },
+      {
+        "class_id": "341",
+        "class_index": 33,
+        "class_name": "Red-throated Loon (Breeding)",
+        "total": 23,
+        "train": 11,
+        "test": 12
+      },
+      {
+        "class_id": "755",
+        "class_index": 299,
+        "class_name": "Snow Bunting (Breeding adult)",
+        "total": 24,
+        "train": 12,
+        "test": 12
+      },
+      {
+        "class_id": "1006",
+        "class_index": 550,
+        "class_name": "Fox Sparrow (Thick-billed/Slate-colored)",
+        "total": 25,
+        "train": 9,
+        "test": 16
+      },
+      {
+        "class_id": "627",
+        "class_index": 230,
+        "class_name": "Harlequin Duck (Female/juvenile)",
+        "total": 27,
+        "train": 5,
+        "test": 22
+      },
+      {
+        "class_id": "464",
+        "class_index": 104,
+        "class_name": "Long-tailed Duck (Summer male)",
+        "total": 28,
+        "train": 16,
+        "test": 12
+      },
+      {
+        "class_id": "763",
+        "class_index": 307,
+        "class_name": "Lark Bunting (Breeding male)",
+        "total": 30,
+        "train": 11,
+        "test": 19
+      },
+      {
+        "class_id": "342",
+        "class_index": 34,
+        "class_name": "Pacific Loon (Breeding)",
+        "total": 31,
+        "train": 11,
+        "test": 20
+      },
+      {
+        "class_id": "369",
+        "class_index": 61,
+        "class_name": "Sanderling (Breeding)",
+        "total": 31,
+        "train": 12,
+        "test": 19
+      }
+    ]
+  },
+  "issues": [
+    {
+      "severity": "warning",
+      "check": "bbox_bounds",
+      "message": "Some bounding boxes are empty or extend outside the recorded image size",
+      "count": 201,
+      "examples": [
+        "004f5dee-8f08-49eb-8ed9-285bd8a5da5b",
+        "017a78eb-20d3-41f5-a1d5-b89bd043590c",
+        "03fd102c-b647-4627-9f59-b32adb356846",
+        "04fd85d5-3b38-4a23-8b62-b7b81967e757",
+        "062f8e2c-9680-42c6-8491-4cb184d8f102",
+        "063f47ad-8a8a-450e-9880-d6bea24b34a6",
+        "074fe35f-af90-4c80-99fe-efc03fe27879",
+        "0892f71c-5030-484c-a765-cd07c14af6ea",
+        "0ddf924a-3c40-4abc-85ab-2c0d8fe2d283",
+        "0f518196-eaed-4e0c-bac1-4ba26981d6a6"
+      ]
+    },
+    {
+      "severity": "info",
+      "check": "image_dimension_check",
+      "message": "Checked actual dimensions for 48562 image files",
+      "count": 48562,
+      "examples": []
+    }
+  ]
+}

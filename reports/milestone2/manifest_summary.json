@@ -1,0 +1,23 @@
+{
+  "dataset_root": "/Users/zhengjieyang/Downloads/NA_birds/nabirds",
+  "output_dir": "/Users/zhengjieyang/Downloads/NA_birds/reports/milestone2",
+  "seed": 231,
+  "val_fraction": 0.15,
+  "counts": {
+    "all": 48562,
+    "train": 20339,
+    "val": 3590,
+    "test": 24633,
+    "class_prompts": 1665,
+    "hard_negative_groups": 137
+  },
+  "num_classes": 555,
+  "official_train": 23929,
+  "official_test": 24633,
+  "bbox_out_of_bounds": 201,
+  "prompt_templates": [
+    "a photo of a {class_name}, a North American bird.",
+    "a field guide photograph of a {class_name}.",
+    "a close-up bird photo showing the fine-grained field marks of a {class_name}."
+  ]
+}

@@ -1,0 +1,11 @@
+0 bill
+1 crown
+2 nape
+3 left eye
+4 right eye
+5 belly
+6 breast
+7 back
+8 tail
+9 left wing
+10 right wing
