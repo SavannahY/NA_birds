@@ -1,0 +1,556 @@
+target,class_name,num_examples,recall,num_correct
+228,Greater Scaup (Female/Eclipse male),30,0.03333333333333333,1
+550,Fox Sparrow (Thick-billed/Slate-colored),16,0.0625,1
+345,Chihuahuan Raven,27,0.07407407407407407,2
+208,Western Gull (Immature),26,0.11538461538461539,3
+344,Fish Crow,30,0.13333333333333333,4
+343,Northwestern Crow,19,0.15789473684210525,3
+251,Great Cormorant (Immature),24,0.16666666666666666,4
+278,"Costa's Hummingbird (Female, immature)",21,0.19047619047619047,4
+209,California Gull (Immature),25,0.2,5
+221,Cinnamon Teal (Female/juvenile),20,0.2,4
+262,Broad-winged Hawk (Immature),29,0.20689655172413793,6
+377,Pacific Wren,21,0.23809523809523808,5
+236,Barrow's Goldeneye (Female/Eclipse male),25,0.24,6
+288,Swainson's Hawk (Immature),24,0.25,6
+89,Black Tern,35,0.2571428571428571,9
+351,Bank Swallow,27,0.25925925925925924,7
+244,Pacific Loon (Nonbreeding/juvenile),27,0.2962962962962963,8
+467,Western Wood-Pewee,49,0.32653061224489793,16
+414,Mourning Warbler,52,0.3269230769230769,17
+3,Swainson's Hawk (Dark morph ),30,0.3333333333333333,10
+519,Dark-eyed Junco (White-winged),9,0.3333333333333333,3
+280,"Broad-tailed Hummingbird (Female, immature)",29,0.3448275862068966,10
+362,Juniper Titmouse,25,0.36,9
+115,Neotropic Cormorant,38,0.3684210526315789,14
+18,Greater Scaup (Breeding male),43,0.37209302325581395,16
+484,Bell's Vireo,29,0.3793103448275862,11
+48,Northern Harrier (Adult male),60,0.38333333333333336,23
+487,Cassin's Vireo,36,0.3888888888888889,14
+187,Vaux's Swift,28,0.39285714285714285,11
+259,Sharp-shinned Hawk (Immature),58,0.39655172413793105,23
+230,Harlequin Duck (Female/juvenile),22,0.4090909090909091,9
+177,Western Screech-Owl,34,0.4117647058823529,14
+82,California Gull (Adult),41,0.4146341463414634,17
+282,"Allen's Hummingbird (Female, immature)",41,0.4146341463414634,17
+486,Plumbeous Vireo,41,0.4146341463414634,17
+202,"Black Guillemot (Nonbreeding, juvenile)",12,0.4166666666666667,5
+522,Western Tanager (Female/Nonbreeding Male),33,0.42424242424242425,14
+41,Great Cormorant (Adult),40,0.425,17
+100,Tundra Swan,28,0.42857142857142855,12
+90,Common Tern,60,0.43333333333333335,26
+137,Red-tailed Hawk (Dark morph),30,0.43333333333333335,13
+233,Black Scoter (Female/juvenile),22,0.45454545454545453,10
+267,Purple Gallinule (Immature),11,0.45454545454545453,5
+535,Hooded Oriole (Female/Immature male),35,0.45714285714285713,16
+53,Rough-legged Hawk (Dark morph),24,0.4583333333333333,11
+5,Snow Goose (White morph),26,0.46153846153846156,12
+52,Broad-winged Hawk (Adult),26,0.46153846153846156,12
+457,Boat-tailed Grackle,60,0.4666666666666667,28
+542,Red Crossbill (Female/juvenile),34,0.47058823529411764,16
+220,Blue-winged Teal  (Female/juvenile),17,0.47058823529411764,8
+544,Lesser Goldfinch (Female/juvenile),36,0.4722222222222222,17
+217,Gadwall (Female/Eclipse male),19,0.47368421052631576,9
+87,Mew Gull,23,0.4782608695652174,11
+253,Reddish Egret (White morph),23,0.4782608695652174,11
+501,American Crow,57,0.49122807017543857,28
+353,Cave Swallow,34,0.5,17
+231,Surf Scoter (Female/immature),24,0.5,12
+75,Black Guillemot (Breeding),20,0.5,10
+249,Northern Gannet (Immature/Juvenile),20,0.5,10
+33,Red-throated Loon (Breeding),12,0.5,6
+276,"Black-chinned Hummingbird (Female, immature)",59,0.5084745762711864,30
+186,Chimney Swift,33,0.5151515151515151,17
+266,Peregrine Falcon (Immature),31,0.5161290322580645,16
+471,Cordilleran Flycatcher,31,0.5161290322580645,16
+469,Least Flycatcher,60,0.5166666666666667,31
+510,"Bay-breasted Warbler (Female, Nonbreeding male, Immature)",29,0.5172413793103449,15
+463,Brown-capped Rosy-Finch,34,0.5294117647058824,18
+356,Black-capped Chickadee,60,0.5333333333333333,32
+458,Great-tailed Grackle,60,0.5333333333333333,32
+232,White-winged Scoter (Female/juvenile),30,0.5333333333333333,16
+99,Trumpeter Swan,37,0.5405405405405406,20
+279,"Calliope Hummingbird (Female, immature)",48,0.5416666666666666,26
+540,Cassin's Finch (Female/immature),24,0.5416666666666666,13
+470,Pacific-slope Flycatcher,59,0.5423728813559322,32
+26,Barrow's Goldeneye (Breeding male),35,0.5428571428571428,19
+346,Common Raven,57,0.543859649122807,31
+114,Brandt's Cormorant,33,0.5454545454545454,18
+211,Glaucous-winged Gull (Immature),22,0.5454545454545454,12
+274,"Broad-billed Hummingbird (Female, immature)",22,0.5454545454545454,12
+326,Brewer's Blackbird (Female/Juvenile),31,0.5483870967741935,17
+4,Red-tailed Hawk (Light morph adult),60,0.55,33
+72,Allen's Hummingbird (Adult Male),60,0.55,33
+275,"Ruby-throated Hummingbird (Female, immature)",60,0.55,33
+49,Sharp-shinned Hawk (Adult ),58,0.5517241379310345,32
+139,Merlin,58,0.5517241379310345,32
+22,White-winged Scoter (Male),27,0.5555555555555556,15
+134,Mississippi Kite,50,0.56,28
+460,Orchard Oriole (Immature Male),25,0.56,14
+85,Great Black-backed Gull (Adult),41,0.5609756097560976,23
+136,Swainson's Hawk (Light morph ),39,0.5641025641025641,22
+352,Cliff Swallow,30,0.5666666666666667,17
+101,American Black Duck,37,0.5675675675675675,21
+283,Red-headed Woodpecker (Immature),35,0.5714285714285714,20
+105,Ruddy Duck (Winter male),28,0.5714285714285714,16
+96,Cackling Goose,14,0.5714285714285714,8
+552,Orchard Oriole (Female/Juvenile),26,0.5769230769230769,15
+421,Pine Warbler,48,0.5833333333333334,28
+553,Yellow-rumped Warbler (Winter/juvenile Audubon's),44,0.5909090909090909,26
+381,Black-tailed Gnatcatcher,22,0.5909090909090909,13
+359,Boreal Chickadee,42,0.5952380952380952,25
+289,Red-tailed Hawk (Light morph immature),60,0.6,36
+264,Golden Eagle (Immature),30,0.6,18
+77,Black-legged Kittiwake (Adult),23,0.6086956521739131,14
+286,Long-tailed Duck (Female/juvenile),23,0.6086956521739131,14
+150,Greater Yellowlegs,59,0.6101694915254238,36
+19,Lesser Scaup (Breeding male),44,0.6136363636363636,27
+277,"Anna's Hummingbird (Female, immature)",52,0.6153846153846154,32
+133,White-tailed Kite,13,0.6153846153846154,8
+533,Brewer's Blackbird (Male),60,0.6166666666666667,37
+102,Mottled Duck,29,0.6206896551724138,18
+465,Hoary Redpoll,29,0.6206896551724138,18
+349,Violet-green Swallow,37,0.6216216216216216,23
+194,Yellow-bellied Sapsucker,59,0.6271186440677966,37
+257,"Bald Eagle (Immature, juvenile)",43,0.627906976744186,27
+84,Glaucous-winged Gull (Adult),38,0.631578947368421,24
+61,Sanderling (Breeding),19,0.631578947368421,12
+204,Black-legged Kittiwake (Immature),19,0.631578947368421,12
+468,Eastern Wood-Pewee,49,0.6326530612244898,31
+527,Lazuli Bunting (Female/juvenile),22,0.6363636363636364,14
+207,Ring-billed Gull (Immature),36,0.6388888888888888,23
+536,Bullock's Oriole (Female/Immature male),36,0.6388888888888888,23
+71,Rufous Hummingbird (Adult Male),50,0.64,32
+489,Hutton's Vireo,39,0.6410256410256411,25
+127,White-faced Ibis,34,0.6470588235294118,22
+50,Cooper's Hawk (Adult),57,0.6491228070175439,37
+260,Cooper's Hawk (Immature),60,0.65,39
+336,White-winged Crossbill (Adult Male),20,0.65,13
+56,Peregrine Falcon (Adult),46,0.6521739130434783,30
+413,MacGillivray's Warbler,46,0.6521739130434783,30
+514,Lark Bunting (Female/Nonbreeding male),32,0.65625,21
+261,Red-shouldered Hawk (Immature),38,0.6578947368421053,25
+455,Rusty Blackbird,48,0.6666666666666666,32
+54,Golden Eagle (Adult),42,0.6666666666666666,28
+503,Purple Martin (Female/juvenile),36,0.6666666666666666,24
+364,Black-crested Titmouse,33,0.6666666666666666,22
+224,Green-winged Teal  (Female/juvenile),30,0.6666666666666666,20
+453,Eastern Meadowlark,40,0.675,27
+281,"Rufous Hummingbird (Female, immature)",37,0.6756756756756757,25
+214,Snow Goose (Blue morph),28,0.6785714285714286,19
+416,Cape May Warbler,60,0.6833333333333333,41
+83,Herring Gull (Adult),57,0.6842105263157895,39
+51,Red-shouldered Hawk (Adult ),38,0.6842105263157895,26
+65,Ruby-throated Hummingbird (Adult Male),54,0.6851851851851852,37
+195,Red-naped Sapsucker,54,0.6851851851851852,37
+440,Brewer's Sparrow,35,0.6857142857142857,24
+477,Cassin's Kingbird,35,0.6857142857142857,24
+537,Baltimore Oriole (Female/Immature male),48,0.6875,33
+174,Black-billed Cuckoo,32,0.6875,22
+111,Western Grebe,42,0.6904761904761905,29
+526,Blue Grosbeak (Female/juvenile),42,0.6904761904761905,29
+116,Pelagic Cormorant,26,0.6923076923076923,18
+497,Mexican Jay,26,0.6923076923076923,18
+548,"Vermilion Flycatcher (Female, immature)",36,0.6944444444444444,25
+284,Northern Flicker (Red-shafted),59,0.6949152542372882,41
+192,Golden-fronted Woodpecker,33,0.696969696969697,23
+258,"Northern Harrier (Female, immature)",60,0.7,42
+178,Eastern Screech-Owl,50,0.7,35
+263,Rough-legged Hawk (Light morph),40,0.7,28
+164,American Woodcock,30,0.7,21
+361,Oak Titmouse,37,0.7027027027027027,26
+492,Gray Jay,54,0.7037037037037037,38
+210,Herring Gull (Immature),44,0.7045454545454546,31
+226,Redhead (Female/Eclipse male),17,0.7058823529411765,12
+551,Summer Tanager (Immature Male),17,0.7058823529411765,12
+474,Say's Phoebe,58,0.7068965517241379,41
+97,Canada Goose,31,0.7096774193548387,22
+247,Red-necked Grebe (Nonbreeding/juvenile),31,0.7096774193548387,22
+88,Caspian Tern,49,0.7142857142857143,35
+242,Ring-necked Pheasant (Female/juvenile),14,0.7142857142857143,10
+200,Hairy Woodpecker,60,0.7166666666666667,43
+482,Northern Shrike,60,0.7166666666666667,43
+197,Ladder-backed Woodpecker,50,0.72,36
+298,Phainopepla (Female/juvenile),18,0.7222222222222222,13
+222,Northern Shoveler (Female/Eclipse male),40,0.725,29
+464,Common Redpoll,40,0.725,29
+160,Western Sandpiper,51,0.7254901960784313,37
+70,Broad-tailed Hummingbird (Adult Male),44,0.7272727272727273,32
+256,White Ibis (Immature),33,0.7272727272727273,24
+450,Summer Tanager (Female),33,0.7272727272727273,24
+495,Florida Scrub-Jay,26,0.7307692307692307,19
+39,"Northern Gannet (Adult, Subadult)",60,0.7333333333333333,44
+151,Willet,60,0.7333333333333333,44
+152,Lesser Yellowlegs,60,0.7333333333333333,44
+419,Yellow Warbler,60,0.7333333333333333,44
+205,Laughing Gull (Nonbreeding/Immature),45,0.7333333333333333,33
+515,White-throated Sparrow (Tan-striped/immature),45,0.7333333333333333,33
+532,Yellow-headed Blackbird (Female/Immature Male),34,0.7352941176470589,25
+140,Prairie Falcon,42,0.7380952380952381,31
+66,Black-chinned Hummingbird (Adult Male),50,0.74,37
+86,Bonaparte's Gull,58,0.7413793103448276,43
+549,European Starling (Juvenile),35,0.7428571428571429,26
+418,Blackburnian Warbler,51,0.7450980392156863,38
+292,European Starling (Breeding Adult),59,0.7457627118644068,44
+512,Blackpoll Warbler (Female/juvenile),60,0.75,45
+436,California Towhee,44,0.75,33
+166,Band-tailed Pigeon,40,0.75,30
+513,Black-throated Blue Warbler (Female/Immature male),32,0.75,24
+34,Pacific Loon (Breeding),20,0.75,15
+104,Long-tailed Duck (Summer male),12,0.75,9
+299,Snow Bunting (Breeding adult),12,0.75,9
+475,Ash-throated Flycatcher,41,0.7560975609756098,31
+37,Red-necked Grebe (Breeding),29,0.7586206896551724,22
+225,Canvasback (Female/Eclipse male),29,0.7586206896551724,22
+437,Abert's Towhee,29,0.7586206896551724,22
+138,Crested Caracara,54,0.7592592592592593,41
+335,Red Crossbill (Adult Male),25,0.76,19
+76,Pigeon Guillemot (Breeding),42,0.7619047619047619,32
+350,Northern Rough-winged Swallow,42,0.7619047619047619,32
+405,Louisiana Waterthrush,42,0.7619047619047619,32
+92,Royal Tern,38,0.7631578947368421,29
+333,Cassin's Finch (Adult Male),38,0.7631578947368421,29
+370,Brown-headed Nuthatch,38,0.7631578947368421,29
+203,"Pigeon Guillemot (Nonbreeding, juvenile)",17,0.7647058823529411,13
+241,Gambel's Quail (Female/juvenile),17,0.7647058823529411,13
+219,Mallard (Female/Eclipse male),60,0.7666666666666667,46
+402,Bohemian Waxwing,60,0.7666666666666667,46
+478,Western Kingbird,52,0.7692307692307693,40
+528,Indigo Bunting (Female/juvenile),39,0.7692307692307693,30
+505,Phainopepla (Male),35,0.7714285714285715,27
+103,Common Eider (Female/juvenile),22,0.7727272727272727,17
+342,Yellow-rumped Warbler (Winter/juvenile Myrtle),53,0.7735849056603774,41
+188,White-throated Swift,40,0.775,31
+502,Yellow-rumped Warbler (Breeding Audubon's),58,0.7758620689655172,45
+16,Redhead (Breeding male),27,0.7777777777777778,21
+387,Western Bluebird,59,0.7796610169491526,46
+365,Verdin,32,0.78125,25
+520,Chipping Sparrow (Immature/nonbreeding adult),46,0.782608695652174,36
+80,Ring-billed Gull (Adult),60,0.7833333333333333,47
+159,Semipalmated Sandpiper,60,0.7833333333333333,47
+439,Clay-colored Sparrow,60,0.7833333333333333,47
+454,Western Meadowlark,60,0.7833333333333333,47
+473,Eastern Phoebe,60,0.7833333333333333,47
+461,Gray-crowned Rosy-Finch,37,0.7837837837837838,29
+13,Northern Pintail (Breeding male),42,0.7857142857142857,33
+81,Western Gull (Adult),33,0.7878787878787878,26
+547,House Sparrow (Female/Juvenile),57,0.7894736842105263,45
+307,Lark Bunting (Breeding male),19,0.7894736842105263,15
+524,Rose-breasted Grosbeak (Female/immature male),48,0.7916666666666666,38
+355,Carolina Chickadee,58,0.7931034482758621,46
+375,Bewick's Wren,58,0.7931034482758621,46
+185,Common Nighthawk,39,0.7948717948717948,31
+91,Forster's Tern,60,0.8,48
+120,Great Blue Heron,60,0.8,48
+123,Tricolored Heron,60,0.8,48
+366,Bushtit,60,0.8,48
+384,Ruby-crowned Kinglet,60,0.8,48
+410,Tennessee Warbler,60,0.8,48
+511,Chestnut-sided Warbler (Female/immature male),35,0.8,28
+268,Common Gallinule (Immature),15,0.8,12
+348,Tree Swallow,56,0.8035714285714286,45
+69,Calliope Hummingbird (Adult Male),41,0.8048780487804879,33
+168,White-winged Dove,57,0.8070175438596491,46
+462,Black Rosy-Finch,26,0.8076923076923077,21
+243,Red-throated Loon (Nonbreeding/juvenile),47,0.8085106382978723,38
+391,Swainson's Thrush,58,0.8103448275862069,47
+426,Hermit Warbler,37,0.8108108108108109,30
+93,Black Skimmer,53,0.8113207547169812,43
+543,White-winged Crossbill (Female/juvenile),32,0.8125,26
+250,Double-crested Cormorant (Adult),54,0.8148148148148148,44
+388,Mountain Bluebird,49,0.8163265306122449,40
+35,Common Loon (Breeding),60,0.8166666666666667,49
+199,Downy Woodpecker,60,0.8166666666666667,49
+380,Blue-gray Gnatcatcher,60,0.8166666666666667,49
+392,Hermit Thrush,60,0.8166666666666667,49
+432,Spotted Towhee,60,0.8166666666666667,49
+444,Savannah Sparrow,60,0.8166666666666667,49
+446,Song Sparrow,60,0.8166666666666667,49
+490,Warbling Vireo,60,0.8166666666666667,49
+265,"American Kestrel (Female, immature)",55,0.8181818181818182,45
+235,Common Goldeneye (Female/Eclipse male),33,0.8181818181818182,27
+530,Bobolink (Female/juvenile/nonbreeding male),33,0.8181818181818182,27
+285,Common Eider (Immature/Eclipse male),22,0.8181818181818182,18
+255,Yellow-crowned Night-Heron (Immature),39,0.8205128205128205,32
+113,Wood Stork,56,0.8214285714285714,46
+521,Scarlet Tanager (Female/Nonbreeding Male),28,0.8214285714285714,23
+198,Nuttall's Woodpecker,45,0.8222222222222222,37
+435,Canyon Towhee,46,0.8260869565217391,38
+498,Clark's Nutcracker,46,0.8260869565217391,38
+215,Ross's Goose,23,0.8260869565217391,19
+131,Osprey,52,0.8269230769230769,43
+488,Blue-headed Vireo,52,0.8269230769230769,43
+165,Rock Pigeon,58,0.8275862068965517,48
+456,Common Grackle,58,0.8275862068965517,48
+229,Lesser Scaup (Female/Eclipse male),35,0.8285714285714286,29
+434,Rufous-crowned Sparrow,41,0.8292682926829268,34
+538,Pine Grosbeak (Female/juvenile),41,0.8292682926829268,34
+167,Eurasian Collared-Dove,59,0.8305084745762712,49
+109,Wild Turkey,60,0.8333333333333334,50
+169,Mourning Dove,60,0.8333333333333334,50
+395,Gray Catbird,60,0.8333333333333334,50
+417,Northern Parula,60,0.8333333333333334,50
+481,Loggerhead Shrike,60,0.8333333333333334,50
+507,Common Yellowthroat (Female/immature male),60,0.8333333333333334,50
+254,Black-crowned Night-Heron (Immature),54,0.8333333333333334,45
+129,Black Vulture,48,0.8333333333333334,40
+525,Black-headed Grosbeak (Female/immature male),48,0.8333333333333334,40
+238,Common Merganser (Female/immature male),42,0.8333333333333334,35
+223,Northern Pintail (Female/Eclipse male),24,0.8333333333333334,20
+135,Harris's Hawk,43,0.8372093023255814,36
+305,Blackpoll Warbler (Breeding male),43,0.8372093023255814,36
+385,Wrentit,37,0.8378378378378378,31
+142,Sandhill Crane,25,0.84,21
+248,Eared Grebe (Nonbreeding/juvenile),38,0.8421052631578947,32
+369,Pygmy Nuthatch,38,0.8421052631578947,32
+218,American Wigeon (Female/Eclipse male),19,0.8421052631578947,16
+95,Brant,32,0.84375,27
+212,Great Black-backed Gull (Immature),32,0.84375,27
+539,Purple Finch (Female/immature),45,0.8444444444444444,38
+411,Orange-crowned Warbler,58,0.8448275862068966,49
+74,Northern Flicker (Yellow-shafted),59,0.847457627118644,50
+508,American Redstart (Female/juvenile),59,0.847457627118644,50
+237,Hooded Merganser (Female/immature male),33,0.8484848484848485,28
+303,Bay-breasted Warbler (Breeding male),33,0.8484848484848485,28
+42,Little Blue Heron (Adult),60,0.85,51
+141,American Coot,60,0.85,51
+412,Nashville Warbler,60,0.85,51
+479,Eastern Kingbird,60,0.85,51
+517,White-crowned Sparrow (Immature),60,0.85,51
+287,Ruddy Duck (Female/juvenile),40,0.85,34
+516,Harris's Sparrow (Immature),34,0.8529411764705882,29
+424,Black-throated Gray Warbler,41,0.8536585365853658,35
+149,Solitary Sandpiper,56,0.8571428571428571,48
+534,Brown-headed Cowbird (Female/Juvenile),49,0.8571428571428571,42
+273,"Wilson's Phalarope (Nonbreeding, juvenile)",28,0.8571428571428571,24
+181,Northern Pygmy-Owl,50,0.86,43
+15,Canvasback (Breeding male),43,0.8604651162790697,37
+182,Burrowing Owl,43,0.8604651162790697,37
+445,Fox Sparrow (Sooty),43,0.8604651162790697,37
+319,Blue Grosbeak (Adult Male),58,0.8620689655172413,50
+239,Red-breasted Merganser (Female/immature male),44,0.8636363636363636,38
+420,Palm Warbler,44,0.8636363636363636,38
+130,Turkey Vulture,59,0.864406779661017,51
+176,Barn Owl,52,0.8653846153846154,45
+110,Pied-billed Grebe,60,0.8666666666666667,52
+161,Least Sandpiper,60,0.8666666666666667,52
+162,Short-billed Dowitcher,60,0.8666666666666667,52
+290,Dark-eyed Junco (Slate-colored),60,0.8666666666666667,52
+293,Fox Sparrow (Red),60,0.8666666666666667,52
+379,Marsh Wren,60,0.8666666666666667,52
+452,Dickcissel,60,0.8666666666666667,52
+545,American Goldfinch (Female/Nonbreeding Male),60,0.8666666666666667,52
+184,Northern Saw-whet Owl,45,0.8666666666666667,39
+485,Yellow-throated Vireo,38,0.868421052631579,33
+393,Wood Thrush,46,0.8695652173913043,40
+378,Winter Wren,54,0.8703703703703703,47
+360,Bridled Titmouse,31,0.8709677419354839,27
+449,Dark-eyed Junco (Pink-sided),31,0.8709677419354839,27
+32,Ring-necked Pheasant (Male),47,0.8723404255319149,41
+173,Yellow-billed Cuckoo,47,0.8723404255319149,41
+107,Northern Bobwhite,32,0.875,28
+399,California Thrasher,32,0.875,28
+459,Bronzed Cowbird,32,0.875,28
+397,Brown Thrasher,57,0.8771929824561403,50
+122,Snowy Egret,49,0.8775510204081632,43
+124,Cattle Egret,49,0.8775510204081632,43
+415,Hooded Warbler,49,0.8775510204081632,43
+94,Greater White-fronted Goose,33,0.8787878787878788,29
+234,Bufflehead (Female/immature male),33,0.8787878787878788,29
+38,Eared Grebe (Breeding),42,0.8809523809523809,37
+196,Red-breasted Sapsucker,42,0.8809523809523809,37
+311,Golden-crowned Sparrow (Adult),42,0.8809523809523809,37
+291,Yellow-rumped Warbler (Breeding Myrtle),59,0.8813559322033898,52
+308,White-throated Sparrow (White-striped),59,0.8813559322033898,52
+337,Lesser Goldfinch (Adult Male),59,0.8813559322033898,52
+329,Bullock's Oriole (Adult male),51,0.8823529411764706,45
+9,Mallard (Breeding male),60,0.8833333333333333,53
+117,Anhinga,60,0.8833333333333333,53
+245,Common Loon (Nonbreeding/juvenile),60,0.8833333333333333,53
+404,Ovenbird,60,0.8833333333333333,53
+422,Yellow-throated Warbler,60,0.8833333333333333,53
+466,Pine Siskin,60,0.8833333333333333,53
+496,Western Scrub-Jay,60,0.8833333333333333,53
+504,American Robin (Juvenile),60,0.8833333333333333,53
+554,Dark-eyed Junco (Red-backed/Gray-headed),43,0.8837209302325582,38
+36,Horned Grebe (Breeding),35,0.8857142857142857,31
+296,Purple Martin (Adult male),35,0.8857142857142857,31
+126,Glossy Ibis,44,0.8863636363636364,39
+357,Mountain Chickadee,53,0.8867924528301887,47
+376,House Wren,54,0.8888888888888888,48
+509,Magnolia Warbler (Female/immature male),45,0.8888888888888888,40
+309,Harris's Sparrow (Adult),27,0.8888888888888888,24
+500,Yellow-billed Magpie,27,0.8888888888888888,24
+398,Curve-billed Thrasher,46,0.8913043478260869,41
+68,Costa's Hummingbird (Adult Male),37,0.8918918918918919,33
+252,Little Blue Heron (Immature),37,0.8918918918918919,33
+389,Townsend's Solitaire,37,0.8918918918918919,33
+7,Gadwall (Breeding male),56,0.8928571428571429,50
+172,Monk Parakeet,28,0.8928571428571429,25
+23,Black Scoter (Male),19,0.8947368421052632,17
+106,Scaled Quail,19,0.8947368421052632,17
+401,American Pipit,58,0.896551724137931,52
+529,Painted Bunting (Female/juvenile),39,0.8974358974358975,35
+146,Black Oystercatcher,49,0.8979591836734694,44
+78,Laughing Gull (Breeding),59,0.8983050847457628,53
+340,House Sparrow (Male),59,0.8983050847457628,53
+443,Lark Sparrow,59,0.8983050847457628,53
+121,Great Egret,60,0.9,54
+193,Red-bellied Woodpecker,60,0.9,54
+302,Magnolia Warbler (Breeding male),60,0.9,54
+347,Horned Lark,60,0.9,54
+368,White-breasted Nuthatch,60,0.9,54
+386,Eastern Bluebird,60,0.9,54
+396,Northern Mockingbird,60,0.9,54
+400,European Starling (Nonbreeding Adult),60,0.9,54
+425,Townsend's Warbler,60,0.9,54
+158,Surfbird,40,0.9,36
+25,Common Goldeneye (Breeding male),51,0.9019607843137255,46
+383,Golden-crowned Kinglet,51,0.9019607843137255,46
+40,Double-crested Cormorant (Immature),52,0.9038461538461539,47
+67,Anna's Hummingbird (Adult Male),54,0.9074074074074074,49
+240,California Quail (Female/juvenile),22,0.9090909090909091,20
+394,Varied Thrush,56,0.9107142857142857,51
+8,American Wigeon (Breeding male),45,0.9111111111111111,41
+354,Barn Swallow,57,0.9122807017543859,52
+320,Lazuli Bunting (Adult Male),46,0.9130434782608695,42
+62,Dunlin (Breeding),35,0.9142857142857143,32
+171,Common Ground-Dove,35,0.9142857142857143,32
+306,Black-throated Blue Warbler (Adult Male),59,0.9152542372881356,54
+98,Mute Swan,60,0.9166666666666666,55
+246,Horned Grebe (Nonbreeding/juvenile),60,0.9166666666666666,55
+367,Red-breasted Nuthatch,60,0.9166666666666666,55
+427,Black-throated Green Warbler,60,0.9166666666666666,55
+447,Lincoln's Sparrow,60,0.9166666666666666,55
+448,Swamp Sparrow,60,0.9166666666666666,55
+227,Ring-necked Duck (Female/Eclipse male),24,0.9166666666666666,22
+145,American Oystercatcher,49,0.9183673469387755,45
+314,Scarlet Tanager (Breeding Male),49,0.9183673469387755,45
+170,Inca Dove,50,0.92,46
+191,Gila Woodpecker,50,0.92,46
+294,Summer Tanager (Adult Male),50,0.92,46
+112,Clark's Grebe,38,0.9210526315789473,35
+499,Black-billed Magpie,38,0.9210526315789473,35
+441,Field Sparrow,51,0.9215686274509803,47
+43,Reddish Egret (Dark morph),52,0.9230769230769231,48
+63,Wilson's Phalarope (Breeding),53,0.9245283018867925,49
+154,Long-billed Curlew,53,0.9245283018867925,49
+14,Green-winged Teal (Male),41,0.926829268292683,38
+163,Wilson's Snipe,55,0.9272727272727272,51
+323,Bobolink (Breeding male),55,0.9272727272727272,51
+406,Northern Waterthrush,56,0.9285714285714286,52
+10,Blue-winged Teal  (Male),42,0.9285714285714286,39
+295,Orchard Oriole (Adult Male),42,0.9285714285714286,39
+328,Hooded Oriole (Adult male),43,0.9302325581395349,40
+372,Cactus Wren,43,0.9302325581395349,40
+0,Common Eider (Adult male),29,0.9310344827586207,27
+132,Swallow-tailed Kite,29,0.9310344827586207,27
+17,Ring-necked Duck (Breeding male),44,0.9318181818181818,41
+12,Northern Shoveler (Breeding male),60,0.9333333333333333,56
+24,Bufflehead (Breeding male),60,0.9333333333333333,56
+45,Yellow-crowned Night-Heron (Adult),60,0.9333333333333333,56
+155,Marbled Godwit,60,0.9333333333333333,56
+183,Barred Owl,60,0.9333333333333333,56
+189,Belted Kingfisher,60,0.9333333333333333,56
+304,Chestnut-sided Warbler (Breeding male),60,0.9333333333333333,56
+327,Brown-headed Cowbird (Male),60,0.9333333333333333,56
+408,Black-and-white Warbler,60,0.9333333333333333,56
+423,Prairie Warbler,60,0.9333333333333333,56
+428,Canada Warbler,60,0.9333333333333333,56
+442,Vesper Sparrow,60,0.9333333333333333,56
+518,Golden-crowned Sparrow (Immature),60,0.9333333333333333,56
+523,Northern Cardinal (Female/Juvenile),60,0.9333333333333333,56
+1,Long-tailed Duck (Winter male),30,0.9333333333333333,28
+180,Snowy Owl,46,0.9347826086956522,43
+216,Wood Duck (Female/Eclipse male),46,0.9347826086956522,43
+409,Prothonotary Warbler,46,0.9347826086956522,43
+451,Pyrrhuloxia,48,0.9375,45
+28,Common Merganser (Breeding male),32,0.9375,30
+271,Sanderling (Nonbreeding/juvenile),49,0.9387755102040817,46
+312,Dark-eyed Junco (Oregon),49,0.9387755102040817,46
+147,Black-necked Stilt,33,0.9393939393939394,31
+60,Spotted Sandpiper (Breeding),51,0.9411764705882353,48
+153,Whimbrel,51,0.9411764705882353,48
+476,Great Crested Flycatcher,53,0.9433962264150944,50
+358,Chestnut-backed Chickadee,54,0.9444444444444444,51
+403,Cedar Waxwing,54,0.9444444444444444,51
+433,Eastern Towhee,54,0.9444444444444444,51
+21,Surf Scoter (Male),37,0.9459459459459459,35
+480,Scissor-tailed Flycatcher,37,0.9459459459459459,35
+190,Acorn Woodpecker,58,0.9482758620689655,55
+272,Dunlin (Nonbreeding/juvenile),58,0.9482758620689655,55
+371,Brown Creeper,58,0.9482758620689655,55
+79,Heermann's Gull (Adult),39,0.9487179487179487,37
+322,Painted Bunting (Adult Male),59,0.9491525423728814,56
+324,Red-winged Blackbird (Male),59,0.9491525423728814,56
+438,American Tree Sparrow,59,0.9491525423728814,56
+44,Black-crowned Night-Heron (Adult),60,0.95,57
+47,"Bald Eagle (Adult, subadult)",60,0.95,57
+55,American Kestrel (Adult male),60,0.95,57
+125,Green Heron,60,0.95,57
+201,Pileated Woodpecker,60,0.95,57
+301,American Redstart (Adult Male),60,0.95,57
+313,Chipping Sparrow (Breeding),60,0.95,57
+321,Indigo Bunting (Adult Male),60,0.95,57
+339,Evening Grosbeak (Adult Male),60,0.95,57
+363,Tufted Titmouse,60,0.95,57
+429,Wilson's Warbler,60,0.95,57
+491,Red-eyed Vireo,60,0.95,57
+494,Blue Jay,60,0.95,57
+531,Red-winged Blackbird (Female/juvenile),60,0.95,57
+546,Evening Grosbeak (Female/Juvenile),60,0.95,57
+29,Red-breasted Merganser (Breeding male),41,0.9512195121951219,39
+390,Veery,41,0.9512195121951219,39
+206,Heermann's Gull (Immature),22,0.9545454545454546,21
+270,Spotted Sandpiper (Nonbreeding/juvenile),47,0.9574468085106383,45
+541,House Finch (Female/immature),52,0.9615384615384616,50
+373,Canyon Wren,26,0.9615384615384616,25
+27,Hooded Merganser (Breeding male),53,0.9622641509433962,51
+315,Western Tanager (Breeding Male),53,0.9622641509433962,51
+143,Semipalmated Plover,54,0.9629629629629629,52
+11,Cinnamon Teal (Male),55,0.9636363636363636,53
+156,Ruddy Turnstone,55,0.9636363636363636,53
+118,American White Pelican,28,0.9642857142857143,27
+431,Green-tailed Towhee,28,0.9642857142857143,27
+483,White-eyed Vireo,57,0.9649122807017544,55
+73,Red-headed Woodpecker (Adult),59,0.9661016949152542,57
+330,Baltimore Oriole (Adult male),59,0.9661016949152542,57
+6,Wood Duck (Breeding male),60,0.9666666666666667,58
+144,Killdeer,60,0.9666666666666667,58
+310,White-crowned Sparrow (Adult),60,0.9666666666666667,58
+334,House Finch (Adult Male),60,0.9666666666666667,58
+338,American Goldfinch (Breeding Male),60,0.9666666666666667,58
+374,Carolina Wren,60,0.9666666666666667,58
+430,Yellow-breasted Chat,60,0.9666666666666667,58
+472,Black Phoebe,60,0.9666666666666667,58
+493,Steller's Jay,60,0.9666666666666667,58
+331,Pine Grosbeak (Adult Male),33,0.9696969696969697,32
+31,Gambel's Quail (Male),35,0.9714285714285714,34
+59,Black-bellied Plover (Breeding),35,0.9714285714285714,34
+57,Purple Gallinule (Adult),40,0.975,39
+108,Ruffed Grouse,40,0.975,39
+269,Black-bellied Plover (Nonbreeding/juvenile),42,0.9761904761904762,41
+20,Harlequin Duck (Male),43,0.9767441860465116,42
+179,Great Horned Owl,46,0.9782608695652174,45
+64,Broad-billed Hummingbird (Adult Male),49,0.9795918367346939,48
+325,Yellow-headed Blackbird (Adult Male),49,0.9795918367346939,48
+332,Purple Finch (Adult Male),52,0.9807692307692307,51
+506,Snow Bunting (Nonbreeding),52,0.9807692307692307,51
+318,Black-headed Grosbeak (Adult Male),58,0.9827586206896551,57
+297,American Robin (Adult),59,0.9830508474576272,58
+300,Common Yellowthroat (Adult Male),60,0.9833333333333333,59
+316,Northern Cardinal (Adult Male),60,1.0,60
+317,Rose-breasted Grosbeak (Adult Male),60,1.0,60
+46,White Ibis (Adult),58,1.0,58
+30,California Quail (Male),56,1.0,56
+148,American Avocet,54,1.0,54
+341,Vermilion Flycatcher (Adult male),53,1.0,53
+58,Common Gallinule (Adult),49,1.0,49
+157,Black Turnstone,47,1.0,47
+2,Ruddy Duck (Breeding male),38,1.0,38
+407,Blue-winged Warbler,38,1.0,38
+119,Brown Pelican,34,1.0,34
+175,Greater Roadrunner,34,1.0,34
+382,American Dipper,31,1.0,31
+128,Roseate Spoonbill,29,1.0,29
+213,Black-bellied Whistling-Duck,20,1.0,20

@@ -1,0 +1,15 @@
+Primary sources:
+- reports/milestone2/error_analysis/official_visual_models/resnet50_full/prediction_analysis_summary.json
+- reports/milestone2/error_analysis/official_visual_models/custom_visual/prediction_analysis_summary.json
+- reports/milestone3/modal_outputs_clean/clip_vit_b32_generic_cached_test.json
+- reports/milestone3/modal_outputs_clean/clip_vit_b32_descriptor_cached_test.json
+- reports/milestone3/modal_outputs_clean/siglip2_generic_cached_test.json
+- reports/milestone3/modal_outputs_clean/siglip2_descriptor_cached_test.json
+- reports/milestone3/descriptor_prompt_summary.json
+- reports/milestone3/error_analysis/clip_vit_b32_generic/top_confusions.csv
+- reports/milestone3/error_analysis/clip_vit_b32_generic_viz/misclassification_grid.png
+
+Embedding persistence:
+- CLIP image feature shards saved on Modal volume under /data/nabirds_runs/runs/milestone3_clip_shards/vlm_image_features
+- SigLIP2 image feature shards saved on Modal volume under /data/nabirds_runs/runs/milestone3_siglip2_shards/vlm_image_features
+- CLIP generic/descriptor and SigLIP2 generic/descriptor text features saved under /data/nabirds_runs/runs/milestone3_cached/vlm_text_features

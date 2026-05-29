@@ -1,0 +1,16 @@
+{
+  "predictions_csv": "reports/milestone2/predictions/custom_visual_convnext_base_5view_test_predictions.csv",
+  "num_examples": 24633,
+  "top1_accuracy": 0.9099987821215443,
+  "num_errors": 2217,
+  "num_unique_families": 404,
+  "top_classes_in_heatmap": 20,
+  "num_error_images_requested": 8,
+  "num_error_images_shown": 8,
+  "outputs": {
+    "confusion_matrix_family": "reports/milestone2/error_analysis/official_visual_models/custom_visual_viz/confusion_matrix_family.png",
+    "confusion_matrix_top_classes": "reports/milestone2/error_analysis/official_visual_models/custom_visual_viz/confusion_matrix_top_classes.png",
+    "misclassification_grid": "reports/milestone2/error_analysis/official_visual_models/custom_visual_viz/misclassification_grid.png",
+    "top_confusion_pairs": "reports/milestone2/error_analysis/official_visual_models/custom_visual_viz/top_confusion_pairs.json"
+  }
+}

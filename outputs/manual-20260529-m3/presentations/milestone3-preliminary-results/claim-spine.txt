@@ -1,0 +1,4 @@
+1. Visual branch is strong; vanilla CLIP creates a measurable text-grounding baseline but remains far behind the custom visual model.
+2. Expert descriptors are now aligned to the 555 official NABirds classes and cached as prompt embeddings, but many variant groups inherit shared descriptors.
+3. CLIP errors concentrate in variant labels and near-neighbor species, matching the known difficulty of fine-grained bird ID.
+4. The next high-leverage step is descriptor cleanup plus cached adapter/fusion, not full end-to-end fine-tuning before the milestone.

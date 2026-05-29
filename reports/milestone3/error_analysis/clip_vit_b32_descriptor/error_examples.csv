@@ -1,0 +1,81 @@
+image_id,rel_path,target,class_name,pred_target,pred_class_name,top5_targets
+0000d9fc-4e02-4c06-a0af-a55cfb16b12b,0860/0000d9fc4e024c06a0afa55cfb16b12b.jpg,404,Ovenbird,406,Northern Waterthrush,406|405|391|392|404
+00019306-9d83-4334-b255-a447742edce3,0900/000193069d834334b255a447742edce3.jpg,444,Savannah Sparrow,442,Vesper Sparrow,442|514|307|447|444
+000332b8-997c-4540-9647-2f0a8495aecf,0929/000332b8997c454096472f0a8495aecf.jpg,473,Eastern Phoebe,467,Western Wood-Pewee,467|471|476|474|468
+0004ff8d-0cc8-47ee-94ba-43352a8b9eb4,0951/0004ff8d0cc847ee94ba43352a8b9eb4.jpg,495,Florida Scrub-Jay,387,Western Bluebird,387|189|496|495|388
+0007acfc-c0e6-4393-9ab6-02215a82ef63,0400/0007acfcc0e643939ab602215a82ef63.jpg,83,Herring Gull (Adult),5,Snow Goose (White morph),5|100|84|87|80
+0009051b-a76c-4a27-ac5d-bf410aea7e0c,0776/0009051ba76c4a27ac5dbf410aea7e0c.jpg,320,Lazuli Bunting (Adult Male),321,Indigo Bunting (Adult Male),321|528|320|387|527
+00098273-c636-4b0e-b615-b6c03b00d39a,0700/00098273c6364b0eb615b6c03b00d39a.jpg,289,Red-tailed Hawk (Light morph immature),50,Cooper's Hawk (Adult),50|260|289|137|4
+000d5736-1eff-4207-a587-7b8f7115d529,0555/000d57361eff4207a5877b8f7115d529.jpg,195,Red-naped Sapsucker,198,Nuttall's Woodpecker,198|194|195|193|191
+000ef8cc-7230-46a0-8415-e13eb13bbc28,0380/000ef8cc723046a08415e13eb13bbc28.jpg,72,Allen's Hummingbird (Adult Male),282,"Allen's Hummingbird (Female, immature)",282|72|275|65|281
+001037a2-b6d1-4517-b305-c14a8bdf7963,0945/001037a2b6d14517b305c14a8bdf7963.jpg,489,Hutton's Vireo,470,Pacific-slope Flycatcher,470|469|426|475|489
+0013bc94-07e0-4ff6-b193-8da8f367486f,0816/0013bc9407e04ff6b1938da8f367486f.jpg,360,Bridled Titmouse,355,Carolina Chickadee,355|357|424|356|364
+00178393-59ef-4637-a413-9fc829cd66fd,0949/0017839359ef4637a4139fc829cd66fd.jpg,493,Steller's Jay,496,Western Scrub-Jay,496|497|493|388|321
+001b2009-a40b-4499-aabc-55a7b13bbab9,0963/001b2009a40b4499aabc55a7b13bbab9.jpg,507,Common Yellowthroat (Female/immature male),412,Nashville Warbler,412|414|413|410|426
+00209b86-583c-44d1-b7ef-a7dcab6bed7d,0667/00209b86583c44d1b7efa7dcab6bed7d.jpg,270,Spotted Sandpiper (Nonbreeding/juvenile),151,Willet,151|161|160|152|60
+0021434d-727a-42be-921d-a187ec291ed2,0629/0021434d727a42be921da187ec291ed2.jpg,232,White-winged Scoter (Female/juvenile),22,White-winged Scoter (Male),22|232|114|112|0
+00231538-51eb-40ba-80a1-70e8e3239d13,0943/0023153851eb40ba80a170e8e3239d13.jpg,487,Cassin's Vireo,384,Ruby-crowned Kinglet,384|489|485|487|488
+0028c3a4-55cd-451c-b508-4580cee6ab35,0811/0028c3a455cd451cb5084580cee6ab35.jpg,355,Carolina Chickadee,199,Downy Woodpecker,199|200|495|355|357
+0029cd78-55e8-42dc-9ec3-1fe1c3608aa1,0861/0029cd7855e842dc9ec31fe1c3608aa1.jpg,405,Louisiana Waterthrush,406,Northern Waterthrush,406|405|401|426|512
+0029e7b0-aa46-4988-a9e8-10b54efc3d91,0656/0029e7b0aa464988a9e810b54efc3d91.jpg,259,Sharp-shinned Hawk (Immature),51,Red-shouldered Hawk (Adult ),51|261|50|260|52
+002b7476-7ee1-4e03-b128-dfe354b427b5,0840/002b74767ee14e03b128dfe354b427b5.jpg,384,Ruby-crowned Kinglet,470,Pacific-slope Flycatcher,470|476|471|475|384
+002d1227-58a6-4029-844c-1dac333be0c1,0888/002d122758a64029844c1dac333be0c1.jpg,432,Spotted Towhee,437,Abert's Towhee,437|504|432|433|435
+0036de31-8051-4bc5-aa20-2b93b5598235,0481/0036de3180514bc5aa202b93b5598235.jpg,121,Great Egret,122,Snowy Egret,122|124|121|46|42
+00378235-a328-4524-8ff3-41430238a387,0854/00378235a32845248ff341430238a387.jpg,398,Curve-billed Thrasher,399,California Thrasher,399|373|391|436|398
+0039ce66-310a-4709-9456-fcf7c61c8b12,0927/0039ce66310a47099456fcf7c61c8b12.jpg,471,Cordilleran Flycatcher,470,Pacific-slope Flycatcher,470|489|384|471|484
+003d21c8-c29d-4c59-8c8b-a80f25b289a5,0757/003d21c8c29d4c598c8ba80f25b289a5.jpg,301,American Redstart (Adult Male),328,Hooded Oriole (Adult male),328|535|301|329|536
+00483c76-14a8-4ad6-a355-e276b7e4fbfd,0910/00483c7614a84ad6a355e276b7e4fbfd.jpg,454,Western Meadowlark,372,Cactus Wren,372|447|401|444|442
+004d9fe4-afb6-4376-b579-8c1ea9f0e751,1005/004d9fe4afb64376b5798c1ea9f0e751.jpg,549,European Starling (Juvenile),472,Black Phoebe,472|395|503|186|298
+004f5dee-8f08-49eb-8ed9-285bd8a5da5b,0628/004f5dee8f0849eb8ed9285bd8a5da5b.jpg,231,Surf Scoter (Female/immature),232,White-winged Scoter (Female/juvenile),232|233|22|23|231
+00520c76-9d4a-4f98-bb8e-1d35db8a3b4e,0605/00520c769d4a4f98bb8e1d35db8a3b4e.jpg,208,Western Gull (Immature),87,Mew Gull,87|211|84|210|83
+005517e0-2245-40ae-be35-14e54914ade2,0929/005517e0224540aebe3514e54914ade2.jpg,473,Eastern Phoebe,475,Ash-throated Flycatcher,475|469|476|470|467
+005ce775-2191-480b-958e-2d0550bb65bd,0815/005ce7752191480b958e2d0550bb65bd.jpg,359,Boreal Chickadee,357,Mountain Chickadee,357|358|359|554|385
+00703a2f-095e-422b-9cb1-87a092f3efc9,0947/00703a2f095e422b9cb187a092f3efc9.jpg,491,Red-eyed Vireo,483,White-eyed Vireo,483|491|410|484|485
+007497dd-5bb5-4754-83ea-b628695d7df4,0517/007497dd5bb5475483eab628695d7df4.jpg,157,Black Turnstone,62,Dunlin (Breeding),62|272|156|401|157
+0076aa55-1f13-44cf-a490-695cbd536a60,0790/0076aa551f1344cfa490695cbd536a60.jpg,334,House Finch (Adult Male),541,House Finch (Female/immature),541|540|334|333|539
+0078fca2-f5db-4e35-939f-499c14f06846,0912/0078fca2f5db4e35939f499c14f06846.jpg,456,Common Grackle,457,Boat-tailed Grackle,457|456|493|458|497
+007bdf14-6d09-4a7e-a69b-21ba6863b603,0661/007bdf146d094a7ea69b21ba6863b603.jpg,264,Golden Eagle (Immature),131,Osprey,131|264|54|3|136
+00834a6f-9ae6-4c14-8042-1b38e95ca0d7,0636/00834a6f9ae64c1480421b38e95ca0d7.jpg,239,Red-breasted Merganser (Female/immature male),145,American Oystercatcher,145|60|238|28|270
+00874293-f6c3-4c6e-a613-08bd13b39982,0511/00874293f6c34c6ea61308bd13b39982.jpg,151,Willet,162,Short-billed Dowitcher,162|151|152|155|62
+00891401-e4c9-4ce1-bc19-f70740d174bc,0766/00891401e4c94ce1bc19f70740d174bc.jpg,310,White-crowned Sparrow (Adult),311,Golden-crowned Sparrow (Adult),311|518|308|434|310
+008c68f6-f620-440f-874b-2d9b1d960e5b,0884/008c68f6f620440f874b2d9b1d960e5b.jpg,428,Canada Warbler,419,Yellow Warbler,419|429|450|414|294
+008e91e6-46bb-4638-aadc-219dd34781bd,0997/008e91e646bb4638aadc219dd34781bd.jpg,541,House Finch (Female/immature),447,Lincoln's Sparrow,447|446|442|440|444
+00975e7f-bacf-4dba-b03b-691c15db577c,0528/00975e7fbacf4dbab03b691c15db577c.jpg,168,White-winged Dove,170,Inca Dove,170|169|396|166|451
+00acf6c1-b66e-4060-bb04-4caf29b5a8b0,0901/00acf6c1b66e4060bb044caf29b5a8b0.jpg,445,Fox Sparrow (Sooty),391,Swainson's Thrush,391|445|550|392|390
+00ae017e-7bbe-43c1-b766-01c882f089fb,0698/00ae017e7bbe43c1b76601c882f089fb.jpg,287,Ruddy Duck (Female/juvenile),228,Greater Scaup (Female/Eclipse male),228|229|227|101|18
+00ae236a-cfc4-49d2-bb6c-79a0a5fb25c1,0679/00ae236acfc449d2bb6c79a0a5fb25c1.jpg,282,"Allen's Hummingbird (Female, immature)",341,Vermilion Flycatcher (Adult male),341|548|471|373|281
+00b47979-ec0c-4edc-88e8-5b813b35d6f5,0798/00b47979ec0c4edc88e85b813b35d6f5.jpg,342,Yellow-rumped Warbler (Winter/juvenile Myrtle),470,Pacific-slope Flycatcher,470|489|475|342|380
+00b590bb-84ed-4961-b4fc-5e656cdd7972,0379/00b590bb84ed4961b4fc5e656cdd7972.jpg,71,Rufous Hummingbird (Adult Male),281,"Rufous Hummingbird (Female, immature)",281|71|275|65|280
+00b71433-d412-46a8-9d35-5eb0062133f7,0988/00b71433d41246a89d355eb0062133f7.jpg,532,Yellow-headed Blackbird (Female/Immature Male),297,American Robin (Adult),297|394|505|298|328
+00b8538d-7ba9-47de-8f2c-0930fa560594,0880/00b8538d7ba947de8f2c0930fa560594.jpg,424,Black-throated Gray Warbler,191,Gila Woodpecker,191|357|298|505|362
+00ba3785-6a65-441c-91d3-84188946dc63,0373/00ba37856a65441c91d384188946dc63.jpg,65,Ruby-throated Hummingbird (Adult Male),275,"Ruby-throated Hummingbird (Female, immature)",275|282|72|65|280
+00c2b312-0d04-4fdf-98f2-2ee2bd4c4b33,0833/00c2b3120d044fdf98f22ee2bd4c4b33.jpg,377,Pacific Wren,436,California Towhee,436|378|435|437|377
+00ca1b86-91a7-46db-a5b3-c275172af7fc,0605/00ca1b8691a746dba5b3c275172af7fc.jpg,208,Western Gull (Immature),87,Mew Gull,87|84|83|211|210
+00cd92d2-9cc0-4f96-8d0c-feaadc7b1725,0788/00cd92d29cc04f968d0cfeaadc7b1725.jpg,332,Purple Finch (Adult Male),334,House Finch (Adult Male),334|541|332|450|539
+00ce2a1d-6908-4083-a725-7742fad2cbd4,0599/00ce2a1d69084083a7257742fad2cbd4.jpg,202,"Black Guillemot (Nonbreeding, juvenile)",75,Black Guillemot (Breeding),75|202|33|243|34
+00e033c8-0808-4200-99d9-695ccfa3f987,0528/00e033c80808420099d9695ccfa3f987.jpg,168,White-winged Dove,167,Eurasian Collared-Dove,167|168|396|169|486
+00e10284-1ed4-4141-adfa-d8fbedc1ad83,0348/00e102841ed44141adfad8fbedc1ad83.jpg,40,Double-crested Cormorant (Immature),114,Brandt's Cormorant,114|117|250|40|115
+00e28b76-8251-4e8c-9c31-1a7d43310e1e,0395/00e28b7682514e8c9c311a7d43310e1e.jpg,78,Laughing Gull (Breeding),204,Black-legged Kittiwake (Immature),204|77|206|91|79
+00e4b347-a189-4c11-b3fd-727b8d321ee7,0604/00e4b347a1894c11b3fd727b8d321ee7.jpg,207,Ring-billed Gull (Immature),87,Mew Gull,87|82|83|84|209
+00e70035-ba5d-4651-a9d8-0715fd942297,0978/00e70035ba5d4651a9d80715fd942297.jpg,522,Western Tanager (Female/Nonbreeding Male),468,Eastern Wood-Pewee,468|470|467|471|485
+00ed8c34-baab-4170-bab8-8013461825f0,0466/00ed8c34baab4170bab88013461825f0.jpg,106,Scaled Quail,170,Inca Dove,170|106|241|169|164
+00ee0804-3030-4b39-8a35-976261a7f4dc,0783/00ee080430304b398a35976261a7f4dc.jpg,327,Brown-headed Cowbird (Male),226,Redhead (Female/Eclipse male),226|327|16|534|433
+00f163e3-7078-40d1-a1a5-f2c93be77d16,0368/00f163e3707840d1a1a5f2c93be77d16.jpg,60,Spotted Sandpiper (Breeding),149,Solitary Sandpiper,149|60|270|161|160
+00f9bac9-e642-4c95-b5a9-cf8e32aed356,0810/00f9bac9e6424c95b5a9cf8e32aed356.jpg,354,Barn Swallow,351,Bank Swallow,351|188|353|350|349
+00facde4-5cd2-470c-b18f-6ddd1299d1af,0333/00facde45cd2470cb18f6ddd1299d1af.jpg,25,Common Goldeneye (Breeding male),235,Common Goldeneye (Female/Eclipse male),235|25|219|26|236
+01022e9f-7069-4b6a-80ef-5d166e6025dc,0770/01022e9f70694b6a80ef5d166e6025dc.jpg,314,Scarlet Tanager (Breeding Male),521,Scarlet Tanager (Female/Nonbreeding Male),521|314|294|450|551
+010864eb-78e5-44e5-8dd8-38be9a878add,0315/010864eb78e544e58dd838be9a878add.jpg,7,Gadwall (Breeding male),217,Gadwall (Female/Eclipse male),217|7|101|220|268
+010c9cec-26d9-4bfa-9e7e-0586a71a7581,0782/010c9cec26d94bfa9e7e0586a71a7581.jpg,326,Brewer's Blackbird (Female/Juvenile),343,Northwestern Crow,343|501|327|345|498
+010fe194-3bc0-4c32-b007-0213f1b74f90,0968/010fe1943bc04c32b0070213f1b74f90.jpg,512,Blackpoll Warbler (Female/juvenile),410,Tennessee Warbler,410|426|414|413|420
+01149d79-e309-403d-903e-6291b16c4c5f,0917/01149d79e309403d903e6291b16c4c5f.jpg,461,Gray-crowned Rosy-Finch,554,Dark-eyed Junco (Red-backed/Gray-headed),554|437|449|463|187
+0114ca6b-6639-479e-a91c-ec2d6d7c6fcf,0768/0114ca6b6639479ea91cec2d6d7c6fcf.jpg,312,Dark-eyed Junco (Oregon),554,Dark-eyed Junco (Red-backed/Gray-headed),554|519|437|449|312
+011534c4-cd69-4475-a54b-92670c870c33,0970/011534c4cd694475a54b92670c870c33.jpg,514,Lark Bunting (Female/Nonbreeding male),442,Vesper Sparrow,442|443|307|514|401
+01157b27-5c1a-42df-b165-e5c9a6d1e13e,0451/01157b275c1a42dfb165e5c9a6d1e13e.jpg,91,Forster's Tern,92,Royal Tern,92|90|88|91|79
+01183813-18ac-45ae-8989-c40fc5516a76,0823/0118381318ac45ae8989c40fc5516a76.jpg,367,Red-breasted Nuthatch,370,Brown-headed Nuthatch,370|369|371|192|363
+011ac2c9-9ea3-48a3-a742-eb184c13eb30,0882/011ac2c99ea348a3a742eb184c13eb30.jpg,426,Hermit Warbler,339,Evening Grosbeak (Adult Male),339|546|427|425|422
+011c895c-488e-46ea-94ce-bfa6e0f582f1,0520/011c895c488e46ea94cebfa6e0f582f1.jpg,160,Western Sandpiper,161,Least Sandpiper,161|62|160|272|159
+01207e13-1123-4ad3-9b9b-21aac854756d,0902/01207e1311234ad39b9b21aac854756d.jpg,446,Song Sparrow,447,Lincoln's Sparrow,447|446|448|308|440
+012490df-126d-46a0-a892-8da0224b0c12,0358/012490df126d46a0a8928da0224b0c12.jpg,50,Cooper's Hawk (Adult),49,Sharp-shinned Hawk (Adult ),49|51|50|258|140
+0127b94b-24f0-4db3-ba40-cd2aea811b6c,0622/0127b94b24f04db3ba40cd2aea811b6c.jpg,225,Canvasback (Female/Eclipse male),217,Gadwall (Female/Eclipse male),217|7|225|228|15
+012edf20-3e13-4ad9-827d-2047cc8e4d57,0967/012edf203e134ad9827d2047cc8e4d57.jpg,511,Chestnut-sided Warbler (Female/immature male),410,Tennessee Warbler,410|414|425|426|421
+013173a2-1827-4a6c-aedd-a2588796ef83,0868/013173a218274a6caedda2588796ef83.jpg,412,Nashville Warbler,414,Mourning Warbler,414|412|485|487|410

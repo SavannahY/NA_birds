@@ -1,0 +1,242 @@
+[
+  {
+    "target": 72,
+    "true_name": "Allen's Hummingbird (Adult Male)",
+    "pred_target": 71,
+    "pred_name": "Rufous Hummingbird (Adult Male)",
+    "count": 44,
+    "same_family": false
+  },
+  {
+    "target": 6,
+    "true_name": "Wood Duck (Breeding male)",
+    "pred_target": 216,
+    "pred_name": "Wood Duck (Female/Eclipse male)",
+    "count": 42,
+    "same_family": true
+  },
+  {
+    "target": 74,
+    "true_name": "Northern Flicker (Yellow-shafted)",
+    "pred_target": 284,
+    "pred_name": "Northern Flicker (Red-shafted)",
+    "count": 39,
+    "same_family": true
+  },
+  {
+    "target": 9,
+    "true_name": "Mallard (Breeding male)",
+    "pred_target": 219,
+    "pred_name": "Mallard (Female/Eclipse male)",
+    "count": 37,
+    "same_family": true
+  },
+  {
+    "target": 270,
+    "true_name": "Spotted Sandpiper (Nonbreeding/juvenile)",
+    "pred_target": 60,
+    "pred_name": "Spotted Sandpiper (Breeding)",
+    "count": 34,
+    "same_family": true
+  },
+  {
+    "target": 55,
+    "true_name": "American Kestrel (Adult male)",
+    "pred_target": 265,
+    "pred_name": "American Kestrel (Female, immature)",
+    "count": 34,
+    "same_family": true
+  },
+  {
+    "target": 112,
+    "true_name": "Clark's Grebe",
+    "pred_target": 111,
+    "pred_name": "Western Grebe",
+    "count": 32,
+    "same_family": false
+  },
+  {
+    "target": 302,
+    "true_name": "Magnolia Warbler (Breeding male)",
+    "pred_target": 422,
+    "pred_name": "Yellow-throated Warbler",
+    "count": 30,
+    "same_family": false
+  },
+  {
+    "target": 156,
+    "true_name": "Ruddy Turnstone",
+    "pred_target": 157,
+    "pred_name": "Black Turnstone",
+    "count": 30,
+    "same_family": false
+  },
+  {
+    "target": 246,
+    "true_name": "Horned Grebe (Nonbreeding/juvenile)",
+    "pred_target": 112,
+    "pred_name": "Clark's Grebe",
+    "count": 30,
+    "same_family": false
+  },
+  {
+    "target": 454,
+    "true_name": "Western Meadowlark",
+    "pred_target": 453,
+    "pred_name": "Eastern Meadowlark",
+    "count": 29,
+    "same_family": false
+  },
+  {
+    "target": 161,
+    "true_name": "Least Sandpiper",
+    "pred_target": 159,
+    "pred_name": "Semipalmated Sandpiper",
+    "count": 28,
+    "same_family": false
+  },
+  {
+    "target": 546,
+    "true_name": "Evening Grosbeak (Female/Juvenile)",
+    "pred_target": 339,
+    "pred_name": "Evening Grosbeak (Adult Male)",
+    "count": 28,
+    "same_family": true
+  },
+  {
+    "target": 200,
+    "true_name": "Hairy Woodpecker",
+    "pred_target": 199,
+    "pred_name": "Downy Woodpecker",
+    "count": 26,
+    "same_family": false
+  },
+  {
+    "target": 386,
+    "true_name": "Eastern Bluebird",
+    "pred_target": 387,
+    "pred_name": "Western Bluebird",
+    "count": 26,
+    "same_family": false
+  },
+  {
+    "target": 457,
+    "true_name": "Boat-tailed Grackle",
+    "pred_target": 456,
+    "pred_name": "Common Grackle",
+    "count": 26,
+    "same_family": false
+  },
+  {
+    "target": 194,
+    "true_name": "Yellow-bellied Sapsucker",
+    "pred_target": 197,
+    "pred_name": "Ladder-backed Woodpecker",
+    "count": 26,
+    "same_family": false
+  },
+  {
+    "target": 292,
+    "true_name": "European Starling (Breeding Adult)",
+    "pred_target": 400,
+    "pred_name": "European Starling (Nonbreeding Adult)",
+    "count": 26,
+    "same_family": true
+  },
+  {
+    "target": 150,
+    "true_name": "Greater Yellowlegs",
+    "pred_target": 152,
+    "pred_name": "Lesser Yellowlegs",
+    "count": 26,
+    "same_family": false
+  },
+  {
+    "target": 468,
+    "true_name": "Eastern Wood-Pewee",
+    "pred_target": 467,
+    "pred_name": "Western Wood-Pewee",
+    "count": 25,
+    "same_family": false
+  },
+  {
+    "target": 25,
+    "true_name": "Common Goldeneye (Breeding male)",
+    "pred_target": 26,
+    "pred_name": "Barrow's Goldeneye (Breeding male)",
+    "count": 24,
+    "same_family": false
+  },
+  {
+    "target": 238,
+    "true_name": "Common Merganser (Female/immature male)",
+    "pred_target": 28,
+    "pred_name": "Common Merganser (Breeding male)",
+    "count": 24,
+    "same_family": true
+  },
+  {
+    "target": 196,
+    "true_name": "Red-breasted Sapsucker",
+    "pred_target": 195,
+    "pred_name": "Red-naped Sapsucker",
+    "count": 24,
+    "same_family": false
+  },
+  {
+    "target": 56,
+    "true_name": "Peregrine Falcon (Adult)",
+    "pred_target": 266,
+    "pred_name": "Peregrine Falcon (Immature)",
+    "count": 24,
+    "same_family": true
+  },
+  {
+    "target": 178,
+    "true_name": "Eastern Screech-Owl",
+    "pred_target": 177,
+    "pred_name": "Western Screech-Owl",
+    "count": 24,
+    "same_family": false
+  },
+  {
+    "target": 293,
+    "true_name": "Fox Sparrow (Red)",
+    "pred_target": 550,
+    "pred_name": "Fox Sparrow (Thick-billed/Slate-colored)",
+    "count": 24,
+    "same_family": true
+  },
+  {
+    "target": 43,
+    "true_name": "Reddish Egret (Dark morph)",
+    "pred_target": 253,
+    "pred_name": "Reddish Egret (White morph)",
+    "count": 24,
+    "same_family": true
+  },
+  {
+    "target": 427,
+    "true_name": "Black-throated Green Warbler",
+    "pred_target": 425,
+    "pred_name": "Townsend's Warbler",
+    "count": 23,
+    "same_family": false
+  },
+  {
+    "target": 291,
+    "true_name": "Yellow-rumped Warbler (Breeding Myrtle)",
+    "pred_target": 422,
+    "pred_name": "Yellow-throated Warbler",
+    "count": 23,
+    "same_family": false
+  },
+  {
+    "target": 90,
+    "true_name": "Common Tern",
+    "pred_target": 88,
+    "pred_name": "Caspian Tern",
+    "count": 23,
+    "same_family": false
+  }
+]

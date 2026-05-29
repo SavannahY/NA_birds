@@ -1,0 +1,8 @@
+Task mode: create
+Primary deck profile: engineering-platform
+Secondary gates: consumer-retail image evidence for bird examples
+Required proof objects: benchmark comparison chart; CLIP/SigLIP-style prompt/embedding workflow; error-analysis page; limitations and next-step roadmap
+Source requirements: use only repo metrics and generated Modal artifacts; preserve official 555 NABirds leaf classes
+Asset requirements: current charts from reports/milestone3/slide_assets; real NABirds error examples from reports/milestone3/error_analysis; no invented metrics
+Known missing inputs: none for the 4-slide milestone deck; SigLIP2 cached scoring completed but appears non-informative because of the HF evaluation path.
+QA gates: every slide has a claim, a proof object, and readable metric labels at thumbnail size

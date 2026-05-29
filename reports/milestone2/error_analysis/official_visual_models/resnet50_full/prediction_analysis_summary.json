@@ -1,0 +1,12 @@
+{
+  "predictions_csv": "reports/milestone2/predictions/visual_resnet50_full_test_predictions.csv",
+  "num_examples": 24633,
+  "top1_accuracy": 0.7940973490845613,
+  "top5_accuracy": 0.94824016563147,
+  "macro_f1": 0.7688563727740256,
+  "balanced_accuracy": 0.7678706740389668,
+  "num_labels_in_predictions": 555,
+  "top_confusions_csv": "reports/milestone2/error_analysis/official_visual_models/resnet50_full/top_confusions.csv",
+  "per_class_recall_csv": "reports/milestone2/error_analysis/official_visual_models/resnet50_full/per_class_recall.csv",
+  "error_examples_csv": "reports/milestone2/error_analysis/official_visual_models/resnet50_full/error_examples.csv"
+}

@@ -54,7 +54,10 @@ def _read_csv(path: Path, required_columns: Sequence[str]) -> List[Dict[str, str
     return rows
 
 
-def _limit_rows(rows: List[Dict[str, str]], limit: Optional[int]) -> List[Dict[str, str]]:
+def _select_rows(rows: List[Dict[str, str]], row_offset: int, limit: Optional[int]) -> List[Dict[str, str]]:
+    if row_offset < 0:
+        raise SystemExit("--row-offset must be non-negative.")
+    rows = rows[row_offset:]
     if limit is None or limit <= 0:
         return rows
     return rows[:limit]
@@ -331,9 +334,10 @@ def precompute_split(
     save_dtype: Any,
     normalize: bool,
     limit: Optional[int],
+    row_offset: int,
     show_progress: bool,
 ) -> Dict[str, Any]:
-    rows = _limit_rows(_read_csv(manifest_path, required_columns=("image_path", "target")), limit)
+    rows = _select_rows(_read_csv(manifest_path, required_columns=("image_path", "target")), row_offset, limit)
     if not rows:
         raise SystemExit(f"{manifest_path}: no rows to encode.")
 
@@ -381,6 +385,8 @@ def precompute_split(
             "feature_dim": int(image_features.shape[1]),
             "num_samples": int(image_features.shape[0]),
             "dtype": _dtype_name(image_features.dtype),
+            "row_offset": row_offset,
+            "limit": limit,
         },
     }
     output_path.parent.mkdir(parents=True, exist_ok=True)
@@ -428,7 +434,15 @@ def precompute(args: argparse.Namespace) -> Dict[str, Any]:
     started = time.time()
     for split in args.splits:
         manifest_path = _manifest_for_split(manifest_dir, split)
-        output_path = output_dir / f"{split}_{slug}_{args.input_mode}_image_features.pt"
+        suffix_parts = []
+        if args.output_suffix:
+            suffix_parts.append(_model_slug(args.output_suffix))
+        if args.row_offset:
+            suffix_parts.append(f"offset_{args.row_offset}")
+        if args.limit is not None:
+            suffix_parts.append(f"limit_{args.limit}")
+        suffix = f"_{'_'.join(suffix_parts)}" if suffix_parts else ""
+        output_path = output_dir / f"{split}_{slug}_{args.input_mode}{suffix}_image_features.pt"
         summary = precompute_split(
             torch=torch,
             Image=Image,
@@ -448,6 +462,7 @@ def precompute(args: argparse.Namespace) -> Dict[str, Any]:
             save_dtype=save_dtype,
             normalize=not args.no_normalize,
             limit=args.limit,
+            row_offset=args.row_offset,
             show_progress=not args.no_progress,
         )
         split_summaries.append(summary)
@@ -466,11 +481,18 @@ def precompute(args: argparse.Namespace) -> Dict[str, Any]:
         "normalized": not args.no_normalize,
         "batch_size": args.batch_size,
         "limit": args.limit,
+        "row_offset": args.row_offset,
+        "output_suffix": args.output_suffix,
         "splits": split_summaries,
         "elapsed_seconds": round(time.time() - started, 3),
     }
     output_dir.mkdir(parents=True, exist_ok=True)
-    manifest_path = output_dir / f"{slug}_{args.input_mode}_feature_manifest.json"
+    manifest_suffix = f"_{_model_slug(args.output_suffix)}" if args.output_suffix else ""
+    if args.row_offset:
+        manifest_suffix += f"_offset_{args.row_offset}"
+    if args.limit is not None:
+        manifest_suffix += f"_limit_{args.limit}"
+    manifest_path = output_dir / f"{slug}_{args.input_mode}{manifest_suffix}_feature_manifest.json"
     manifest_path.write_text(json.dumps(manifest, indent=2), encoding="utf-8")
     manifest["feature_manifest"] = str(manifest_path)
     return manifest
@@ -491,6 +513,8 @@ def parse_args(argv: Optional[Sequence[str]] = None) -> argparse.Namespace:
     parser.add_argument("--crop-padding", type=_nonnegative_float, default=0.0, help="Fractional padding around bbox crops.")
     parser.add_argument("--batch-size", type=_positive_int, default=64, help="Image batch size.")
     parser.add_argument("--limit", type=_positive_int, default=None, help="Encode only the first N rows per split for smoke tests.")
+    parser.add_argument("--row-offset", type=int, default=0, help="Skip this many rows before applying --limit.")
+    parser.add_argument("--output-suffix", default="", help="Optional suffix for shard output filenames.")
     parser.add_argument("--device", default="auto", help="auto, cpu, cuda, cuda:0, or mps.")
     parser.add_argument("--dtype", choices=("auto", "float32", "float16", "bfloat16"), default="auto", help="Model/input floating dtype.")
     parser.add_argument("--save-dtype", choices=("float32", "float16", "bfloat16"), default="float32", help="Feature tensor dtype on disk.")

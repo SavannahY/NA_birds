@@ -1,0 +1,26 @@
+{
+  "class_prompts": "reports/milestone2/nabirds_class_prompts.csv",
+  "descriptors_csv": "bird_class_expert_description_visual_attribute_descriptors.csv",
+  "output_csv": "reports/milestone3/nabirds_descriptor_prompts.csv",
+  "prompt_rows": 1665,
+  "unique_targets": 555,
+  "unique_raw_class_ids": 555,
+  "expected_targets": 555,
+  "missing_raw_class_ids": [],
+  "prompt_templates": [
+    "a field guide photograph of a {class_name}; visual field marks: {traits}.",
+    "a close-up bird photo of a {class_name} showing {traits}.",
+    "a fine-grained ID photo of a {class_name}, with {traits}."
+  ],
+  "max_descriptors_per_prompt": 8,
+  "descriptor_count_min": 0,
+  "descriptor_count_max": 20,
+  "descriptor_count_zero_classes": 1,
+  "shared_variant_descriptor_classes": 279,
+  "descriptor_quality_counts": {
+    "compact_verified": 11,
+    "missing_descriptor": 1,
+    "needs_normalization": 264,
+    "needs_normalization|shared_variant_descriptor": 279
+  }
+}

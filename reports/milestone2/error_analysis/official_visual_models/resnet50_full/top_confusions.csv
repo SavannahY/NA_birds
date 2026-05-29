@@ -1,0 +1,51 @@
+target,target_name,pred_target,pred_name,count
+228,Greater Scaup (Female/Eclipse male),229,Lesser Scaup (Female/Eclipse male),23
+72,Allen's Hummingbird (Adult Male),71,Rufous Hummingbird (Adult Male),22
+356,Black-capped Chickadee,355,Carolina Chickadee,22
+90,Common Tern,91,Forster's Tern,19
+177,Western Screech-Owl,178,Eastern Screech-Owl,19
+467,Western Wood-Pewee,468,Eastern Wood-Pewee,18
+344,Fish Crow,501,American Crow,18
+282,"Allen's Hummingbird (Female, immature)",281,"Rufous Hummingbird (Female, immature)",18
+150,Greater Yellowlegs,152,Lesser Yellowlegs,18
+345,Chihuahuan Raven,346,Common Raven,18
+18,Greater Scaup (Breeding male),19,Lesser Scaup (Breeding male),18
+259,Sharp-shinned Hawk (Immature),260,Cooper's Hawk (Immature),17
+49,Sharp-shinned Hawk (Adult ),50,Cooper's Hawk (Adult),17
+486,Plumbeous Vireo,487,Cassin's Vireo,17
+414,Mourning Warbler,413,MacGillivray's Warbler,16
+275,"Ruby-throated Hummingbird (Female, immature)",276,"Black-chinned Hummingbird (Female, immature)",16
+194,Yellow-bellied Sapsucker,195,Red-naped Sapsucker,15
+346,Common Raven,501,American Crow,15
+470,Pacific-slope Flycatcher,471,Cordilleran Flycatcher,15
+377,Pacific Wren,378,Winter Wren,14
+284,Northern Flicker (Red-shafted),74,Northern Flicker (Yellow-shafted),14
+487,Cassin's Vireo,488,Blue-headed Vireo,14
+26,Barrow's Goldeneye (Breeding male),25,Common Goldeneye (Breeding male),14
+71,Rufous Hummingbird (Adult Male),72,Allen's Hummingbird (Adult Male),14
+50,Cooper's Hawk (Adult),49,Sharp-shinned Hawk (Adult ),13
+195,Red-naped Sapsucker,194,Yellow-bellied Sapsucker,13
+262,Broad-winged Hawk (Immature),261,Red-shouldered Hawk (Immature),13
+458,Great-tailed Grackle,457,Boat-tailed Grackle,13
+553,Yellow-rumped Warbler (Winter/juvenile Audubon's),502,Yellow-rumped Warbler (Breeding Audubon's),13
+200,Hairy Woodpecker,199,Downy Woodpecker,12
+152,Lesser Yellowlegs,150,Greater Yellowlegs,12
+280,"Broad-tailed Hummingbird (Female, immature)",279,"Calliope Hummingbird (Female, immature)",12
+178,Eastern Screech-Owl,177,Western Screech-Owl,12
+469,Least Flycatcher,470,Pacific-slope Flycatcher,11
+197,Ladder-backed Woodpecker,198,Nuttall's Woodpecker,11
+550,Fox Sparrow (Thick-billed/Slate-colored),445,Fox Sparrow (Sooty),11
+342,Yellow-rumped Warbler (Winter/juvenile Myrtle),553,Yellow-rumped Warbler (Winter/juvenile Audubon's),11
+502,Yellow-rumped Warbler (Breeding Audubon's),553,Yellow-rumped Warbler (Winter/juvenile Audubon's),11
+127,White-faced Ibis,126,Glossy Ibis,11
+457,Boat-tailed Grackle,458,Great-tailed Grackle,11
+260,Cooper's Hawk (Immature),259,Sharp-shinned Hawk (Immature),11
+99,Trumpeter Swan,100,Tundra Swan,10
+355,Carolina Chickadee,356,Black-capped Chickadee,10
+289,Red-tailed Hawk (Light morph immature),261,Red-shouldered Hawk (Immature),10
+199,Downy Woodpecker,200,Hairy Woodpecker,10
+251,Great Cormorant (Immature),40,Double-crested Cormorant (Immature),10
+236,Barrow's Goldeneye (Female/Eclipse male),235,Common Goldeneye (Female/Eclipse male),10
+111,Western Grebe,112,Clark's Grebe,10
+501,American Crow,346,Common Raven,10
+100,Tundra Swan,99,Trumpeter Swan,10

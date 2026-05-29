@@ -1,0 +1,11 @@
+Slide rhythm:
+1. Results dashboard: chart + metric cards.
+2. Evaluation setup: left-to-right embedding pipeline + prompt example.
+3. Error analysis: image grid + confusion pair bars.
+4. Limitations and next steps: risk ledger + roadmap.
+
+Thumbnail test:
+- Slide 1 should read as a benchmark gap.
+- Slide 2 should read as a data-to-embedding pipeline.
+- Slide 3 should show real visual errors immediately.
+- Slide 4 should make the next engineering sequence obvious.

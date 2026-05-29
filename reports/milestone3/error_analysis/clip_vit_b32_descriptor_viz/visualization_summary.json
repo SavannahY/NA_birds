@@ -1,0 +1,16 @@
+{
+  "predictions_csv": "reports/milestone3/modal_outputs_clean/clip_vit_b32_descriptor_cached_test_predictions.csv",
+  "num_examples": 24633,
+  "top1_accuracy": 0.37746112937928794,
+  "num_errors": 15335,
+  "num_unique_families": 404,
+  "top_classes_in_heatmap": 30,
+  "num_error_images_requested": 12,
+  "num_error_images_shown": 12,
+  "outputs": {
+    "confusion_matrix_family": "reports/milestone3/error_analysis/clip_vit_b32_descriptor_viz/confusion_matrix_family.png",
+    "confusion_matrix_top_classes": "reports/milestone3/error_analysis/clip_vit_b32_descriptor_viz/confusion_matrix_top_classes.png",
+    "misclassification_grid": "reports/milestone3/error_analysis/clip_vit_b32_descriptor_viz/misclassification_grid.png",
+    "top_confusion_pairs": "reports/milestone3/error_analysis/clip_vit_b32_descriptor_viz/top_confusion_pairs.json"
+  }
+}

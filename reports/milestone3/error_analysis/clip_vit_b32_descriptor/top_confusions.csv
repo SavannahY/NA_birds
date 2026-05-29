@@ -1,0 +1,81 @@
+target,target_name,pred_target,pred_name,count
+150,Greater Yellowlegs,152,Lesser Yellowlegs,51
+12,Northern Shoveler (Breeding male),222,Northern Shoveler (Female/Eclipse male),51
+9,Mallard (Breeding male),219,Mallard (Female/Eclipse male),49
+533,Brewer's Blackbird (Male),457,Boat-tailed Grackle,42
+55,American Kestrel (Adult male),265,"American Kestrel (Female, immature)",39
+315,Western Tanager (Breeding Male),522,Western Tanager (Female/Nonbreeding Male),39
+314,Scarlet Tanager (Breeding Male),521,Scarlet Tanager (Female/Nonbreeding Male),38
+121,Great Egret,122,Snowy Egret,37
+338,American Goldfinch (Breeding Male),545,American Goldfinch (Female/Nonbreeding Male),37
+250,Double-crested Cormorant (Adult),114,Brandt's Cormorant,36
+458,Great-tailed Grackle,457,Boat-tailed Grackle,34
+156,Ruddy Turnstone,157,Black Turnstone,34
+8,American Wigeon (Breeding male),218,American Wigeon (Female/Eclipse male),33
+7,Gadwall (Breeding male),217,Gadwall (Female/Eclipse male),31
+72,Allen's Hummingbird (Adult Male),71,Rufous Hummingbird (Adult Male),31
+112,Clark's Grebe,111,Western Grebe,30
+74,Northern Flicker (Yellow-shafted),284,Northern Flicker (Red-shafted),30
+507,Common Yellowthroat (Female/immature male),412,Nashville Warbler,29
+427,Black-throated Green Warbler,425,Townsend's Warbler,29
+41,Great Cormorant (Adult),114,Brandt's Cormorant,29
+47,"Bald Eagle (Adult, subadult)",257,"Bald Eagle (Immature, juvenile)",29
+456,Common Grackle,457,Boat-tailed Grackle,28
+115,Neotropic Cormorant,114,Brandt's Cormorant,28
+19,Lesser Scaup (Breeding male),228,Greater Scaup (Female/Eclipse male),27
+469,Least Flycatcher,470,Pacific-slope Flycatcher,26
+433,Eastern Towhee,432,Spotted Towhee,26
+43,Reddish Egret (Dark morph),253,Reddish Egret (White morph),26
+40,Double-crested Cormorant (Immature),114,Brandt's Cormorant,25
+200,Hairy Woodpecker,199,Downy Woodpecker,25
+252,Little Blue Heron (Immature),122,Snowy Egret,25
+272,Dunlin (Nonbreeding/juvenile),62,Dunlin (Breeding),25
+414,Mourning Warbler,412,Nashville Warbler,25
+246,Horned Grebe (Nonbreeding/juvenile),112,Clark's Grebe,25
+178,Eastern Screech-Owl,177,Western Screech-Owl,25
+293,Fox Sparrow (Red),550,Fox Sparrow (Thick-billed/Slate-colored),24
+18,Greater Scaup (Breeding male),228,Greater Scaup (Female/Eclipse male),24
+356,Black-capped Chickadee,355,Carolina Chickadee,23
+195,Red-naped Sapsucker,198,Nuttall's Woodpecker,22
+290,Dark-eyed Junco (Slate-colored),554,Dark-eyed Junco (Red-backed/Gray-headed),22
+294,Summer Tanager (Adult Male),450,Summer Tanager (Female),22
+481,Loggerhead Shrike,482,Northern Shrike,22
+363,Tufted Titmouse,360,Bridled Titmouse,22
+81,Western Gull (Adult),82,California Gull (Adult),22
+330,Baltimore Oriole (Adult male),328,Hooded Oriole (Adult male),22
+25,Common Goldeneye (Breeding male),235,Common Goldeneye (Female/Eclipse male),21
+90,Common Tern,88,Caspian Tern,21
+229,Lesser Scaup (Female/Eclipse male),228,Greater Scaup (Female/Eclipse male),21
+517,White-crowned Sparrow (Immature),439,Clay-colored Sparrow,21
+477,Cassin's Kingbird,478,Western Kingbird,21
+271,Sanderling (Nonbreeding/juvenile),61,Sanderling (Breeding),21
+270,Spotted Sandpiper (Nonbreeding/juvenile),60,Spotted Sandpiper (Breeding),21
+146,Black Oystercatcher,145,American Oystercatcher,21
+404,Ovenbird,406,Northern Waterthrush,20
+471,Cordilleran Flycatcher,470,Pacific-slope Flycatcher,20
+312,Dark-eyed Junco (Oregon),554,Dark-eyed Junco (Red-backed/Gray-headed),20
+91,Forster's Tern,92,Royal Tern,20
+386,Eastern Bluebird,387,Western Bluebird,20
+497,Mexican Jay,496,Western Scrub-Jay,20
+546,Evening Grosbeak (Female/Juvenile),339,Evening Grosbeak (Adult Male),20
+2,Ruddy Duck (Breeding male),105,Ruddy Duck (Winter male),20
+400,European Starling (Nonbreeding Adult),549,European Starling (Juvenile),20
+6,Wood Duck (Breeding male),216,Wood Duck (Female/Eclipse male),20
+187,Vaux's Swift,186,Chimney Swift,20
+254,Black-crowned Night-Heron (Immature),44,Black-crowned Night-Heron (Adult),20
+506,Snow Bunting (Nonbreeding),299,Snow Bunting (Breeding adult),19
+508,American Redstart (Female/juvenile),412,Nashville Warbler,19
+26,Barrow's Goldeneye (Breeding male),235,Common Goldeneye (Female/Eclipse male),19
+160,Western Sandpiper,62,Dunlin (Breeding),19
+17,Ring-necked Duck (Breeding male),227,Ring-necked Duck (Female/Eclipse male),19
+71,Rufous Hummingbird (Adult Male),281,"Rufous Hummingbird (Female, immature)",18
+332,Purple Finch (Adult Male),334,House Finch (Adult Male),18
+207,Ring-billed Gull (Immature),87,Mew Gull,18
+212,Great Black-backed Gull (Immature),87,Mew Gull,18
+159,Semipalmated Sandpiper,161,Least Sandpiper,18
+258,"Northern Harrier (Female, immature)",48,Northern Harrier (Adult male),18
+197,Ladder-backed Woodpecker,191,Gila Woodpecker,18
+159,Semipalmated Sandpiper,62,Dunlin (Breeding),18
+367,Red-breasted Nuthatch,370,Brown-headed Nuthatch,17
+340,House Sparrow (Male),547,House Sparrow (Female/Juvenile),17
+210,Herring Gull (Immature),87,Mew Gull,17

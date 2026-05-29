@@ -1,0 +1,242 @@
+[
+  {
+    "target": 71,
+    "true_name": "Rufous Hummingbird (Adult Male)",
+    "pred_target": 72,
+    "pred_name": "Allen's Hummingbird (Adult Male)",
+    "count": 28,
+    "same_family": false
+  },
+  {
+    "target": 356,
+    "true_name": "Black-capped Chickadee",
+    "pred_target": 355,
+    "pred_name": "Carolina Chickadee",
+    "count": 26,
+    "same_family": false
+  },
+  {
+    "target": 228,
+    "true_name": "Greater Scaup (Female/Eclipse male)",
+    "pred_target": 229,
+    "pred_name": "Lesser Scaup (Female/Eclipse male)",
+    "count": 25,
+    "same_family": false
+  },
+  {
+    "target": 259,
+    "true_name": "Sharp-shinned Hawk (Immature)",
+    "pred_target": 260,
+    "pred_name": "Cooper's Hawk (Immature)",
+    "count": 19,
+    "same_family": false
+  },
+  {
+    "target": 345,
+    "true_name": "Chihuahuan Raven",
+    "pred_target": 346,
+    "pred_name": "Common Raven",
+    "count": 19,
+    "same_family": false
+  },
+  {
+    "target": 282,
+    "true_name": "Allen's Hummingbird (Female, immature)",
+    "pred_target": 281,
+    "pred_name": "Rufous Hummingbird (Female, immature)",
+    "count": 17,
+    "same_family": false
+  },
+  {
+    "target": 18,
+    "true_name": "Greater Scaup (Breeding male)",
+    "pred_target": 19,
+    "pred_name": "Lesser Scaup (Breeding male)",
+    "count": 17,
+    "same_family": false
+  },
+  {
+    "target": 377,
+    "true_name": "Pacific Wren",
+    "pred_target": 378,
+    "pred_name": "Winter Wren",
+    "count": 16,
+    "same_family": false
+  },
+  {
+    "target": 195,
+    "true_name": "Red-naped Sapsucker",
+    "pred_target": 194,
+    "pred_name": "Yellow-bellied Sapsucker",
+    "count": 16,
+    "same_family": false
+  },
+  {
+    "target": 502,
+    "true_name": "Yellow-rumped Warbler (Breeding Audubon's)",
+    "pred_target": 553,
+    "pred_name": "Yellow-rumped Warbler (Winter/juvenile Audubon's)",
+    "count": 16,
+    "same_family": true
+  },
+  {
+    "target": 187,
+    "true_name": "Vaux's Swift",
+    "pred_target": 186,
+    "pred_name": "Chimney Swift",
+    "count": 16,
+    "same_family": false
+  },
+  {
+    "target": 470,
+    "true_name": "Pacific-slope Flycatcher",
+    "pred_target": 471,
+    "pred_name": "Cordilleran Flycatcher",
+    "count": 16,
+    "same_family": false
+  },
+  {
+    "target": 351,
+    "true_name": "Bank Swallow",
+    "pred_target": 350,
+    "pred_name": "Northern Rough-winged Swallow",
+    "count": 16,
+    "same_family": false
+  },
+  {
+    "target": 200,
+    "true_name": "Hairy Woodpecker",
+    "pred_target": 199,
+    "pred_name": "Downy Woodpecker",
+    "count": 15,
+    "same_family": false
+  },
+  {
+    "target": 344,
+    "true_name": "Fish Crow",
+    "pred_target": 501,
+    "pred_name": "American Crow",
+    "count": 15,
+    "same_family": false
+  },
+  {
+    "target": 467,
+    "true_name": "Western Wood-Pewee",
+    "pred_target": 468,
+    "pred_name": "Eastern Wood-Pewee",
+    "count": 15,
+    "same_family": false
+  },
+  {
+    "target": 90,
+    "true_name": "Common Tern",
+    "pred_target": 91,
+    "pred_name": "Forster's Tern",
+    "count": 15,
+    "same_family": false
+  },
+  {
+    "target": 178,
+    "true_name": "Eastern Screech-Owl",
+    "pred_target": 177,
+    "pred_name": "Western Screech-Owl",
+    "count": 15,
+    "same_family": false
+  },
+  {
+    "target": 535,
+    "true_name": "Hooded Oriole (Female/Immature male)",
+    "pred_target": 552,
+    "pred_name": "Orchard Oriole (Female/Juvenile)",
+    "count": 14,
+    "same_family": false
+  },
+  {
+    "target": 501,
+    "true_name": "American Crow",
+    "pred_target": 344,
+    "pred_name": "Fish Crow",
+    "count": 14,
+    "same_family": false
+  },
+  {
+    "target": 487,
+    "true_name": "Cassin's Vireo",
+    "pred_target": 488,
+    "pred_name": "Blue-headed Vireo",
+    "count": 13,
+    "same_family": false
+  },
+  {
+    "target": 160,
+    "true_name": "Western Sandpiper",
+    "pred_target": 159,
+    "pred_name": "Semipalmated Sandpiper",
+    "count": 13,
+    "same_family": false
+  },
+  {
+    "target": 465,
+    "true_name": "Hoary Redpoll",
+    "pred_target": 464,
+    "pred_name": "Common Redpoll",
+    "count": 12,
+    "same_family": false
+  },
+  {
+    "target": 177,
+    "true_name": "Western Screech-Owl",
+    "pred_target": 178,
+    "pred_name": "Eastern Screech-Owl",
+    "count": 12,
+    "same_family": false
+  },
+  {
+    "target": 515,
+    "true_name": "White-throated Sparrow (Tan-striped/immature)",
+    "pred_target": 308,
+    "pred_name": "White-throated Sparrow (White-striped)",
+    "count": 12,
+    "same_family": true
+  },
+  {
+    "target": 100,
+    "true_name": "Tundra Swan",
+    "pred_target": 99,
+    "pred_name": "Trumpeter Swan",
+    "count": 12,
+    "same_family": false
+  },
+  {
+    "target": 264,
+    "true_name": "Golden Eagle (Immature)",
+    "pred_target": 54,
+    "pred_name": "Golden Eagle (Adult)",
+    "count": 10,
+    "same_family": true
+  },
+  {
+    "target": 343,
+    "true_name": "Northwestern Crow",
+    "pred_target": 501,
+    "pred_name": "American Crow",
+    "count": 10,
+    "same_family": false
+  },
+  {
+    "target": 553,
+    "true_name": "Yellow-rumped Warbler (Winter/juvenile Audubon's)",
+    "pred_target": 502,
+    "pred_name": "Yellow-rumped Warbler (Breeding Audubon's)",
+    "count": 10,
+    "same_family": true
+  },
+  {
+    "target": 414,
+    "true_name": "Mourning Warbler",
+    "pred_target": 413,
+    "pred_name": "MacGillivray's Warbler",
+    "count": 10,
+    "same_family": false
+  }
+]

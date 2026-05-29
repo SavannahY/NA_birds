@@ -1,0 +1,12 @@
+{
+  "predictions_csv": "reports/milestone2/predictions/custom_visual_convnext_base_5view_test_predictions.csv",
+  "num_examples": 24633,
+  "top1_accuracy": 0.9099987821215443,
+  "top5_accuracy": 0.9834368530020704,
+  "macro_f1": 0.8924831848138075,
+  "balanced_accuracy": 0.8897726237113381,
+  "num_labels_in_predictions": 555,
+  "top_confusions_csv": "reports/milestone2/error_analysis/official_visual_models/custom_visual/top_confusions.csv",
+  "per_class_recall_csv": "reports/milestone2/error_analysis/official_visual_models/custom_visual/per_class_recall.csv",
+  "error_examples_csv": "reports/milestone2/error_analysis/official_visual_models/custom_visual/error_examples.csv"
+}

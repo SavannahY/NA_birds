@@ -1,0 +1,12 @@
+{
+  "predictions_csv": "reports/milestone3/modal_outputs_clean/clip_vit_b32_descriptor_cached_test_predictions.csv",
+  "num_examples": 24633,
+  "top1_accuracy": 0.37746112937928794,
+  "top5_accuracy": 0.7224049039905818,
+  "macro_f1": 0.3359197058178761,
+  "balanced_accuracy": 0.35666099586961286,
+  "num_labels_in_predictions": 555,
+  "top_confusions_csv": "reports/milestone3/error_analysis/clip_vit_b32_descriptor/top_confusions.csv",
+  "per_class_recall_csv": "reports/milestone3/error_analysis/clip_vit_b32_descriptor/per_class_recall.csv",
+  "error_examples_csv": "reports/milestone3/error_analysis/clip_vit_b32_descriptor/error_examples.csv"
+}

@@ -1,0 +1,242 @@
+[
+  {
+    "target": 150,
+    "true_name": "Greater Yellowlegs",
+    "pred_target": 152,
+    "pred_name": "Lesser Yellowlegs",
+    "count": 51,
+    "same_family": false
+  },
+  {
+    "target": 12,
+    "true_name": "Northern Shoveler (Breeding male)",
+    "pred_target": 222,
+    "pred_name": "Northern Shoveler (Female/Eclipse male)",
+    "count": 51,
+    "same_family": true
+  },
+  {
+    "target": 9,
+    "true_name": "Mallard (Breeding male)",
+    "pred_target": 219,
+    "pred_name": "Mallard (Female/Eclipse male)",
+    "count": 49,
+    "same_family": true
+  },
+  {
+    "target": 533,
+    "true_name": "Brewer's Blackbird (Male)",
+    "pred_target": 457,
+    "pred_name": "Boat-tailed Grackle",
+    "count": 42,
+    "same_family": false
+  },
+  {
+    "target": 55,
+    "true_name": "American Kestrel (Adult male)",
+    "pred_target": 265,
+    "pred_name": "American Kestrel (Female, immature)",
+    "count": 39,
+    "same_family": true
+  },
+  {
+    "target": 315,
+    "true_name": "Western Tanager (Breeding Male)",
+    "pred_target": 522,
+    "pred_name": "Western Tanager (Female/Nonbreeding Male)",
+    "count": 39,
+    "same_family": true
+  },
+  {
+    "target": 314,
+    "true_name": "Scarlet Tanager (Breeding Male)",
+    "pred_target": 521,
+    "pred_name": "Scarlet Tanager (Female/Nonbreeding Male)",
+    "count": 38,
+    "same_family": true
+  },
+  {
+    "target": 121,
+    "true_name": "Great Egret",
+    "pred_target": 122,
+    "pred_name": "Snowy Egret",
+    "count": 37,
+    "same_family": false
+  },
+  {
+    "target": 338,
+    "true_name": "American Goldfinch (Breeding Male)",
+    "pred_target": 545,
+    "pred_name": "American Goldfinch (Female/Nonbreeding Male)",
+    "count": 37,
+    "same_family": true
+  },
+  {
+    "target": 250,
+    "true_name": "Double-crested Cormorant (Adult)",
+    "pred_target": 114,
+    "pred_name": "Brandt's Cormorant",
+    "count": 36,
+    "same_family": false
+  },
+  {
+    "target": 458,
+    "true_name": "Great-tailed Grackle",
+    "pred_target": 457,
+    "pred_name": "Boat-tailed Grackle",
+    "count": 34,
+    "same_family": false
+  },
+  {
+    "target": 156,
+    "true_name": "Ruddy Turnstone",
+    "pred_target": 157,
+    "pred_name": "Black Turnstone",
+    "count": 34,
+    "same_family": false
+  },
+  {
+    "target": 8,
+    "true_name": "American Wigeon (Breeding male)",
+    "pred_target": 218,
+    "pred_name": "American Wigeon (Female/Eclipse male)",
+    "count": 33,
+    "same_family": true
+  },
+  {
+    "target": 7,
+    "true_name": "Gadwall (Breeding male)",
+    "pred_target": 217,
+    "pred_name": "Gadwall (Female/Eclipse male)",
+    "count": 31,
+    "same_family": true
+  },
+  {
+    "target": 72,
+    "true_name": "Allen's Hummingbird (Adult Male)",
+    "pred_target": 71,
+    "pred_name": "Rufous Hummingbird (Adult Male)",
+    "count": 31,
+    "same_family": false
+  },
+  {
+    "target": 112,
+    "true_name": "Clark's Grebe",
+    "pred_target": 111,
+    "pred_name": "Western Grebe",
+    "count": 30,
+    "same_family": false
+  },
+  {
+    "target": 74,
+    "true_name": "Northern Flicker (Yellow-shafted)",
+    "pred_target": 284,
+    "pred_name": "Northern Flicker (Red-shafted)",
+    "count": 30,
+    "same_family": true
+  },
+  {
+    "target": 507,
+    "true_name": "Common Yellowthroat (Female/immature male)",
+    "pred_target": 412,
+    "pred_name": "Nashville Warbler",
+    "count": 29,
+    "same_family": false
+  },
+  {
+    "target": 427,
+    "true_name": "Black-throated Green Warbler",
+    "pred_target": 425,
+    "pred_name": "Townsend's Warbler",
+    "count": 29,
+    "same_family": false
+  },
+  {
+    "target": 41,
+    "true_name": "Great Cormorant (Adult)",
+    "pred_target": 114,
+    "pred_name": "Brandt's Cormorant",
+    "count": 29,
+    "same_family": false
+  },
+  {
+    "target": 47,
+    "true_name": "Bald Eagle (Adult, subadult)",
+    "pred_target": 257,
+    "pred_name": "Bald Eagle (Immature, juvenile)",
+    "count": 29,
+    "same_family": true
+  },
+  {
+    "target": 456,
+    "true_name": "Common Grackle",
+    "pred_target": 457,
+    "pred_name": "Boat-tailed Grackle",
+    "count": 28,
+    "same_family": false
+  },
+  {
+    "target": 115,
+    "true_name": "Neotropic Cormorant",
+    "pred_target": 114,
+    "pred_name": "Brandt's Cormorant",
+    "count": 28,
+    "same_family": false
+  },
+  {
+    "target": 19,
+    "true_name": "Lesser Scaup (Breeding male)",
+    "pred_target": 228,
+    "pred_name": "Greater Scaup (Female/Eclipse male)",
+    "count": 27,
+    "same_family": false
+  },
+  {
+    "target": 469,
+    "true_name": "Least Flycatcher",
+    "pred_target": 470,
+    "pred_name": "Pacific-slope Flycatcher",
+    "count": 26,
+    "same_family": false
+  },
+  {
+    "target": 433,
+    "true_name": "Eastern Towhee",
+    "pred_target": 432,
+    "pred_name": "Spotted Towhee",
+    "count": 26,
+    "same_family": false
+  },
+  {
+    "target": 43,
+    "true_name": "Reddish Egret (Dark morph)",
+    "pred_target": 253,
+    "pred_name": "Reddish Egret (White morph)",
+    "count": 26,
+    "same_family": true
+  },
+  {
+    "target": 40,
+    "true_name": "Double-crested Cormorant (Immature)",
+    "pred_target": 114,
+    "pred_name": "Brandt's Cormorant",
+    "count": 25,
+    "same_family": false
+  },
+  {
+    "target": 200,
+    "true_name": "Hairy Woodpecker",
+    "pred_target": 199,
+    "pred_name": "Downy Woodpecker",
+    "count": 25,
+    "same_family": false
+  },
+  {
+    "target": 252,
+    "true_name": "Little Blue Heron (Immature)",
+    "pred_target": 122,
+    "pred_name": "Snowy Egret",
+    "count": 25,
+    "same_family": false
+  }
+]
