@@ -295,6 +295,50 @@ def _macro_f1(y_true: Sequence[int], y_pred: Sequence[int], labels: Sequence[int
     return sum(f1_values) / len(f1_values)
 
 
+def _is_siglip_model(model_name: str, model: Optional[Any] = None) -> bool:
+    values: List[str] = [model_name]
+    if model is not None:
+        values.append(type(model).__name__)
+        config = getattr(model, "config", None)
+        if config is not None:
+            values.append(str(getattr(config, "model_type", "")))
+            architectures = getattr(config, "architectures", None) or []
+            values.extend(str(value) for value in architectures)
+    return "siglip" in " ".join(values).casefold()
+
+
+def _text_processor_kwargs(
+    model_name: str,
+    text_padding: str,
+    text_max_length: int,
+    model: Optional[Any] = None,
+) -> Dict[str, Any]:
+    padding: Any
+    max_length: Optional[int]
+    if text_padding == "auto":
+        if _is_siglip_model(model_name, model):
+            padding = "max_length"
+            max_length = text_max_length or 64
+        else:
+            padding = True
+            max_length = None
+    elif text_padding == "longest":
+        padding = True
+        max_length = None
+    else:
+        padding = "max_length"
+        max_length = text_max_length or 64
+
+    kwargs: Dict[str, Any] = {
+        "padding": padding,
+        "truncation": True,
+        "return_tensors": "pt",
+    }
+    if max_length:
+        kwargs["max_length"] = max_length
+    return kwargs
+
+
 def _encode_text_features(
     torch: Any,
     model: Any,
@@ -306,6 +350,7 @@ def _encode_text_features(
     text_batch_size: int,
     aggregation: str,
     show_progress: bool,
+    text_processor_kwargs: Optional[Mapping[str, Any]] = None,
 ) -> Any:
     if not hasattr(model, "get_text_features"):
         raise SystemExit(
@@ -323,14 +368,10 @@ def _encode_text_features(
     features: List[Any] = []
     batches = list(_batched(flat_prompts, text_batch_size))
     iterator = _progress(batches, total=len(batches), label="encoding text", enabled=show_progress)
+    processor_kwargs = dict(text_processor_kwargs or {"padding": True, "truncation": True, "return_tensors": "pt"})
     with torch.inference_mode():
         for prompt_batch in iterator:
-            inputs = processor(
-                text=list(prompt_batch),
-                padding=True,
-                truncation=True,
-                return_tensors="pt",
-            )
+            inputs = processor(text=list(prompt_batch), **processor_kwargs)
             inputs = _move_inputs(inputs, device=device, dtype=dtype)
             text_features = _pooled_feature_tensor(model.get_text_features(**inputs), "text")
             features.append(_normalize(torch, text_features).detach().cpu())
@@ -347,6 +388,19 @@ def _encode_text_features(
         class_features.append(_normalize(torch, class_feature.unsqueeze(0)).squeeze(0))
 
     return torch.stack(class_features, dim=0).to(device=device, dtype=dtype)
+
+
+def _flatten_prompts(
+    prompts_by_target: Mapping[int, Sequence[str]],
+    class_targets: Sequence[int],
+) -> Tuple[List[str], Dict[int, Tuple[int, int]]]:
+    flat_prompts: List[str] = []
+    target_spans: Dict[int, Tuple[int, int]] = {}
+    for target in class_targets:
+        start = len(flat_prompts)
+        flat_prompts.extend(prompts_by_target[target])
+        target_spans[target] = (start, len(flat_prompts))
+    return flat_prompts, target_spans
 
 
 def _encode_image_features(
@@ -372,6 +426,47 @@ def _encode_image_features(
     with torch.inference_mode():
         image_features = _pooled_feature_tensor(model.get_image_features(**inputs), "image")
     return _normalize(torch, image_features)
+
+
+def _forward_scores(
+    torch: Any,
+    model: Any,
+    processor: Any,
+    Image: Any,
+    rows: Sequence[Mapping[str, str]],
+    dataset_root: Path,
+    input_mode: str,
+    flat_prompts: Sequence[str],
+    target_spans: Mapping[int, Tuple[int, int]],
+    class_targets: Sequence[int],
+    device: Any,
+    dtype: Optional[Any],
+    text_processor_kwargs: Mapping[str, Any],
+    aggregation: str,
+) -> Any:
+    images = [_open_image(Image, row, dataset_root=dataset_root, input_mode=input_mode) for row in rows]
+    inputs = processor(text=list(flat_prompts), images=images, **text_processor_kwargs)
+    inputs = _move_inputs(inputs, device=device, dtype=dtype)
+    with torch.inference_mode():
+        output = model(**inputs)
+
+    logits = getattr(output, "logits_per_image", None)
+    if logits is None:
+        logits_per_text = getattr(output, "logits_per_text", None)
+        if logits_per_text is not None:
+            logits = logits_per_text.T
+    if logits is None:
+        raise TypeError(f"Could not extract logits_per_image from output type {type(output).__name__}.")
+
+    class_scores: List[Any] = []
+    for target in class_targets:
+        start, end = target_spans[target]
+        prompt_scores = logits[:, start:end]
+        if aggregation == "first":
+            class_scores.append(prompt_scores[:, 0])
+        else:
+            class_scores.append(prompt_scores.mean(dim=1))
+    return torch.stack(class_scores, dim=1)
 
 
 def evaluate(args: argparse.Namespace) -> Dict[str, Any]:
@@ -407,18 +502,26 @@ def evaluate(args: argparse.Namespace) -> Dict[str, Any]:
         model.to(dtype=dtype)
 
     started = time.time()
-    text_features = _encode_text_features(
-        torch=torch,
-        model=model,
-        processor=processor,
-        prompts_by_target=prompts_by_target,
-        class_targets=class_targets,
-        device=device,
-        dtype=dtype,
-        text_batch_size=args.text_batch_size,
-        aggregation=args.prompt_aggregation,
-        show_progress=not args.no_progress,
-    )
+    text_processor_kwargs = _text_processor_kwargs(args.model, args.text_padding, args.text_max_length, model=model)
+    if args.score_mode == "features":
+        text_features = _encode_text_features(
+            torch=torch,
+            model=model,
+            processor=processor,
+            prompts_by_target=prompts_by_target,
+            class_targets=class_targets,
+            device=device,
+            dtype=dtype,
+            text_batch_size=args.text_batch_size,
+            aggregation=args.prompt_aggregation,
+            show_progress=not args.no_progress,
+            text_processor_kwargs=text_processor_kwargs,
+        )
+        flat_prompts: List[str] = []
+        target_spans: Dict[int, Tuple[int, int]] = {}
+    else:
+        text_features = None
+        flat_prompts, target_spans = _flatten_prompts(prompts_by_target, class_targets)
 
     target_to_col = {target: index for index, target in enumerate(class_targets)}
     y_true: List[int] = []
@@ -432,18 +535,36 @@ def evaluate(args: argparse.Namespace) -> Dict[str, Any]:
     iterator = _progress(batches, total=len(batches), label="scoring images", enabled=not args.no_progress)
     with torch.inference_mode():
         for batch_rows in iterator:
-            image_features = _encode_image_features(
-                torch=torch,
-                model=model,
-                processor=processor,
-                Image=Image,
-                rows=batch_rows,
-                dataset_root=dataset_root,
-                input_mode=args.input_mode,
-                device=device,
-                dtype=dtype,
-            )
-            scores = image_features @ text_features.T
+            if args.score_mode == "features":
+                image_features = _encode_image_features(
+                    torch=torch,
+                    model=model,
+                    processor=processor,
+                    Image=Image,
+                    rows=batch_rows,
+                    dataset_root=dataset_root,
+                    input_mode=args.input_mode,
+                    device=device,
+                    dtype=dtype,
+                )
+                scores = image_features @ text_features.T
+            else:
+                scores = _forward_scores(
+                    torch=torch,
+                    model=model,
+                    processor=processor,
+                    Image=Image,
+                    rows=batch_rows,
+                    dataset_root=dataset_root,
+                    input_mode=args.input_mode,
+                    flat_prompts=flat_prompts,
+                    target_spans=target_spans,
+                    class_targets=class_targets,
+                    device=device,
+                    dtype=dtype,
+                    text_processor_kwargs=text_processor_kwargs,
+                    aggregation=args.prompt_aggregation,
+                )
             _, top_indices = scores.topk(top_k, dim=1)
             top_indices_cpu = top_indices.detach().cpu().tolist()
 
@@ -482,6 +603,7 @@ def evaluate(args: argparse.Namespace) -> Dict[str, Any]:
         "manifest": str(manifest_path),
         "prompts": str(prompt_path),
         "input_mode": args.input_mode,
+        "score_mode": args.score_mode,
         "prompt_aggregation": args.prompt_aggregation,
         "num_samples": num_samples,
         "num_classes": len(class_targets),
@@ -528,10 +650,13 @@ def parse_args(argv: Optional[Sequence[str]] = None) -> argparse.Namespace:
     parser.add_argument("--dataset-root", default="nabirds", help="Dataset root used to resolve rel_path fallback.")
     parser.add_argument("--model", default=DEFAULT_MODEL, help="Hugging Face SigLIP/SigLIP2 model id or local path.")
     parser.add_argument("--input-mode", choices=("full", "bbox"), default="full", help="Use full image or clipped bbox crop.")
+    parser.add_argument("--score-mode", choices=("features", "forward"), default="features", help="Score by separate normalized features or model forward logits.")
     parser.add_argument("--prompt-aggregation", choices=("mean", "first"), default="mean", help="How to combine multiple prompts per class.")
     parser.add_argument("--expected-num-classes", type=int, default=EXPECTED_NABIRDS_CLASSES, help="Expected unique targets in prompt CSV; use 0 to disable.")
     parser.add_argument("--batch-size", type=_positive_int, default=32, help="Image batch size.")
     parser.add_argument("--text-batch-size", type=_positive_int, default=256, help="Prompt text batch size.")
+    parser.add_argument("--text-padding", choices=("auto", "longest", "max_length"), default="auto")
+    parser.add_argument("--text-max-length", type=int, default=64, help="Used when --text-padding is auto for SigLIP/SigLIP2 or max_length.")
     parser.add_argument("--limit", type=_positive_int, default=None, help="Evaluate only the first N manifest rows for smoke tests.")
     parser.add_argument("--device", default="auto", help="auto, cpu, cuda, cuda:0, or mps.")
     parser.add_argument("--dtype", choices=("auto", "float32", "float16", "bfloat16"), default="auto", help="Model/input floating dtype.")
@@ -554,6 +679,7 @@ def main(argv: Optional[Sequence[str]] = None) -> None:
         "device",
         "dtype",
         "input_mode",
+        "score_mode",
         "prompt_aggregation",
         "num_samples",
         "num_classes",

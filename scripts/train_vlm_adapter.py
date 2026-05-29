@@ -426,6 +426,7 @@ def _encode_text_features(
     text_batch_size: int,
     aggregation: str,
     show_progress: bool,
+    text_processor_kwargs: Optional[Mapping[str, Any]] = None,
 ) -> Any:
     if not hasattr(model, "get_text_features"):
         raise SystemExit(
@@ -445,14 +446,10 @@ def _encode_text_features(
     iterator = _progress(batches, total=len(batches), label="encoding text", enabled=show_progress)
     model_was_training = model.training
     model.eval()
+    processor_kwargs = dict(text_processor_kwargs or {"padding": True, "truncation": True, "return_tensors": "pt"})
     with torch.inference_mode():
         for prompt_batch in iterator:
-            inputs = processor(
-                text=list(prompt_batch),
-                padding=True,
-                truncation=True,
-                return_tensors="pt",
-            )
+            inputs = processor(text=list(prompt_batch), **processor_kwargs)
             inputs = _move_inputs(inputs, device=device, dtype=dtype)
             text_features = _pooled_feature_tensor(model.get_text_features(**inputs), "text")
             features.append(_normalize(torch, text_features).detach().float().cpu())
@@ -471,6 +468,50 @@ def _encode_text_features(
         class_features.append(_normalize(torch, class_feature.unsqueeze(0)).squeeze(0))
 
     return torch.stack(class_features, dim=0)
+
+
+def _is_siglip_model(model_name: str, model: Optional[Any] = None) -> bool:
+    values: List[str] = [model_name]
+    if model is not None:
+        values.append(type(model).__name__)
+        config = getattr(model, "config", None)
+        if config is not None:
+            values.append(str(getattr(config, "model_type", "")))
+            architectures = getattr(config, "architectures", None) or []
+            values.extend(str(value) for value in architectures)
+    return "siglip" in " ".join(values).casefold()
+
+
+def _text_processor_kwargs(
+    model_name: str,
+    text_padding: str,
+    text_max_length: int,
+    model: Optional[Any] = None,
+) -> Dict[str, Any]:
+    padding: Any
+    max_length: Optional[int]
+    if text_padding == "auto":
+        if _is_siglip_model(model_name, model):
+            padding = "max_length"
+            max_length = text_max_length or 64
+        else:
+            padding = True
+            max_length = None
+    elif text_padding == "longest":
+        padding = True
+        max_length = None
+    else:
+        padding = "max_length"
+        max_length = text_max_length or 64
+
+    kwargs: Dict[str, Any] = {
+        "padding": padding,
+        "truncation": True,
+        "return_tensors": "pt",
+    }
+    if max_length:
+        kwargs["max_length"] = max_length
+    return kwargs
 
 
 def _encode_image_features(
@@ -944,6 +985,8 @@ def parse_args(argv: Optional[Sequence[str]] = None) -> argparse.Namespace:
     parser.add_argument("--epochs", type=_positive_int, default=5)
     parser.add_argument("--batch-size", type=_positive_int, default=32)
     parser.add_argument("--text-batch-size", type=_positive_int, default=256)
+    parser.add_argument("--text-padding", choices=("auto", "longest", "max_length"), default="auto")
+    parser.add_argument("--text-max-length", type=int, default=64)
     parser.add_argument("--adapter-lr", type=float, default=3e-4)
     parser.add_argument("--vlm-lr", type=float, default=1e-6, help="Used only with --train-image-encoder.")
     parser.add_argument("--weight-decay", type=_nonnegative_float, default=1e-4)
@@ -1018,6 +1061,7 @@ def main(argv: Optional[Sequence[str]] = None) -> None:
         text_batch_size=args.text_batch_size,
         aggregation=args.prompt_aggregation,
         show_progress=not args.no_progress,
+        text_processor_kwargs=_text_processor_kwargs(args.model, args.text_padding, args.text_max_length, model=vlm_model),
     ).to(device=device)
 
     train_ds = NABirdsVLMManifestDataset(

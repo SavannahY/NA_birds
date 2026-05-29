@@ -20,10 +20,34 @@ from scripts.eval_vlm_zero_shot import (  # noqa: E402
     EXPECTED_NABIRDS_CLASSES,
     _encode_text_features,
     _load_prompt_rows,
-    _require_runtime_deps,
     _resolve_device,
     _resolve_dtype,
+    _text_processor_kwargs,
 )
+
+
+def _require_text_runtime_deps():
+    missing: list[str] = []
+    try:
+        import torch
+    except ImportError:
+        torch = None
+        missing.append("torch")
+
+    try:
+        from transformers import AutoModel, AutoProcessor
+    except ImportError:
+        AutoModel = None
+        AutoProcessor = None
+        missing.append("transformers")
+
+    if missing:
+        raise SystemExit(
+            "VLM text feature precompute dependencies are missing: "
+            f"{', '.join(sorted(set(missing)))}.\n"
+            "Install a compatible PyTorch build plus transformers before running text precompute."
+        )
+    return torch, AutoModel, AutoProcessor
 
 
 def _dtype_name(dtype: Any) -> Optional[str]:
@@ -35,7 +59,7 @@ def _model_slug(model: str) -> str:
 
 
 def precompute(args: argparse.Namespace) -> dict[str, Any]:
-    torch, _Image, AutoModel, AutoProcessor = _require_runtime_deps()
+    torch, AutoModel, AutoProcessor = _require_text_runtime_deps()
 
     prompt_path = Path(args.prompts)
     out_dir = Path(args.out_dir)
@@ -73,6 +97,7 @@ def precompute(args: argparse.Namespace) -> dict[str, Any]:
         text_batch_size=args.text_batch_size,
         aggregation=args.prompt_aggregation,
         show_progress=not args.no_progress,
+        text_processor_kwargs=_text_processor_kwargs(args.model, args.text_padding, args.text_max_length, model=model),
     ).detach().float().cpu()
 
     slug = _model_slug(args.model)
@@ -91,6 +116,8 @@ def precompute(args: argparse.Namespace) -> dict[str, Any]:
             "num_prompt_rows": prompt_rows,
             "feature_dim": int(class_text_features.shape[1]),
             "dtype": str(class_text_features.dtype).replace("torch.", ""),
+            "text_padding": args.text_padding,
+            "text_max_length": args.text_max_length,
         },
     }
     torch.save(payload, output_path)
@@ -104,6 +131,8 @@ def precompute(args: argparse.Namespace) -> dict[str, Any]:
         "num_classes": len(class_targets),
         "num_prompt_rows": prompt_rows,
         "feature_dim": int(class_text_features.shape[1]),
+        "text_padding": args.text_padding,
+        "text_max_length": args.text_max_length,
         "output": str(output_path),
         "elapsed_seconds": round(time.time() - started, 3),
     }
@@ -124,6 +153,8 @@ def parse_args(argv: Optional[Sequence[str]] = None) -> argparse.Namespace:
     parser.add_argument("--prompt-aggregation", choices=("mean", "first"), default="mean")
     parser.add_argument("--expected-num-classes", type=int, default=EXPECTED_NABIRDS_CLASSES, help="Use 0 to disable.")
     parser.add_argument("--text-batch-size", type=int, default=256)
+    parser.add_argument("--text-padding", choices=("auto", "longest", "max_length"), default="auto")
+    parser.add_argument("--text-max-length", type=int, default=64)
     parser.add_argument("--device", default="auto")
     parser.add_argument("--dtype", choices=("auto", "float32", "float16", "bfloat16"), default="auto")
     parser.add_argument("--no-progress", action="store_true")

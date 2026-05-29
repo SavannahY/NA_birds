@@ -31,6 +31,7 @@ except ImportError:  # Keep local py_compile/import checks working.
 APP_NAME = "nabirds-training"
 VOLUME_NAME = os.environ.get("NABIRDS_MODAL_VOLUME", "nabirds-data")
 DEFAULT_GPU = os.environ.get("NABIRDS_MODAL_GPU", "A10G")
+DEFAULT_VLM_MODEL = os.environ.get("NABIRDS_MODAL_VLM_MODEL", "google/siglip2-base-patch16-224")
 
 LOCAL_PROJECT_ROOT = Path(__file__).resolve().parents[1]
 REMOTE_PROJECT_ROOT = Path("/workspace/NA_birds")
@@ -290,7 +291,7 @@ def build_descriptor_prompts(
     manifest_dir: str = str(DEFAULT_MANIFEST_DIR),
     out_dir: str = str(DEFAULT_MILESTONE3_DIR),
     descriptors_csv: str = str(REMOTE_DESCRIPTOR_CSV),
-    max_descriptors: int = 8,
+    max_descriptors: int = 5,
     rebuild_manifests: bool = False,
 ) -> dict[str, str]:
     """Build descriptor-augmented Milestone 3 prompts on the mounted Volume."""
@@ -470,7 +471,7 @@ def precompute_vlm_image_features(
     archive_path: str = str(DEFAULT_ARCHIVE),
     manifest_dir: str = str(DEFAULT_MANIFEST_DIR),
     out_dir: str = str(DEFAULT_FEATURE_ROOT / "vlm_image_features"),
-    model: str = "google/siglip2-base-patch16-224",
+    model: str = "",
     input_mode: str = "full",
     batch_size: int = 64,
     limit: Optional[int] = None,
@@ -636,6 +637,61 @@ def eval_vlm_cached_features(
     return {
         "metrics": str(metrics_path),
         "predictions": str(predictions_path),
+        "image_features": "|".join(str(path) for path in image_paths),
+        "text_features": text_features,
+    }
+
+
+@app.function(**_modal_options(gpu=DEFAULT_GPU, timeout=2 * 60 * 60, cpu=4.0, memory=16384))
+def eval_vlm_adapter_cached(
+    checkpoint: str,
+    image_features: str,
+    text_features: str,
+    out_dir: str = str(DEFAULT_RUN_ROOT / "vlm_adapter_cached_eval"),
+    run_name: str = "vlm_adapter_cached",
+    split: str = "test",
+    batch_size: int = 4096,
+    extra_args: Optional[Sequence[str]] = None,
+) -> dict[str, str]:
+    """Evaluate a cached VLM adapter checkpoint against saved features."""
+
+    _reload_volume()
+    image_paths = [Path(value) for value in image_features.split("|") if value]
+    if not image_paths:
+        raise SystemExit("Pass --image-features with one or more | separated feature paths.")
+    if not text_features:
+        raise SystemExit("Pass --text-features for cached adapter eval.")
+    if not checkpoint:
+        raise SystemExit("Pass --checkpoint for cached adapter eval.")
+
+    output_dir = Path(out_dir)
+    output_dir.mkdir(parents=True, exist_ok=True)
+    metrics_path = output_dir / f"{_slug(run_name)}_{split}.json"
+    predictions_path = output_dir / f"{_slug(run_name)}_{split}_predictions.csv"
+    args = [
+        "scripts/eval_vlm_adapter_cached.py",
+        "--checkpoint",
+        checkpoint,
+        "--image-features",
+        *[str(path) for path in image_paths],
+        "--text-features",
+        text_features,
+        "--output-json",
+        str(metrics_path),
+        "--output-predictions",
+        str(predictions_path),
+        "--batch-size",
+        str(batch_size),
+        "--device",
+        "cuda",
+    ]
+    args.extend(_split_extra_args(extra_args))
+    _run_python(args)
+    _commit_volume()
+    return {
+        "metrics": str(metrics_path),
+        "predictions": str(predictions_path),
+        "checkpoint": checkpoint,
         "image_features": "|".join(str(path) for path in image_paths),
         "text_features": text_features,
     }
@@ -1119,8 +1175,6 @@ def train_part_hierarchy_fused(
         str(dataset.parent),
         "--out-dir",
         str(output_dir),
-        "--model",
-        model,
         "--epochs",
         str(epochs),
         "--batch-size",
@@ -1243,6 +1297,7 @@ def train_vlm_adapter_cached(
     manifest_dir: str = str(DEFAULT_MANIFEST_DIR),
     feature_manifest: str = "",
     prompts: str = "",
+    text_features: str = "",
     out_dir: str = str(DEFAULT_RUN_ROOT / "vlm_adapter_cached"),
     model: str = "google/siglip2-base-patch16-224",
     epochs: int = 5,
@@ -1280,8 +1335,6 @@ def train_vlm_adapter_cached(
         str(manifests / "nabirds_hard_negative_groups.csv"),
         "--out-dir",
         str(output_dir),
-        "--model",
-        model,
         "--epochs",
         str(epochs),
         "--batch-size",
@@ -1295,8 +1348,12 @@ def train_vlm_adapter_cached(
         "--device",
         "cuda",
     ]
+    if model:
+        args.extend(["--model", model])
     if feature_manifest:
         args.extend(["--feature-manifest", feature_manifest])
+    if text_features:
+        args.extend(["--text-features", text_features])
     if macro_f1:
         args.append("--macro-f1")
     _append_optional_int(args, "--limit-train", limit_train)
@@ -1308,6 +1365,7 @@ def train_vlm_adapter_cached(
         "run_root": str(output_dir),
         "manifest_dir": str(manifests),
         "feature_manifest": feature_manifest,
+        "text_features": text_features,
         "prompts": prompts or str(manifests / "nabirds_class_prompts.csv"),
     }
 
@@ -1325,6 +1383,7 @@ def _help_text() -> str:
   modal run scripts/modal_train_nabirds.py --task precompute-vlm-features
   modal run scripts/modal_train_nabirds.py --task precompute-vlm-text-features
   modal run scripts/modal_train_nabirds.py --task eval-vlm-cached --feature-manifest /data/nabirds_runs/runs/milestone3/vlm_image_features/<manifest>.json --text-features /data/nabirds_runs/runs/milestone3/vlm_text_features/<features>.pt
+  modal run scripts/modal_train_nabirds.py --task eval-vlm-adapter-cached --checkpoint /data/nabirds_runs/runs/vlm_adapter_cached/<run>/best.pt --image-features "/data/.../test_shard0.pt|/data/.../test_shard1.pt" --text-features /data/.../text_features.pt
   modal run scripts/modal_train_nabirds.py --task train-visual --input-mode full
   modal run scripts/modal_train_nabirds.py --task train-fused --branch-mode shared
   modal run scripts/modal_train_nabirds.py --task train-part-hierarchy --extra-args "--num-views 5 --fusion concat --hierarchy-loss-weight 0.1"
@@ -1337,6 +1396,7 @@ Defaults:
   Dataset root: {DEFAULT_DATASET_ROOT}
   Archive fallback: {DEFAULT_ARCHIVE}
   GPU functions: {DEFAULT_GPU}
+  Default VLM model: {DEFAULT_VLM_MODEL}
 """
 
 
@@ -1356,7 +1416,7 @@ def main(
     out_root: str = str(DEFAULT_RUN_ROOT),
     prompts: str = "",
     model: str = "resnet50",
-    vlm_model: str = "google/siglip2-base-patch16-224",
+    vlm_model: str = "",
     input_mode: str = "full",
     branch_mode: str = "shared",
     epochs: int = 10,
@@ -1421,7 +1481,7 @@ def main(
                 manifest_dir=manifest_dir,
                 prompts=prompts,
                 out_dir=str(Path(out_root) / "vlm_zero_shot"),
-                model=vlm_model,
+                model=vlm_model or DEFAULT_VLM_MODEL,
                 input_mode=input_mode,
                 batch_size=batch_size or 32,
                 limit=limit or 64,
@@ -1441,7 +1501,7 @@ def main(
                 manifest_dir=manifest_dir,
                 prompts=prompts,
                 out_dir=str(Path(out_root) / "vlm_zero_shot"),
-                model=vlm_model,
+                model=vlm_model or DEFAULT_VLM_MODEL,
                 input_mode=input_mode,
                 batch_size=batch_size or 32,
                 rebuild_manifests=rebuild_manifests,
@@ -1459,7 +1519,7 @@ def main(
                 archive_path=archive_path,
                 manifest_dir=manifest_dir,
                 out_dir=str(Path(out_root) / "vlm_image_features"),
-                model=vlm_model,
+                model=vlm_model or DEFAULT_VLM_MODEL,
                 input_mode=input_mode,
                 batch_size=batch_size or 64,
                 limit=_none_if_zero(limit),
@@ -1479,7 +1539,7 @@ def main(
                 manifest_dir=manifest_dir,
                 prompts=prompts,
                 out_dir=str(Path(out_root) / "vlm_text_features"),
-                model=vlm_model,
+                model=vlm_model or DEFAULT_VLM_MODEL,
                 rebuild_manifests=rebuild_manifests,
                 extra_args=extra,
             )
@@ -1495,6 +1555,22 @@ def main(
                 image_features=image_features,
                 text_features=text_features,
                 out_dir=str(Path(out_root) / "vlm_cached_eval"),
+                run_name=run_name,
+                batch_size=batch_size or 4096,
+                extra_args=extra,
+            )
+        )
+        return
+
+    if task_normalized in {"eval-vlm-adapter-cached", "vlm-adapter-cached-eval", "eval-cached-adapter"}:
+        print(
+            _invoke(
+                eval_vlm_adapter_cached,
+                background,
+                checkpoint=checkpoint,
+                image_features=image_features,
+                text_features=text_features,
+                out_dir=str(Path(out_root) / "vlm_adapter_cached_eval"),
                 run_name=run_name,
                 batch_size=batch_size or 4096,
                 extra_args=extra,
@@ -1644,7 +1720,7 @@ def main(
                 manifest_dir=manifest_dir,
                 prompts=prompts,
                 out_dir=str(Path(out_root) / "vlm_adapter"),
-                model=vlm_model,
+                model=vlm_model or DEFAULT_VLM_MODEL,
                 input_mode=input_mode,
                 epochs=epochs,
                 batch_size=batch_size or 32,
@@ -1667,7 +1743,9 @@ def main(
                 dataset_root=dataset_root,
                 archive_path=archive_path,
                 manifest_dir=manifest_dir,
+                feature_manifest=feature_manifest,
                 prompts=prompts,
+                text_features=text_features,
                 out_dir=str(Path(out_root) / "vlm_adapter_cached"),
                 model=vlm_model,
                 epochs=epochs,

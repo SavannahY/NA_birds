@@ -11,10 +11,18 @@ ablations, cached evaluation, adapter training, error analysis, or slide assets.
 
 - CLIP image embeddings:
   `/data/nabirds_runs/runs/milestone3_clip_shards/vlm_image_features/`
+- CLIP train/val image embeddings for cached adapters:
+  `/data/nabirds_runs/runs/milestone3_clip_trainval/vlm_image_features/`
 - SigLIP2 image embeddings:
   `/data/nabirds_runs/runs/milestone3_siglip2_shards/vlm_image_features/`
-- CLIP and SigLIP2 text embeddings:
-  `/data/nabirds_runs/runs/milestone3_cached/vlm_text_features/`
+- SigLIP base image embeddings:
+  `/data/nabirds_runs/runs/milestone3_siglip_base/vlm_image_features/`
+- CLIP and SigLIP2 improved text embeddings:
+  `/data/nabirds_runs/runs/milestone3_improve/vlm_text_features/`
+- SigLIP base text embeddings:
+  `/data/nabirds_runs/runs/milestone3_siglip_base/vlm_text_features/`
+- Cached CLIP adapter checkpoint:
+  `/data/nabirds_runs/runs/milestone3_clip_adapter/vlm_adapter_cached/`
 
 ## Required Workflow
 

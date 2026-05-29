@@ -1,0 +1,19 @@
+{
+  "image_features": [
+    "/data/nabirds_runs/runs/milestone3_clip_shards/vlm_image_features/test_openai_clip_vit_base_patch32_full_shard0_limit_4000_image_features.pt",
+    "/data/nabirds_runs/runs/milestone3_clip_shards/vlm_image_features/test_openai_clip_vit_base_patch32_full_shard1_offset_4000_limit_4000_image_features.pt",
+    "/data/nabirds_runs/runs/milestone3_clip_shards/vlm_image_features/test_openai_clip_vit_base_patch32_full_shard2_offset_8000_limit_4000_image_features.pt",
+    "/data/nabirds_runs/runs/milestone3_clip_shards/vlm_image_features/test_openai_clip_vit_base_patch32_full_shard3_offset_12000_limit_4000_image_features.pt",
+    "/data/nabirds_runs/runs/milestone3_clip_shards/vlm_image_features/test_openai_clip_vit_base_patch32_full_shard4_offset_16000_limit_4000_image_features.pt",
+    "/data/nabirds_runs/runs/milestone3_clip_shards/vlm_image_features/test_openai_clip_vit_base_patch32_full_shard5_offset_20000_limit_4000_image_features.pt",
+    "/data/nabirds_runs/runs/milestone3_clip_shards/vlm_image_features/test_openai_clip_vit_base_patch32_full_shard6_offset_24000_limit_633_image_features.pt"
+  ],
+  "text_features": "/data/nabirds_runs/runs/milestone3_improve/vlm_text_features/openai_clip_vit_base_patch32_nabirds_class_name_only_prompts_mean_text_features.pt",
+  "num_samples": 24633,
+  "num_classes": 555,
+  "top1_accuracy": 0.3740104737547193,
+  "top5_accuracy": 0.7034871919782406,
+  "macro_f1": 0.3218826821260167,
+  "balanced_accuracy": 0.35165720062178296,
+  "elapsed_seconds": 3.08
+}

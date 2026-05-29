@@ -1,0 +1,19 @@
+{
+  "image_features": [
+    "/data/nabirds_runs/runs/milestone3_siglip2_shards/vlm_image_features/test_google_siglip2_base_patch16_224_full_shard0_limit_4000_image_features.pt",
+    "/data/nabirds_runs/runs/milestone3_siglip2_shards/vlm_image_features/test_google_siglip2_base_patch16_224_full_shard1_offset_4000_limit_4000_image_features.pt",
+    "/data/nabirds_runs/runs/milestone3_siglip2_shards/vlm_image_features/test_google_siglip2_base_patch16_224_full_shard2_offset_8000_limit_4000_image_features.pt",
+    "/data/nabirds_runs/runs/milestone3_siglip2_shards/vlm_image_features/test_google_siglip2_base_patch16_224_full_shard3_offset_12000_limit_4000_image_features.pt",
+    "/data/nabirds_runs/runs/milestone3_siglip2_shards/vlm_image_features/test_google_siglip2_base_patch16_224_full_shard4_offset_16000_limit_4000_image_features.pt",
+    "/data/nabirds_runs/runs/milestone3_siglip2_shards/vlm_image_features/test_google_siglip2_base_patch16_224_full_shard5_offset_20000_limit_4000_image_features.pt",
+    "/data/nabirds_runs/runs/milestone3_siglip2_shards/vlm_image_features/test_google_siglip2_base_patch16_224_full_shard6_offset_24000_limit_633_image_features.pt"
+  ],
+  "text_features": "/data/nabirds_runs/runs/milestone3_improve/vlm_text_features/google_siglip2_base_patch16_224_nabirds_class_prompts_mean_text_features.pt",
+  "num_samples": 24633,
+  "num_classes": 555,
+  "top1_accuracy": 0.0306093451873503,
+  "top5_accuracy": 0.07814720090934925,
+  "macro_f1": 0.009512341269575512,
+  "balanced_accuracy": 0.02987010254877022,
+  "elapsed_seconds": 2.428
+}

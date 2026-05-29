@@ -1,21 +1,68 @@
 {
   "class_prompts": "reports/milestone2/nabirds_class_prompts.csv",
   "descriptors_csv": "bird_class_expert_description_visual_attribute_descriptors.csv",
-  "output_csv": "reports/milestone3/nabirds_descriptor_prompts.csv",
-  "prompt_rows": 1665,
-  "unique_targets": 555,
-  "unique_raw_class_ids": 555,
+  "output_files": {
+    "class_name_only": "reports/milestone3/nabirds_class_name_only_prompts.csv",
+    "short_variant": "reports/milestone3/nabirds_short_variant_prompts.csv",
+    "descriptor_only": "reports/milestone3/nabirds_descriptor_only_prompts.csv",
+    "clean_descriptor": "reports/milestone3/nabirds_clean_descriptor_prompts.csv",
+    "legacy_clean_descriptor": "reports/milestone3/nabirds_descriptor_prompts.csv"
+  },
+  "output_stats": {
+    "class_name_only": {
+      "rows": 555,
+      "unique_targets": 555,
+      "unique_raw_class_ids": 555
+    },
+    "short_variant": {
+      "rows": 1665,
+      "unique_targets": 555,
+      "unique_raw_class_ids": 555
+    },
+    "descriptor_only": {
+      "rows": 1110,
+      "unique_targets": 555,
+      "unique_raw_class_ids": 555
+    },
+    "clean_descriptor": {
+      "rows": 1110,
+      "unique_targets": 555,
+      "unique_raw_class_ids": 555
+    },
+    "legacy_clean_descriptor": {
+      "rows": 1110,
+      "unique_targets": 555,
+      "unique_raw_class_ids": 555
+    }
+  },
   "expected_targets": 555,
   "missing_raw_class_ids": [],
-  "prompt_templates": [
-    "a field guide photograph of a {class_name}; visual field marks: {traits}.",
-    "a close-up bird photo of a {class_name} showing {traits}.",
-    "a fine-grained ID photo of a {class_name}, with {traits}."
-  ],
-  "max_descriptors_per_prompt": 8,
+  "prompt_templates": {
+    "class_name_only": [
+      "{label}"
+    ],
+    "short_variant": [
+      "{label}",
+      "a photo of {article} {variant_first_label}.",
+      "a field guide photo of {article} {variant_first_label}."
+    ],
+    "descriptor_only": [
+      "a bird with {traits}.",
+      "a field guide photo of a bird showing {traits}."
+    ],
+    "clean_descriptor": [
+      "{label}; field marks: {traits}.",
+      "a field guide photo of {article} {variant_first_label} with {traits}."
+    ]
+  },
+  "max_descriptors_per_prompt": 5,
+  "variant_classes": 288,
   "descriptor_count_min": 0,
   "descriptor_count_max": 20,
   "descriptor_count_zero_classes": 1,
+  "clean_descriptor_count_min": 0,
+  "clean_descriptor_count_max": 5,
+  "clean_descriptor_count_zero_classes": 5,
   "shared_variant_descriptor_classes": 279,
   "descriptor_quality_counts": {
     "compact_verified": 11,

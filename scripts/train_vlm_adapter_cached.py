@@ -40,6 +40,7 @@ from scripts.train_vlm_adapter import (  # noqa: E402
     _resolve_device,
     _resolve_dtype,
     _seed_everything,
+    _text_processor_kwargs,
     _write_json,
     accuracy_at_k,
     build_alignment_model,
@@ -141,6 +142,23 @@ def _validate_feature_payload(torch: Any, path: Path) -> Dict[str, Any]:
         raise SystemExit(f"{path}: targets must be a 1D tensor.")
     if int(features.shape[0]) != int(targets.shape[0]):
         raise SystemExit(f"{path}: feature/target row count mismatch.")
+    return dict(payload)
+
+
+def _validate_text_feature_payload(torch: Any, path: Path) -> Dict[str, Any]:
+    if not path.is_file():
+        raise SystemExit(f"Text feature checkpoint not found: {path}")
+    payload = _torch_load(torch, path)
+    if not isinstance(payload, Mapping):
+        raise SystemExit(f"{path} did not contain a checkpoint dictionary.")
+    for key in ("class_text_features", "class_targets", "class_names"):
+        if key not in payload:
+            raise SystemExit(f"{path} is missing required key {key!r}.")
+    features = payload["class_text_features"]
+    if getattr(features, "ndim", None) != 2:
+        raise SystemExit(f"{path}: class_text_features must be a 2D tensor.")
+    if int(features.shape[0]) != len(payload["class_targets"]):
+        raise SystemExit(f"{path}: feature/class target row count mismatch.")
     return dict(payload)
 
 
@@ -347,6 +365,7 @@ def parse_args(argv: Optional[Sequence[str]] = None) -> argparse.Namespace:
     parser.add_argument("--feature-manifest", default=None, help="JSON manifest from precompute_vlm_image_features.py.")
     parser.add_argument("--train-features", default=None, help="Explicit train split .pt feature checkpoint.")
     parser.add_argument("--val-features", default=None, help="Explicit val split .pt feature checkpoint.")
+    parser.add_argument("--text-features", default=None, help="Optional cached text feature checkpoint from precompute_vlm_text_features.py.")
     parser.add_argument("--prompts", default=DEFAULT_PROMPTS, help="NABirds class prompt CSV.")
     parser.add_argument("--hard-negative-csv", default=DEFAULT_HARD_NEGATIVES, help="Family-variant hard-negative CSV.")
     parser.add_argument("--out-dir", default="reports/milestone2/runs", help="Output directory for adapter checkpoints.")
@@ -364,6 +383,8 @@ def parse_args(argv: Optional[Sequence[str]] = None) -> argparse.Namespace:
     parser.add_argument("--epochs", type=_positive_int, default=5)
     parser.add_argument("--batch-size", type=_positive_int, default=256)
     parser.add_argument("--text-batch-size", type=_positive_int, default=256)
+    parser.add_argument("--text-padding", choices=("auto", "longest", "max_length"), default="auto")
+    parser.add_argument("--text-max-length", type=int, default=64)
     parser.add_argument("--adapter-lr", type=float, default=3e-4)
     parser.add_argument("--weight-decay", type=_nonnegative_float, default=1e-4)
     parser.add_argument("--label-smoothing", type=_nonnegative_float, default=0.05)
@@ -408,10 +429,21 @@ def main(argv: Optional[Sequence[str]] = None) -> None:
         if manifest_dir:
             prompt_path = Path(manifest_dir) / "nabirds_class_prompts.csv"
 
-    class_targets, class_names, prompts_by_target, prompt_rows = _load_prompt_rows(
-        prompt_path,
-        expected_num_classes=args.expected_num_classes,
-    )
+    text_payload: Optional[Dict[str, Any]] = None
+    if args.text_features:
+        text_payload = _validate_text_feature_payload(torch, Path(args.text_features))
+        class_targets = [int(value) for value in text_payload["class_targets"]]
+        class_names = [str(value) for value in text_payload["class_names"]]
+        prompt_rows = int(text_payload.get("config", {}).get("num_prompt_rows", len(class_targets)))
+        if args.expected_num_classes and len(class_targets) != args.expected_num_classes:
+            raise SystemExit(
+                f"{args.text_features}: expected {args.expected_num_classes} classes, found {len(class_targets)}."
+            )
+    else:
+        class_targets, class_names, prompts_by_target, prompt_rows = _load_prompt_rows(
+            prompt_path,
+            expected_num_classes=args.expected_num_classes,
+        )
     target_to_index = {target: index for index, target in enumerate(class_targets)}
     train_targets = _map_targets(torch, train_raw_targets, target_to_index, train_path)
     val_targets = _map_targets(torch, val_raw_targets, target_to_index, val_path)
@@ -431,28 +463,40 @@ def main(argv: Optional[Sequence[str]] = None) -> None:
 
     device = _resolve_device(torch, args.device)
     dtype = _resolve_dtype(torch, args.dtype, device)
-    print(f"Loading text encoder: {model_name}")
-    text_model, processor = _load_text_model(AutoModel, AutoProcessor, model_name)
-    text_model.to(device=device)
-    if dtype is not None:
-        text_model.to(dtype=dtype)
-    text_model.eval()
-    for parameter in text_model.parameters():
-        parameter.requires_grad_(False)
+    if text_payload is not None:
+        class_text_features = _normalize(torch, text_payload["class_text_features"].float()).to(device=device)
+        cached_model = text_payload.get("config", {}).get("model")
+        if cached_model and str(cached_model) != str(model_name):
+            print(f"Using cached text features from {cached_model}; image feature model is {model_name}.")
+    else:
+        print(f"Loading text encoder: {model_name}")
+        text_model, processor = _load_text_model(AutoModel, AutoProcessor, model_name)
+        text_model.to(device=device)
+        if dtype is not None:
+            text_model.to(dtype=dtype)
+        text_model.eval()
+        for parameter in text_model.parameters():
+            parameter.requires_grad_(False)
 
-    class_text_features = _encode_text_features(
-        torch=torch,
-        model=text_model,
-        processor=processor,
-        prompts_by_target=prompts_by_target,
-        class_targets=class_targets,
-        device=device,
-        dtype=dtype,
-        text_batch_size=args.text_batch_size,
-        aggregation=args.prompt_aggregation,
-        show_progress=not args.no_progress,
-    ).to(device=device)
-    del text_model
+        class_text_features = _encode_text_features(
+            torch=torch,
+            model=text_model,
+            processor=processor,
+            prompts_by_target=prompts_by_target,
+            class_targets=class_targets,
+            device=device,
+            dtype=dtype,
+            text_batch_size=args.text_batch_size,
+            aggregation=args.prompt_aggregation,
+            show_progress=not args.no_progress,
+            text_processor_kwargs=_text_processor_kwargs(
+                str(model_name),
+                args.text_padding,
+                args.text_max_length,
+                model=text_model,
+            ),
+        ).to(device=device)
+        del text_model
 
     image_dim = int(train_features.shape[1])
     text_dim = int(class_text_features.shape[1])

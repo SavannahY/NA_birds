@@ -17,6 +17,7 @@ import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT_DIR = ROOT / "reports" / "milestone3" / "slide_assets"
+IMPROVE_DIR = ROOT / "reports" / "milestone3" / "modal_outputs_improve"
 
 COLORS = {
     "ink": "#16211F",
@@ -68,12 +69,11 @@ def load_metrics() -> list[dict]:
         / "custom_visual"
         / "prediction_analysis_summary.json"
     )
-    clip_generic = _read_json(
-        ROOT / "reports" / "milestone3" / "modal_outputs_clean" / "clip_vit_b32_generic_cached_test.json"
-    )
-    clip_descriptor = _read_json(
-        ROOT / "reports" / "milestone3" / "modal_outputs_clean" / "clip_vit_b32_descriptor_cached_test.json"
-    )
+    clip_generic = _read_json(IMPROVE_DIR / "clip_generic_cached_improved_test.json")
+    clip_short = _read_json(IMPROVE_DIR / "clip_short_variant_cached_test.json")
+    siglip2_fixed = _read_json(IMPROVE_DIR / "siglip2_generic_fixed_cached_test.json")
+    siglip_base_short = _read_json(IMPROVE_DIR / "siglip_base_short_variant_cached_test.json")
+    clip_adapter = _read_json(IMPROVE_DIR / "clip_short_variant_residual_adapter_test_test.json")
     rows = [
         {
             "model": "ResNet-50\nvisual",
@@ -100,39 +100,38 @@ def load_metrics() -> list[dict]:
             "color": COLORS["teal"],
         },
         {
-            "model": "CLIP ViT-B/32\ndescriptor text",
+            "model": "CLIP ViT-B/32\nshort variant text",
             "type": "vlm",
-            "top1": _percent(clip_descriptor["top1_accuracy"]),
-            "top5": _percent(clip_descriptor["top5_accuracy"]),
-            "macro_f1": _percent(clip_descriptor["macro_f1"]),
+            "top1": _percent(clip_short["top1_accuracy"]),
+            "top5": _percent(clip_short["top5_accuracy"]),
+            "macro_f1": _percent(clip_short["macro_f1"]),
             "color": COLORS["rose"],
         },
+        {
+            "model": "SigLIP2 base\nfixed generic",
+            "type": "vlm",
+            "top1": _percent(siglip2_fixed["top1_accuracy"]),
+            "top5": _percent(siglip2_fixed["top5_accuracy"]),
+            "macro_f1": _percent(siglip2_fixed["macro_f1"]),
+            "color": COLORS["olive"],
+        },
+        {
+            "model": "SigLIP base\nshort variant text",
+            "type": "vlm",
+            "top1": _percent(siglip_base_short["top1_accuracy"]),
+            "top5": _percent(siglip_base_short["top5_accuracy"]),
+            "macro_f1": _percent(siglip_base_short["macro_f1"]),
+            "color": COLORS["amber"],
+        },
+        {
+            "model": "CLIP ViT-B/32\ncached adapter",
+            "type": "vlm",
+            "top1": _percent(clip_adapter["top1_accuracy"]),
+            "top5": _percent(clip_adapter["top5_accuracy"]),
+            "macro_f1": _percent(clip_adapter["macro_f1"]),
+            "color": COLORS["ink"],
+        },
     ]
-    siglip_generic_path = ROOT / "reports" / "milestone3" / "modal_outputs_clean" / "siglip2_generic_cached_test.json"
-    siglip_descriptor_path = ROOT / "reports" / "milestone3" / "modal_outputs_clean" / "siglip2_descriptor_cached_test.json"
-    if siglip_generic_path.is_file() and siglip_descriptor_path.is_file():
-        siglip_generic = _read_json(siglip_generic_path)
-        siglip_descriptor = _read_json(siglip_descriptor_path)
-        rows.extend(
-            [
-                {
-                    "model": "SigLIP2 base\nHF generic",
-                    "type": "vlm",
-                    "top1": _percent(siglip_generic["top1_accuracy"]),
-                    "top5": _percent(siglip_generic["top5_accuracy"]),
-                    "macro_f1": _percent(siglip_generic["macro_f1"]),
-                    "color": COLORS["olive"],
-                },
-                {
-                    "model": "SigLIP2 base\nHF descriptor",
-                    "type": "vlm",
-                    "top1": _percent(siglip_descriptor["top1_accuracy"]),
-                    "top5": _percent(siglip_descriptor["top5_accuracy"]),
-                    "macro_f1": _percent(siglip_descriptor["macro_f1"]),
-                    "color": COLORS["amber"],
-                },
-            ]
-        )
     return rows
 
 
@@ -170,18 +169,23 @@ def results_comparison() -> Path:
 
 
 def descriptor_ablation() -> Path:
-    metrics = load_metrics()
-    clip_rows = [row for row in metrics if row["model"].startswith("CLIP")]
-    labels = ["Generic\nclass prompts", "Descriptor +\nvariant prompts"]
-    top1 = [row["top1"] for row in clip_rows]
-    top5 = [row["top5"] for row in clip_rows]
-    x = np.arange(2)
+    rows = [
+        ("Generic", _read_json(IMPROVE_DIR / "clip_generic_cached_improved_test.json"), _read_json(IMPROVE_DIR / "siglip_base_generic_cached_test.json")),
+        ("Class only", _read_json(IMPROVE_DIR / "clip_class_name_only_cached_test.json"), _read_json(IMPROVE_DIR / "siglip_base_class_name_only_cached_test.json")),
+        ("Short variant", _read_json(IMPROVE_DIR / "clip_short_variant_cached_test.json"), _read_json(IMPROVE_DIR / "siglip_base_short_variant_cached_test.json")),
+        ("Descriptor only", _read_json(IMPROVE_DIR / "clip_descriptor_only_cached_test.json"), _read_json(IMPROVE_DIR / "siglip_base_descriptor_only_cached_test.json")),
+        ("Descriptor + name", _read_json(IMPROVE_DIR / "clip_clean_descriptor_cached_test.json"), _read_json(IMPROVE_DIR / "siglip_base_clean_descriptor_cached_test.json")),
+    ]
+    labels = [row[0].replace(" ", "\n") for row in rows]
+    clip_top1 = [_percent(row[1]["top1_accuracy"]) for row in rows]
+    siglip_top1 = [_percent(row[2]["top1_accuracy"]) for row in rows]
+    x = np.arange(len(rows))
 
-    fig, ax = plt.subplots(figsize=(8.6, 4.6))
+    fig, ax = plt.subplots(figsize=(10.5, 4.8))
     fig.patch.set_facecolor("#FFFFFF")
-    ax.bar(x - 0.17, top1, width=0.34, color=COLORS["teal"], label="Top-1")
-    ax.bar(x + 0.17, top5, width=0.34, color=COLORS["indigo"], label="Top-5")
-    ax.set_ylim(0, 82)
+    ax.bar(x - 0.18, clip_top1, width=0.36, color=COLORS["teal"], label="CLIP ViT-B/32")
+    ax.bar(x + 0.18, siglip_top1, width=0.36, color=COLORS["amber"], label="SigLIP base")
+    ax.set_ylim(0, 58)
     ax.set_xticks(x)
     ax.set_xticklabels(labels, fontsize=11.5, color=COLORS["ink"])
     ax.grid(axis="y", color="#E5E9E1")
@@ -191,11 +195,10 @@ def descriptor_ablation() -> Path:
     ax.tick_params(axis="y", labelsize=10, colors=COLORS["muted"])
     ax.legend(frameon=False, loc="upper right", fontsize=10.5)
     ax.set_ylabel("Official test score (%)", fontsize=11, color=COLORS["muted"])
-    delta = top1[1] - top1[0]
-    ax.set_title(f"Descriptor prompts reduced CLIP top-1 by {abs(delta):.1f} points", fontsize=15.5, fontweight="bold", color=COLORS["ink"])
-    for xpos, value in zip(x - 0.17, top1):
+    ax.set_title("Species names matter; short variant prompts are strongest", fontsize=15.5, fontweight="bold", color=COLORS["ink"])
+    for xpos, value in zip(x - 0.18, clip_top1):
         ax.text(xpos, value + 1.2, f"{value:.1f}", ha="center", fontsize=10.5, color=COLORS["ink"], fontweight="bold")
-    for xpos, value in zip(x + 0.17, top5):
+    for xpos, value in zip(x + 0.18, siglip_top1):
         ax.text(xpos, value + 1.2, f"{value:.1f}", ha="center", fontsize=10.5, color=COLORS["ink"], fontweight="bold")
     return _save(fig, "descriptor_ablation.png")
 

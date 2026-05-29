@@ -1,0 +1,13 @@
+{
+  "image_features": [
+    "/data/nabirds_runs/runs/milestone3_siglip_base/vlm_image_features/test_google_siglip_base_patch16_224_full_image_features.pt"
+  ],
+  "text_features": "/data/nabirds_runs/runs/milestone3_siglip_base/vlm_text_features/google_siglip_base_patch16_224_nabirds_clean_descriptor_prompts_mean_text_features.pt",
+  "num_samples": 24633,
+  "num_classes": 555,
+  "top1_accuracy": 0.4789915966386555,
+  "top5_accuracy": 0.8099297690090529,
+  "macro_f1": 0.44344387874169733,
+  "balanced_accuracy": 0.45993495939678997,
+  "elapsed_seconds": 2.603
+}

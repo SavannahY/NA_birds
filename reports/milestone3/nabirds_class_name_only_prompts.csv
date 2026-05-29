@@ -1,0 +1,556 @@
+raw_class_id,target,class_name,class_family,prompt_id,prompt,prompt_set,variant_label,descriptor_count,clean_descriptor_count,descriptor_quality
+295,0,Common Eider (Adult male),Common Eider,0,Common Eider Adult male,class_name_only,Adult male,10,5,needs_normalization|shared_variant_descriptor
+296,1,Long-tailed Duck (Winter male),Long-tailed Duck,0,Long-tailed Duck Winter male,class_name_only,Winter male,15,4,needs_normalization|shared_variant_descriptor
+297,2,Ruddy Duck (Breeding male),Ruddy Duck,0,Ruddy Duck Breeding male,class_name_only,Breeding male,11,5,needs_normalization|shared_variant_descriptor
+298,3,Swainson's Hawk (Dark morph ),Swainson's Hawk,0,Swainson's Hawk Dark morph,class_name_only,Dark morph,10,4,needs_normalization|shared_variant_descriptor
+299,4,Red-tailed Hawk (Light morph adult),Red-tailed Hawk,0,Red-tailed Hawk Light morph adult,class_name_only,Light morph adult,14,5,needs_normalization|shared_variant_descriptor
+313,5,Snow Goose (White morph),Snow Goose,0,Snow Goose White morph,class_name_only,White morph,11,5,needs_normalization|shared_variant_descriptor
+314,6,Wood Duck (Breeding male),Wood Duck,0,Wood Duck Breeding male,class_name_only,Breeding male,7,5,compact_verified
+315,7,Gadwall (Breeding male),Gadwall,0,Gadwall Breeding male,class_name_only,Breeding male,6,3,needs_normalization|shared_variant_descriptor
+316,8,American Wigeon (Breeding male),American Wigeon,0,American Wigeon Breeding male,class_name_only,Breeding male,11,5,needs_normalization|shared_variant_descriptor
+317,9,Mallard (Breeding male),Mallard,0,Mallard Breeding male,class_name_only,Breeding male,10,4,needs_normalization|shared_variant_descriptor
+318,10,Blue-winged Teal  (Male),Blue-winged Teal,0,Blue-winged Teal Male,class_name_only,Male,10,5,needs_normalization|shared_variant_descriptor
+319,11,Cinnamon Teal (Male),Cinnamon Teal,0,Cinnamon Teal Male,class_name_only,Male,9,2,needs_normalization|shared_variant_descriptor
+320,12,Northern Shoveler (Breeding male),Northern Shoveler,0,Northern Shoveler Breeding male,class_name_only,Breeding male,9,3,needs_normalization|shared_variant_descriptor
+321,13,Northern Pintail (Breeding male),Northern Pintail,0,Northern Pintail Breeding male,class_name_only,Breeding male,5,3,needs_normalization|shared_variant_descriptor
+322,14,Green-winged Teal (Male),Green-winged Teal,0,Green-winged Teal Male,class_name_only,Male,9,4,needs_normalization|shared_variant_descriptor
+323,15,Canvasback (Breeding male),Canvasback,0,Canvasback Breeding male,class_name_only,Breeding male,17,2,needs_normalization|shared_variant_descriptor
+324,16,Redhead (Breeding male),Redhead,0,Redhead Breeding male,class_name_only,Breeding male,9,4,needs_normalization|shared_variant_descriptor
+325,17,Ring-necked Duck (Breeding male),Ring-necked Duck,0,Ring-necked Duck Breeding male,class_name_only,Breeding male,13,5,needs_normalization|shared_variant_descriptor
+326,18,Greater Scaup (Breeding male),Greater Scaup,0,Greater Scaup Breeding male,class_name_only,Breeding male,11,4,needs_normalization|shared_variant_descriptor
+327,19,Lesser Scaup (Breeding male),Lesser Scaup,0,Lesser Scaup Breeding male,class_name_only,Breeding male,12,5,needs_normalization|shared_variant_descriptor
+328,20,Harlequin Duck (Male),Harlequin Duck,0,Harlequin Duck Male,class_name_only,Male,13,4,needs_normalization|shared_variant_descriptor
+329,21,Surf Scoter (Male),Surf Scoter,0,Surf Scoter Male,class_name_only,Male,11,5,needs_normalization|shared_variant_descriptor
+330,22,White-winged Scoter (Male),White-winged Scoter,0,White-winged Scoter Male,class_name_only,Male,12,5,needs_normalization|shared_variant_descriptor
+331,23,Black Scoter (Male),Black Scoter,0,Black Scoter Male,class_name_only,Male,9,3,needs_normalization|shared_variant_descriptor
+332,24,Bufflehead (Breeding male),Bufflehead,0,Bufflehead Breeding male,class_name_only,Breeding male,9,3,needs_normalization|shared_variant_descriptor
+333,25,Common Goldeneye (Breeding male),Common Goldeneye,0,Common Goldeneye Breeding male,class_name_only,Breeding male,15,3,needs_normalization|shared_variant_descriptor
+334,26,Barrow's Goldeneye (Breeding male),Barrow's Goldeneye,0,Barrow's Goldeneye Breeding male,class_name_only,Breeding male,5,3,needs_normalization|shared_variant_descriptor
+335,27,Hooded Merganser (Breeding male),Hooded Merganser,0,Hooded Merganser Breeding male,class_name_only,Breeding male,7,5,needs_normalization|shared_variant_descriptor
+336,28,Common Merganser (Breeding male),Common Merganser,0,Common Merganser Breeding male,class_name_only,Breeding male,9,2,needs_normalization|shared_variant_descriptor
+337,29,Red-breasted Merganser (Breeding male),Red-breasted Merganser,0,Red-breasted Merganser Breeding male,class_name_only,Breeding male,13,3,needs_normalization|shared_variant_descriptor
+338,30,California Quail (Male),California Quail,0,California Quail Male,class_name_only,Male,9,2,needs_normalization|shared_variant_descriptor
+339,31,Gambel's Quail (Male),Gambel's Quail,0,Gambel's Quail Male,class_name_only,Male,15,4,needs_normalization|shared_variant_descriptor
+340,32,Ring-necked Pheasant (Male),Ring-necked Pheasant,0,Ring-necked Pheasant Male,class_name_only,Male,13,5,needs_normalization|shared_variant_descriptor
+341,33,Red-throated Loon (Breeding),Red-throated Loon,0,Red-throated Loon Breeding,class_name_only,Breeding,15,5,needs_normalization|shared_variant_descriptor
+342,34,Pacific Loon (Breeding),Pacific Loon,0,Pacific Loon Breeding,class_name_only,Breeding,17,5,needs_normalization|shared_variant_descriptor
+343,35,Common Loon (Breeding),Common Loon,0,Common Loon Breeding,class_name_only,Breeding,12,4,needs_normalization|shared_variant_descriptor
+344,36,Horned Grebe (Breeding),Horned Grebe,0,Horned Grebe Breeding,class_name_only,Breeding,12,4,needs_normalization|shared_variant_descriptor
+345,37,Red-necked Grebe (Breeding),Red-necked Grebe,0,Red-necked Grebe Breeding,class_name_only,Breeding,8,5,needs_normalization|shared_variant_descriptor
+346,38,Eared Grebe (Breeding),Eared Grebe,0,Eared Grebe Breeding,class_name_only,Breeding,9,3,needs_normalization|shared_variant_descriptor
+347,39,"Northern Gannet (Adult, Subadult)",Northern Gannet,0,"Northern Gannet Adult, Subadult",class_name_only,"Adult, Subadult",10,1,needs_normalization|shared_variant_descriptor
+348,40,Double-crested Cormorant (Immature),Double-crested Cormorant,0,Double-crested Cormorant Immature,class_name_only,Immature,7,1,needs_normalization|shared_variant_descriptor
+349,41,Great Cormorant (Adult),Great Cormorant,0,Great Cormorant Adult,class_name_only,Adult,9,5,needs_normalization|shared_variant_descriptor
+350,42,Little Blue Heron (Adult),Little Blue Heron,0,Little Blue Heron Adult,class_name_only,Adult,15,2,needs_normalization|shared_variant_descriptor
+351,43,Reddish Egret (Dark morph),Reddish Egret,0,Reddish Egret Dark morph,class_name_only,Dark morph,9,1,needs_normalization|shared_variant_descriptor
+352,44,Black-crowned Night-Heron (Adult),Black-crowned Night-Heron,0,Black-crowned Night-Heron Adult,class_name_only,Adult,11,5,needs_normalization|shared_variant_descriptor
+353,45,Yellow-crowned Night-Heron (Adult),Yellow-crowned Night-Heron,0,Yellow-crowned Night-Heron Adult,class_name_only,Adult,14,5,needs_normalization|shared_variant_descriptor
+354,46,White Ibis (Adult),White Ibis,0,White Ibis Adult,class_name_only,Adult,15,5,needs_normalization|shared_variant_descriptor
+355,47,"Bald Eagle (Adult, subadult)",Bald Eagle,0,"Bald Eagle Adult, subadult",class_name_only,"Adult, subadult",12,3,needs_normalization|shared_variant_descriptor
+356,48,Northern Harrier (Adult male),Northern Harrier,0,Northern Harrier Adult male,class_name_only,Adult male,17,5,needs_normalization|shared_variant_descriptor
+357,49,Sharp-shinned Hawk (Adult ),Sharp-shinned Hawk,0,Sharp-shinned Hawk Adult,class_name_only,Adult,10,2,needs_normalization|shared_variant_descriptor
+358,50,Cooper's Hawk (Adult),Cooper's Hawk,0,Cooper's Hawk Adult,class_name_only,Adult,10,4,needs_normalization|shared_variant_descriptor
+359,51,Red-shouldered Hawk (Adult ),Red-shouldered Hawk,0,Red-shouldered Hawk Adult,class_name_only,Adult,10,4,needs_normalization|shared_variant_descriptor
+360,52,Broad-winged Hawk (Adult),Broad-winged Hawk,0,Broad-winged Hawk Adult,class_name_only,Adult,8,1,needs_normalization|shared_variant_descriptor
+361,53,Rough-legged Hawk (Dark morph),Rough-legged Hawk,0,Rough-legged Hawk Dark morph,class_name_only,Dark morph,9,5,needs_normalization|shared_variant_descriptor
+362,54,Golden Eagle (Adult),Golden Eagle,0,Golden Eagle Adult,class_name_only,Adult,2,2,needs_normalization|shared_variant_descriptor
+363,55,American Kestrel (Adult male),American Kestrel,0,American Kestrel Adult male,class_name_only,Adult male,5,1,needs_normalization|shared_variant_descriptor
+364,56,Peregrine Falcon (Adult),Peregrine Falcon,0,Peregrine Falcon Adult,class_name_only,Adult,6,1,needs_normalization|shared_variant_descriptor
+365,57,Purple Gallinule (Adult),Purple Gallinule,0,Purple Gallinule Adult,class_name_only,Adult,12,5,needs_normalization|shared_variant_descriptor
+366,58,Common Gallinule (Adult),Common Gallinule,0,Common Gallinule Adult,class_name_only,Adult,9,4,needs_normalization|shared_variant_descriptor
+367,59,Black-bellied Plover (Breeding),Black-bellied Plover,0,Black-bellied Plover Breeding,class_name_only,Breeding,17,5,needs_normalization|shared_variant_descriptor
+368,60,Spotted Sandpiper (Breeding),Spotted Sandpiper,0,Spotted Sandpiper Breeding,class_name_only,Breeding,6,4,needs_normalization|shared_variant_descriptor
+369,61,Sanderling (Breeding),Sanderling,0,Sanderling Breeding,class_name_only,Breeding,5,1,needs_normalization|shared_variant_descriptor
+370,62,Dunlin (Breeding),Dunlin,0,Dunlin Breeding,class_name_only,Breeding,16,5,needs_normalization|shared_variant_descriptor
+371,63,Wilson's Phalarope (Breeding),Wilson's Phalarope,0,Wilson's Phalarope Breeding,class_name_only,Breeding,6,3,needs_normalization|shared_variant_descriptor
+372,64,Broad-billed Hummingbird (Adult Male),Broad-billed Hummingbird,0,Broad-billed Hummingbird Adult Male,class_name_only,Adult Male,11,5,needs_normalization|shared_variant_descriptor
+373,65,Ruby-throated Hummingbird (Adult Male),Ruby-throated Hummingbird,0,Ruby-throated Hummingbird Adult Male,class_name_only,Adult Male,6,2,needs_normalization|shared_variant_descriptor
+374,66,Black-chinned Hummingbird (Adult Male),Black-chinned Hummingbird,0,Black-chinned Hummingbird Adult Male,class_name_only,Adult Male,8,4,needs_normalization|shared_variant_descriptor
+375,67,Anna's Hummingbird (Adult Male),Anna's Hummingbird,0,Anna's Hummingbird Adult Male,class_name_only,Adult Male,5,1,needs_normalization|shared_variant_descriptor
+376,68,Costa's Hummingbird (Adult Male),Costa's Hummingbird,0,Costa's Hummingbird Adult Male,class_name_only,Adult Male,10,5,needs_normalization|shared_variant_descriptor
+377,69,Calliope Hummingbird (Adult Male),Calliope Hummingbird,0,Calliope Hummingbird Adult Male,class_name_only,Adult Male,6,3,needs_normalization|shared_variant_descriptor
+378,70,Broad-tailed Hummingbird (Adult Male),Broad-tailed Hummingbird,0,Broad-tailed Hummingbird Adult Male,class_name_only,Adult Male,14,5,needs_normalization|shared_variant_descriptor
+379,71,Rufous Hummingbird (Adult Male),Rufous Hummingbird,0,Rufous Hummingbird Adult Male,class_name_only,Adult Male,14,5,needs_normalization|shared_variant_descriptor
+380,72,Allen's Hummingbird (Adult Male),Allen's Hummingbird,0,Allen's Hummingbird Adult Male,class_name_only,Adult Male,7,1,needs_normalization|shared_variant_descriptor
+381,73,Red-headed Woodpecker (Adult),Red-headed Woodpecker,0,Red-headed Woodpecker Adult,class_name_only,Adult,14,5,needs_normalization|shared_variant_descriptor
+382,74,Northern Flicker (Yellow-shafted),Northern Flicker,0,Northern Flicker Yellow shafted,class_name_only,Yellow shafted,11,4,needs_normalization|shared_variant_descriptor
+392,75,Black Guillemot (Breeding),Black Guillemot,0,Black Guillemot Breeding,class_name_only,Breeding,12,5,needs_normalization|shared_variant_descriptor
+393,76,Pigeon Guillemot (Breeding),Pigeon Guillemot,0,Pigeon Guillemot Breeding,class_name_only,Breeding,12,4,needs_normalization|shared_variant_descriptor
+394,77,Black-legged Kittiwake (Adult),Black-legged Kittiwake,0,Black-legged Kittiwake Adult,class_name_only,Adult,9,5,needs_normalization|shared_variant_descriptor
+395,78,Laughing Gull (Breeding),Laughing Gull,0,Laughing Gull Breeding,class_name_only,Breeding,9,5,needs_normalization|shared_variant_descriptor
+396,79,Heermann's Gull (Adult),Heermann's Gull,0,Heermann's Gull Adult,class_name_only,Adult,12,5,needs_normalization|shared_variant_descriptor
+397,80,Ring-billed Gull (Adult),Ring-billed Gull,0,Ring-billed Gull Adult,class_name_only,Adult,13,5,needs_normalization|shared_variant_descriptor
+398,81,Western Gull (Adult),Western Gull,0,Western Gull Adult,class_name_only,Adult,20,3,needs_normalization|shared_variant_descriptor
+399,82,California Gull (Adult),California Gull,0,California Gull Adult,class_name_only,Adult,9,4,needs_normalization|shared_variant_descriptor
+400,83,Herring Gull (Adult),Herring Gull,0,Herring Gull Adult,class_name_only,Adult,9,2,needs_normalization|shared_variant_descriptor
+401,84,Glaucous-winged Gull (Adult),Glaucous-winged Gull,0,Glaucous-winged Gull Adult,class_name_only,Adult,7,4,needs_normalization|shared_variant_descriptor
+402,85,Great Black-backed Gull (Adult),Great Black-backed Gull,0,Great Black-backed Gull Adult,class_name_only,Adult,14,5,needs_normalization|shared_variant_descriptor
+446,86,Bonaparte's Gull,Bonaparte's Gull,0,Bonaparte's Gull,class_name_only,,12,5,needs_normalization
+447,87,Mew Gull,Mew Gull,0,Mew Gull,class_name_only,,16,5,needs_normalization
+448,88,Caspian Tern,Caspian Tern,0,Caspian Tern,class_name_only,,10,5,needs_normalization
+449,89,Black Tern,Black Tern,0,Black Tern,class_name_only,,12,5,needs_normalization
+450,90,Common Tern,Common Tern,0,Common Tern,class_name_only,,9,5,needs_normalization
+451,91,Forster's Tern,Forster's Tern,0,Forster's Tern,class_name_only,,16,5,needs_normalization
+452,92,Royal Tern,Royal Tern,0,Royal Tern,class_name_only,,10,5,needs_normalization
+453,93,Black Skimmer,Black Skimmer,0,Black Skimmer,class_name_only,,9,5,needs_normalization
+454,94,Greater White-fronted Goose,Greater White-fronted Goose,0,Greater White-fronted Goose,class_name_only,,9,3,needs_normalization
+455,95,Brant,Brant,0,Brant,class_name_only,,10,5,needs_normalization
+456,96,Cackling Goose,Cackling Goose,0,Cackling Goose,class_name_only,,16,5,needs_normalization
+457,97,Canada Goose,Canada Goose,0,Canada Goose,class_name_only,,9,5,needs_normalization
+458,98,Mute Swan,Mute Swan,0,Mute Swan,class_name_only,,7,3,needs_normalization
+459,99,Trumpeter Swan,Trumpeter Swan,0,Trumpeter Swan,class_name_only,,7,4,needs_normalization
+460,100,Tundra Swan,Tundra Swan,0,Tundra Swan,class_name_only,,6,3,needs_normalization
+461,101,American Black Duck,American Black Duck,0,American Black Duck,class_name_only,,6,3,needs_normalization
+462,102,Mottled Duck,Mottled Duck,0,Mottled Duck,class_name_only,,11,5,needs_normalization
+463,103,Common Eider (Female/juvenile),Common Eider,0,Common Eider Female or juvenile,class_name_only,Female or juvenile,10,5,needs_normalization|shared_variant_descriptor
+464,104,Long-tailed Duck (Summer male),Long-tailed Duck,0,Long-tailed Duck Summer male,class_name_only,Summer male,15,4,needs_normalization|shared_variant_descriptor
+465,105,Ruddy Duck (Winter male),Ruddy Duck,0,Ruddy Duck Winter male,class_name_only,Winter male,11,5,needs_normalization|shared_variant_descriptor
+466,106,Scaled Quail,Scaled Quail,0,Scaled Quail,class_name_only,,7,1,needs_normalization
+467,107,Northern Bobwhite,Northern Bobwhite,0,Northern Bobwhite,class_name_only,,10,5,needs_normalization
+468,108,Ruffed Grouse,Ruffed Grouse,0,Ruffed Grouse,class_name_only,,8,5,needs_normalization
+469,109,Wild Turkey,Wild Turkey,0,Wild Turkey,class_name_only,,8,4,needs_normalization
+470,110,Pied-billed Grebe,Pied-billed Grebe,0,Pied-billed Grebe,class_name_only,,7,2,needs_normalization
+471,111,Western Grebe,Western Grebe,0,Western Grebe,class_name_only,,5,2,needs_normalization
+472,112,Clark's Grebe,Clark's Grebe,0,Clark's Grebe,class_name_only,,7,3,needs_normalization
+473,113,Wood Stork,Wood Stork,0,Wood Stork,class_name_only,,7,3,needs_normalization
+474,114,Brandt's Cormorant,Brandt's Cormorant,0,Brandt's Cormorant,class_name_only,,15,5,needs_normalization
+475,115,Neotropic Cormorant,Neotropic Cormorant,0,Neotropic Cormorant,class_name_only,,7,1,needs_normalization
+476,116,Pelagic Cormorant,Pelagic Cormorant,0,Pelagic Cormorant,class_name_only,,10,5,needs_normalization
+477,117,Anhinga,Anhinga,0,Anhinga,class_name_only,,7,4,needs_normalization
+478,118,American White Pelican,American White Pelican,0,American White Pelican,class_name_only,,10,4,needs_normalization
+479,119,Brown Pelican,Brown Pelican,0,Brown Pelican,class_name_only,,11,5,needs_normalization
+480,120,Great Blue Heron,Great Blue Heron,0,Great Blue Heron,class_name_only,,4,1,needs_normalization
+481,121,Great Egret,Great Egret,0,Great Egret,class_name_only,,4,2,needs_normalization
+482,122,Snowy Egret,Snowy Egret,0,Snowy Egret,class_name_only,,10,5,needs_normalization
+483,123,Tricolored Heron,Tricolored Heron,0,Tricolored Heron,class_name_only,,11,5,needs_normalization
+484,124,Cattle Egret,Cattle Egret,0,Cattle Egret,class_name_only,,9,5,needs_normalization
+485,125,Green Heron,Green Heron,0,Green Heron,class_name_only,,9,5,needs_normalization
+486,126,Glossy Ibis,Glossy Ibis,0,Glossy Ibis,class_name_only,,6,1,needs_normalization
+487,127,White-faced Ibis,White-faced Ibis,0,White-faced Ibis,class_name_only,,13,5,needs_normalization
+488,128,Roseate Spoonbill,Roseate Spoonbill,0,Roseate Spoonbill,class_name_only,,10,5,needs_normalization
+489,129,Black Vulture,Black Vulture,0,Black Vulture,class_name_only,,4,2,needs_normalization
+490,130,Turkey Vulture,Turkey Vulture,0,Turkey Vulture,class_name_only,,3,3,needs_normalization
+491,131,Osprey,Osprey,0,Osprey,class_name_only,,9,5,needs_normalization
+492,132,Swallow-tailed Kite,Swallow-tailed Kite,0,Swallow-tailed Kite,class_name_only,,8,4,needs_normalization
+493,133,White-tailed Kite,White-tailed Kite,0,White-tailed Kite,class_name_only,,9,5,compact_verified
+494,134,Mississippi Kite,Mississippi Kite,0,Mississippi Kite,class_name_only,,8,5,compact_verified
+495,135,Harris's Hawk,Harris's Hawk,0,Harris's Hawk,class_name_only,,10,5,needs_normalization
+496,136,Swainson's Hawk (Light morph ),Swainson's Hawk,0,Swainson's Hawk Light morph,class_name_only,Light morph,10,4,needs_normalization|shared_variant_descriptor
+497,137,Red-tailed Hawk (Dark morph),Red-tailed Hawk,0,Red-tailed Hawk Dark morph,class_name_only,Dark morph,14,5,needs_normalization|shared_variant_descriptor
+498,138,Crested Caracara,Crested Caracara,0,Crested Caracara,class_name_only,,11,4,needs_normalization
+499,139,Merlin,Merlin,0,Merlin,class_name_only,,11,5,needs_normalization
+500,140,Prairie Falcon,Prairie Falcon,0,Prairie Falcon,class_name_only,,6,5,needs_normalization
+501,141,American Coot,American Coot,0,American Coot,class_name_only,,10,5,needs_normalization
+502,142,Sandhill Crane,Sandhill Crane,0,Sandhill Crane,class_name_only,,11,4,needs_normalization
+503,143,Semipalmated Plover,Semipalmated Plover,0,Semipalmated Plover,class_name_only,,18,5,needs_normalization
+504,144,Killdeer,Killdeer,0,Killdeer,class_name_only,,14,5,needs_normalization
+505,145,American Oystercatcher,American Oystercatcher,0,American Oystercatcher,class_name_only,,11,5,needs_normalization
+506,146,Black Oystercatcher,Black Oystercatcher,0,Black Oystercatcher,class_name_only,,7,5,needs_normalization
+507,147,Black-necked Stilt,Black-necked Stilt,0,Black-necked Stilt,class_name_only,,10,5,needs_normalization
+508,148,American Avocet,American Avocet,0,American Avocet,class_name_only,,10,5,needs_normalization
+509,149,Solitary Sandpiper,Solitary Sandpiper,0,Solitary Sandpiper,class_name_only,,12,5,needs_normalization
+510,150,Greater Yellowlegs,Greater Yellowlegs,0,Greater Yellowlegs,class_name_only,,10,5,needs_normalization
+511,151,Willet,Willet,0,Willet,class_name_only,,5,2,needs_normalization
+512,152,Lesser Yellowlegs,Lesser Yellowlegs,0,Lesser Yellowlegs,class_name_only,,11,5,needs_normalization
+513,153,Whimbrel,Whimbrel,0,Whimbrel,class_name_only,,9,5,needs_normalization
+514,154,Long-billed Curlew,Long-billed Curlew,0,Long-billed Curlew,class_name_only,,7,3,needs_normalization
+515,155,Marbled Godwit,Marbled Godwit,0,Marbled Godwit,class_name_only,,7,4,needs_normalization
+516,156,Ruddy Turnstone,Ruddy Turnstone,0,Ruddy Turnstone,class_name_only,,5,4,needs_normalization
+517,157,Black Turnstone,Black Turnstone,0,Black Turnstone,class_name_only,,13,5,needs_normalization
+518,158,Surfbird,Surfbird,0,Surfbird,class_name_only,,11,5,needs_normalization
+519,159,Semipalmated Sandpiper,Semipalmated Sandpiper,0,Semipalmated Sandpiper,class_name_only,,7,5,needs_normalization
+520,160,Western Sandpiper,Western Sandpiper,0,Western Sandpiper,class_name_only,,15,5,needs_normalization
+521,161,Least Sandpiper,Least Sandpiper,0,Least Sandpiper,class_name_only,,8,3,needs_normalization
+522,162,Short-billed Dowitcher,Short-billed Dowitcher,0,Short-billed Dowitcher,class_name_only,,14,5,needs_normalization
+523,163,Wilson's Snipe,Wilson's Snipe,0,Wilson's Snipe,class_name_only,,12,5,needs_normalization
+524,164,American Woodcock,American Woodcock,0,American Woodcock,class_name_only,,8,3,needs_normalization
+525,165,Rock Pigeon,Rock Pigeon,0,Rock Pigeon,class_name_only,,9,5,needs_normalization
+526,166,Band-tailed Pigeon,Band-tailed Pigeon,0,Band-tailed Pigeon,class_name_only,,10,5,needs_normalization
+527,167,Eurasian Collared-Dove,Eurasian Collared-Dove,0,Eurasian Collared-Dove,class_name_only,,7,3,needs_normalization
+528,168,White-winged Dove,White-winged Dove,0,White-winged Dove,class_name_only,,9,5,needs_normalization
+529,169,Mourning Dove,Mourning Dove,0,Mourning Dove,class_name_only,,8,3,needs_normalization
+530,170,Inca Dove,Inca Dove,0,Inca Dove,class_name_only,,4,1,needs_normalization
+531,171,Common Ground-Dove,Common Ground-Dove,0,Common Ground-Dove,class_name_only,,10,5,needs_normalization
+532,172,Monk Parakeet,Monk Parakeet,0,Monk Parakeet,class_name_only,,7,4,needs_normalization
+533,173,Yellow-billed Cuckoo,Yellow-billed Cuckoo,0,Yellow-billed Cuckoo,class_name_only,,11,5,needs_normalization
+534,174,Black-billed Cuckoo,Black-billed Cuckoo,0,Black-billed Cuckoo,class_name_only,,7,5,needs_normalization
+535,175,Greater Roadrunner,Greater Roadrunner,0,Greater Roadrunner,class_name_only,,10,5,needs_normalization
+536,176,Barn Owl,Barn Owl,0,Barn Owl,class_name_only,,11,5,needs_normalization
+537,177,Western Screech-Owl,Western Screech-Owl,0,Western Screech-Owl,class_name_only,,8,4,needs_normalization
+538,178,Eastern Screech-Owl,Eastern Screech-Owl,0,Eastern Screech-Owl,class_name_only,,5,0,needs_normalization
+539,179,Great Horned Owl,Great Horned Owl,0,Great Horned Owl,class_name_only,,7,3,needs_normalization
+540,180,Snowy Owl,Snowy Owl,0,Snowy Owl,class_name_only,,1,0,needs_normalization
+541,181,Northern Pygmy-Owl,Northern Pygmy-Owl,0,Northern Pygmy-Owl,class_name_only,,4,2,needs_normalization
+542,182,Burrowing Owl,Burrowing Owl,0,Burrowing Owl,class_name_only,,8,5,needs_normalization
+543,183,Barred Owl,Barred Owl,0,Barred Owl,class_name_only,,9,5,needs_normalization
+544,184,Northern Saw-whet Owl,Northern Saw-whet Owl,0,Northern Saw-whet Owl,class_name_only,,5,3,needs_normalization
+545,185,Common Nighthawk,Common Nighthawk,0,Common Nighthawk,class_name_only,,10,4,needs_normalization
+546,186,Chimney Swift,Chimney Swift,0,Chimney Swift,class_name_only,,7,3,needs_normalization
+547,187,Vaux's Swift,Vaux's Swift,0,Vaux's Swift,class_name_only,,3,1,needs_normalization
+548,188,White-throated Swift,White-throated Swift,0,White-throated Swift,class_name_only,,8,5,needs_normalization
+549,189,Belted Kingfisher,Belted Kingfisher,0,Belted Kingfisher,class_name_only,,11,5,needs_normalization
+550,190,Acorn Woodpecker,Acorn Woodpecker,0,Acorn Woodpecker,class_name_only,,9,5,needs_normalization
+551,191,Gila Woodpecker,Gila Woodpecker,0,Gila Woodpecker,class_name_only,,4,3,needs_normalization
+552,192,Golden-fronted Woodpecker,Golden-fronted Woodpecker,0,Golden-fronted Woodpecker,class_name_only,,8,4,needs_normalization
+553,193,Red-bellied Woodpecker,Red-bellied Woodpecker,0,Red-bellied Woodpecker,class_name_only,,6,5,needs_normalization
+554,194,Yellow-bellied Sapsucker,Yellow-bellied Sapsucker,0,Yellow-bellied Sapsucker,class_name_only,,12,5,needs_normalization
+555,195,Red-naped Sapsucker,Red-naped Sapsucker,0,Red-naped Sapsucker,class_name_only,,13,5,needs_normalization
+556,196,Red-breasted Sapsucker,Red-breasted Sapsucker,0,Red-breasted Sapsucker,class_name_only,,11,5,needs_normalization
+557,197,Ladder-backed Woodpecker,Ladder-backed Woodpecker,0,Ladder-backed Woodpecker,class_name_only,,12,5,needs_normalization
+558,198,Nuttall's Woodpecker,Nuttall's Woodpecker,0,Nuttall's Woodpecker,class_name_only,,9,5,needs_normalization
+559,199,Downy Woodpecker,Downy Woodpecker,0,Downy Woodpecker,class_name_only,,13,5,needs_normalization
+560,200,Hairy Woodpecker,Hairy Woodpecker,0,Hairy Woodpecker,class_name_only,,11,5,needs_normalization
+561,201,Pileated Woodpecker,Pileated Woodpecker,0,Pileated Woodpecker,class_name_only,,7,4,needs_normalization
+599,202,"Black Guillemot (Nonbreeding, juvenile)",Black Guillemot,0,"Black Guillemot Nonbreeding, juvenile",class_name_only,"Nonbreeding, juvenile",12,5,needs_normalization|shared_variant_descriptor
+600,203,"Pigeon Guillemot (Nonbreeding, juvenile)",Pigeon Guillemot,0,"Pigeon Guillemot Nonbreeding, juvenile",class_name_only,"Nonbreeding, juvenile",12,4,needs_normalization|shared_variant_descriptor
+601,204,Black-legged Kittiwake (Immature),Black-legged Kittiwake,0,Black-legged Kittiwake Immature,class_name_only,Immature,9,5,needs_normalization|shared_variant_descriptor
+602,205,Laughing Gull (Nonbreeding/Immature),Laughing Gull,0,Laughing Gull Nonbreeding or Immature,class_name_only,Nonbreeding or Immature,9,5,needs_normalization|shared_variant_descriptor
+603,206,Heermann's Gull (Immature),Heermann's Gull,0,Heermann's Gull Immature,class_name_only,Immature,12,5,needs_normalization|shared_variant_descriptor
+604,207,Ring-billed Gull (Immature),Ring-billed Gull,0,Ring-billed Gull Immature,class_name_only,Immature,13,5,needs_normalization|shared_variant_descriptor
+605,208,Western Gull (Immature),Western Gull,0,Western Gull Immature,class_name_only,Immature,20,3,needs_normalization|shared_variant_descriptor
+606,209,California Gull (Immature),California Gull,0,California Gull Immature,class_name_only,Immature,9,4,needs_normalization|shared_variant_descriptor
+607,210,Herring Gull (Immature),Herring Gull,0,Herring Gull Immature,class_name_only,Immature,9,2,needs_normalization|shared_variant_descriptor
+608,211,Glaucous-winged Gull (Immature),Glaucous-winged Gull,0,Glaucous-winged Gull Immature,class_name_only,Immature,7,4,needs_normalization|shared_variant_descriptor
+609,212,Great Black-backed Gull (Immature),Great Black-backed Gull,0,Great Black-backed Gull Immature,class_name_only,Immature,14,5,needs_normalization|shared_variant_descriptor
+610,213,Black-bellied Whistling-Duck,Black-bellied Whistling-Duck,0,Black-bellied Whistling-Duck,class_name_only,,12,5,needs_normalization
+611,214,Snow Goose (Blue morph),Snow Goose,0,Snow Goose Blue morph,class_name_only,Blue morph,11,5,needs_normalization|shared_variant_descriptor
+612,215,Ross's Goose,Ross's Goose,0,Ross's Goose,class_name_only,,9,5,needs_normalization
+613,216,Wood Duck (Female/Eclipse male),Wood Duck,0,Wood Duck Female or Eclipse male,class_name_only,Female or Eclipse male,6,5,compact_verified
+614,217,Gadwall (Female/Eclipse male),Gadwall,0,Gadwall Female or Eclipse male,class_name_only,Female or Eclipse male,6,3,needs_normalization|shared_variant_descriptor
+615,218,American Wigeon (Female/Eclipse male),American Wigeon,0,American Wigeon Female or Eclipse male,class_name_only,Female or Eclipse male,11,5,needs_normalization|shared_variant_descriptor
+616,219,Mallard (Female/Eclipse male),Mallard,0,Mallard Female or Eclipse male,class_name_only,Female or Eclipse male,10,4,needs_normalization|shared_variant_descriptor
+617,220,Blue-winged Teal  (Female/juvenile),Blue-winged Teal,0,Blue-winged Teal Female or juvenile,class_name_only,Female or juvenile,10,5,needs_normalization|shared_variant_descriptor
+618,221,Cinnamon Teal (Female/juvenile),Cinnamon Teal,0,Cinnamon Teal Female or juvenile,class_name_only,Female or juvenile,9,2,needs_normalization|shared_variant_descriptor
+619,222,Northern Shoveler (Female/Eclipse male),Northern Shoveler,0,Northern Shoveler Female or Eclipse male,class_name_only,Female or Eclipse male,9,3,needs_normalization|shared_variant_descriptor
+620,223,Northern Pintail (Female/Eclipse male),Northern Pintail,0,Northern Pintail Female or Eclipse male,class_name_only,Female or Eclipse male,5,3,needs_normalization|shared_variant_descriptor
+621,224,Green-winged Teal  (Female/juvenile),Green-winged Teal,0,Green-winged Teal Female or juvenile,class_name_only,Female or juvenile,9,4,needs_normalization|shared_variant_descriptor
+622,225,Canvasback (Female/Eclipse male),Canvasback,0,Canvasback Female or Eclipse male,class_name_only,Female or Eclipse male,17,2,needs_normalization|shared_variant_descriptor
+623,226,Redhead (Female/Eclipse male),Redhead,0,Redhead Female or Eclipse male,class_name_only,Female or Eclipse male,9,4,needs_normalization|shared_variant_descriptor
+624,227,Ring-necked Duck (Female/Eclipse male),Ring-necked Duck,0,Ring-necked Duck Female or Eclipse male,class_name_only,Female or Eclipse male,13,5,needs_normalization|shared_variant_descriptor
+625,228,Greater Scaup (Female/Eclipse male),Greater Scaup,0,Greater Scaup Female or Eclipse male,class_name_only,Female or Eclipse male,11,4,needs_normalization|shared_variant_descriptor
+626,229,Lesser Scaup (Female/Eclipse male),Lesser Scaup,0,Lesser Scaup Female or Eclipse male,class_name_only,Female or Eclipse male,12,5,needs_normalization|shared_variant_descriptor
+627,230,Harlequin Duck (Female/juvenile),Harlequin Duck,0,Harlequin Duck Female or juvenile,class_name_only,Female or juvenile,13,4,needs_normalization|shared_variant_descriptor
+628,231,Surf Scoter (Female/immature),Surf Scoter,0,Surf Scoter Female or immature,class_name_only,Female or immature,11,5,needs_normalization|shared_variant_descriptor
+629,232,White-winged Scoter (Female/juvenile),White-winged Scoter,0,White-winged Scoter Female or juvenile,class_name_only,Female or juvenile,12,5,needs_normalization|shared_variant_descriptor
+630,233,Black Scoter (Female/juvenile),Black Scoter,0,Black Scoter Female or juvenile,class_name_only,Female or juvenile,9,3,needs_normalization|shared_variant_descriptor
+631,234,Bufflehead (Female/immature male),Bufflehead,0,Bufflehead Female or immature male,class_name_only,Female or immature male,9,3,needs_normalization|shared_variant_descriptor
+632,235,Common Goldeneye (Female/Eclipse male),Common Goldeneye,0,Common Goldeneye Female or Eclipse male,class_name_only,Female or Eclipse male,15,3,needs_normalization|shared_variant_descriptor
+633,236,Barrow's Goldeneye (Female/Eclipse male),Barrow's Goldeneye,0,Barrow's Goldeneye Female or Eclipse male,class_name_only,Female or Eclipse male,5,3,needs_normalization|shared_variant_descriptor
+634,237,Hooded Merganser (Female/immature male),Hooded Merganser,0,Hooded Merganser Female or immature male,class_name_only,Female or immature male,7,5,needs_normalization|shared_variant_descriptor
+635,238,Common Merganser (Female/immature male),Common Merganser,0,Common Merganser Female or immature male,class_name_only,Female or immature male,9,2,needs_normalization|shared_variant_descriptor
+636,239,Red-breasted Merganser (Female/immature male),Red-breasted Merganser,0,Red-breasted Merganser Female or immature male,class_name_only,Female or immature male,13,3,needs_normalization|shared_variant_descriptor
+637,240,California Quail (Female/juvenile),California Quail,0,California Quail Female or juvenile,class_name_only,Female or juvenile,9,2,needs_normalization|shared_variant_descriptor
+638,241,Gambel's Quail (Female/juvenile),Gambel's Quail,0,Gambel's Quail Female or juvenile,class_name_only,Female or juvenile,15,4,needs_normalization|shared_variant_descriptor
+639,242,Ring-necked Pheasant (Female/juvenile),Ring-necked Pheasant,0,Ring-necked Pheasant Female or juvenile,class_name_only,Female or juvenile,13,5,needs_normalization|shared_variant_descriptor
+640,243,Red-throated Loon (Nonbreeding/juvenile),Red-throated Loon,0,Red-throated Loon Nonbreeding or juvenile,class_name_only,Nonbreeding or juvenile,15,5,needs_normalization|shared_variant_descriptor
+641,244,Pacific Loon (Nonbreeding/juvenile),Pacific Loon,0,Pacific Loon Nonbreeding or juvenile,class_name_only,Nonbreeding or juvenile,17,5,needs_normalization|shared_variant_descriptor
+642,245,Common Loon (Nonbreeding/juvenile),Common Loon,0,Common Loon Nonbreeding or juvenile,class_name_only,Nonbreeding or juvenile,12,4,needs_normalization|shared_variant_descriptor
+643,246,Horned Grebe (Nonbreeding/juvenile),Horned Grebe,0,Horned Grebe Nonbreeding or juvenile,class_name_only,Nonbreeding or juvenile,12,4,needs_normalization|shared_variant_descriptor
+644,247,Red-necked Grebe (Nonbreeding/juvenile),Red-necked Grebe,0,Red-necked Grebe Nonbreeding or juvenile,class_name_only,Nonbreeding or juvenile,8,5,needs_normalization|shared_variant_descriptor
+645,248,Eared Grebe (Nonbreeding/juvenile),Eared Grebe,0,Eared Grebe Nonbreeding or juvenile,class_name_only,Nonbreeding or juvenile,9,3,needs_normalization|shared_variant_descriptor
+646,249,Northern Gannet (Immature/Juvenile),Northern Gannet,0,Northern Gannet Immature or Juvenile,class_name_only,Immature or Juvenile,10,1,needs_normalization|shared_variant_descriptor
+647,250,Double-crested Cormorant (Adult),Double-crested Cormorant,0,Double-crested Cormorant Adult,class_name_only,Adult,7,1,needs_normalization|shared_variant_descriptor
+648,251,Great Cormorant (Immature),Great Cormorant,0,Great Cormorant Immature,class_name_only,Immature,9,5,needs_normalization|shared_variant_descriptor
+649,252,Little Blue Heron (Immature),Little Blue Heron,0,Little Blue Heron Immature,class_name_only,Immature,15,2,needs_normalization|shared_variant_descriptor
+650,253,Reddish Egret (White morph),Reddish Egret,0,Reddish Egret White morph,class_name_only,White morph,9,1,needs_normalization|shared_variant_descriptor
+651,254,Black-crowned Night-Heron (Immature),Black-crowned Night-Heron,0,Black-crowned Night-Heron Immature,class_name_only,Immature,11,5,needs_normalization|shared_variant_descriptor
+652,255,Yellow-crowned Night-Heron (Immature),Yellow-crowned Night-Heron,0,Yellow-crowned Night-Heron Immature,class_name_only,Immature,14,5,needs_normalization|shared_variant_descriptor
+653,256,White Ibis (Immature),White Ibis,0,White Ibis Immature,class_name_only,Immature,15,5,needs_normalization|shared_variant_descriptor
+654,257,"Bald Eagle (Immature, juvenile)",Bald Eagle,0,"Bald Eagle Immature, juvenile",class_name_only,"Immature, juvenile",12,3,needs_normalization|shared_variant_descriptor
+655,258,"Northern Harrier (Female, immature)",Northern Harrier,0,"Northern Harrier Female, immature",class_name_only,"Female, immature",17,5,needs_normalization|shared_variant_descriptor
+656,259,Sharp-shinned Hawk (Immature),Sharp-shinned Hawk,0,Sharp-shinned Hawk Immature,class_name_only,Immature,10,2,needs_normalization|shared_variant_descriptor
+657,260,Cooper's Hawk (Immature),Cooper's Hawk,0,Cooper's Hawk Immature,class_name_only,Immature,10,4,needs_normalization|shared_variant_descriptor
+658,261,Red-shouldered Hawk (Immature),Red-shouldered Hawk,0,Red-shouldered Hawk Immature,class_name_only,Immature,10,4,needs_normalization|shared_variant_descriptor
+659,262,Broad-winged Hawk (Immature),Broad-winged Hawk,0,Broad-winged Hawk Immature,class_name_only,Immature,8,1,needs_normalization|shared_variant_descriptor
+660,263,Rough-legged Hawk (Light morph),Rough-legged Hawk,0,Rough-legged Hawk Light morph,class_name_only,Light morph,9,5,needs_normalization|shared_variant_descriptor
+661,264,Golden Eagle (Immature),Golden Eagle,0,Golden Eagle Immature,class_name_only,Immature,2,2,needs_normalization|shared_variant_descriptor
+662,265,"American Kestrel (Female, immature)",American Kestrel,0,"American Kestrel Female, immature",class_name_only,"Female, immature",5,1,needs_normalization|shared_variant_descriptor
+663,266,Peregrine Falcon (Immature),Peregrine Falcon,0,Peregrine Falcon Immature,class_name_only,Immature,6,1,needs_normalization|shared_variant_descriptor
+664,267,Purple Gallinule (Immature),Purple Gallinule,0,Purple Gallinule Immature,class_name_only,Immature,12,5,needs_normalization|shared_variant_descriptor
+665,268,Common Gallinule (Immature),Common Gallinule,0,Common Gallinule Immature,class_name_only,Immature,9,4,needs_normalization|shared_variant_descriptor
+666,269,Black-bellied Plover (Nonbreeding/juvenile),Black-bellied Plover,0,Black-bellied Plover Nonbreeding or juvenile,class_name_only,Nonbreeding or juvenile,17,5,needs_normalization|shared_variant_descriptor
+667,270,Spotted Sandpiper (Nonbreeding/juvenile),Spotted Sandpiper,0,Spotted Sandpiper Nonbreeding or juvenile,class_name_only,Nonbreeding or juvenile,6,4,needs_normalization|shared_variant_descriptor
+668,271,Sanderling (Nonbreeding/juvenile),Sanderling,0,Sanderling Nonbreeding or juvenile,class_name_only,Nonbreeding or juvenile,5,1,needs_normalization|shared_variant_descriptor
+669,272,Dunlin (Nonbreeding/juvenile),Dunlin,0,Dunlin Nonbreeding or juvenile,class_name_only,Nonbreeding or juvenile,16,5,needs_normalization|shared_variant_descriptor
+670,273,"Wilson's Phalarope (Nonbreeding, juvenile)",Wilson's Phalarope,0,"Wilson's Phalarope Nonbreeding, juvenile",class_name_only,"Nonbreeding, juvenile",6,3,needs_normalization|shared_variant_descriptor
+671,274,"Broad-billed Hummingbird (Female, immature)",Broad-billed Hummingbird,0,"Broad-billed Hummingbird Female, immature",class_name_only,"Female, immature",11,5,needs_normalization|shared_variant_descriptor
+672,275,"Ruby-throated Hummingbird (Female, immature)",Ruby-throated Hummingbird,0,"Ruby-throated Hummingbird Female, immature",class_name_only,"Female, immature",6,2,needs_normalization|shared_variant_descriptor
+673,276,"Black-chinned Hummingbird (Female, immature)",Black-chinned Hummingbird,0,"Black-chinned Hummingbird Female, immature",class_name_only,"Female, immature",8,4,needs_normalization|shared_variant_descriptor
+674,277,"Anna's Hummingbird (Female, immature)",Anna's Hummingbird,0,"Anna's Hummingbird Female, immature",class_name_only,"Female, immature",5,1,needs_normalization|shared_variant_descriptor
+675,278,"Costa's Hummingbird (Female, immature)",Costa's Hummingbird,0,"Costa's Hummingbird Female, immature",class_name_only,"Female, immature",10,5,needs_normalization|shared_variant_descriptor
+676,279,"Calliope Hummingbird (Female, immature)",Calliope Hummingbird,0,"Calliope Hummingbird Female, immature",class_name_only,"Female, immature",6,3,needs_normalization|shared_variant_descriptor
+677,280,"Broad-tailed Hummingbird (Female, immature)",Broad-tailed Hummingbird,0,"Broad-tailed Hummingbird Female, immature",class_name_only,"Female, immature",14,5,needs_normalization|shared_variant_descriptor
+678,281,"Rufous Hummingbird (Female, immature)",Rufous Hummingbird,0,"Rufous Hummingbird Female, immature",class_name_only,"Female, immature",14,5,needs_normalization|shared_variant_descriptor
+679,282,"Allen's Hummingbird (Female, immature)",Allen's Hummingbird,0,"Allen's Hummingbird Female, immature",class_name_only,"Female, immature",7,1,needs_normalization|shared_variant_descriptor
+680,283,Red-headed Woodpecker (Immature),Red-headed Woodpecker,0,Red-headed Woodpecker Immature,class_name_only,Immature,14,5,needs_normalization|shared_variant_descriptor
+681,284,Northern Flicker (Red-shafted),Northern Flicker,0,Northern Flicker Red shafted,class_name_only,Red shafted,11,5,needs_normalization|shared_variant_descriptor
+696,285,Common Eider (Immature/Eclipse male),Common Eider,0,Common Eider Immature or Eclipse male,class_name_only,Immature or Eclipse male,10,5,needs_normalization|shared_variant_descriptor
+697,286,Long-tailed Duck (Female/juvenile),Long-tailed Duck,0,Long-tailed Duck Female or juvenile,class_name_only,Female or juvenile,15,4,needs_normalization|shared_variant_descriptor
+698,287,Ruddy Duck (Female/juvenile),Ruddy Duck,0,Ruddy Duck Female or juvenile,class_name_only,Female or juvenile,11,5,needs_normalization|shared_variant_descriptor
+699,288,Swainson's Hawk (Immature),Swainson's Hawk,0,Swainson's Hawk Immature,class_name_only,Immature,10,4,needs_normalization|shared_variant_descriptor
+700,289,Red-tailed Hawk (Light morph immature),Red-tailed Hawk,0,Red-tailed Hawk Light morph immature,class_name_only,Light morph immature,14,5,needs_normalization|shared_variant_descriptor
+746,290,Dark-eyed Junco (Slate-colored),Dark-eyed Junco,0,Dark-eyed Junco Slate colored,class_name_only,Slate colored,4,4,compact_verified
+747,291,Yellow-rumped Warbler (Breeding Myrtle),Yellow-rumped Warbler,0,Yellow-rumped Warbler Breeding Myrtle,class_name_only,Breeding Myrtle,12,4,needs_normalization|shared_variant_descriptor
+748,292,European Starling (Breeding Adult),European Starling,0,European Starling Breeding Adult,class_name_only,Breeding Adult,7,2,needs_normalization|shared_variant_descriptor
+749,293,Fox Sparrow (Red),Fox Sparrow,0,Fox Sparrow Red,class_name_only,Red,7,3,needs_normalization|shared_variant_descriptor
+750,294,Summer Tanager (Adult Male),Summer Tanager,0,Summer Tanager Adult Male,class_name_only,Adult Male,12,1,needs_normalization|shared_variant_descriptor
+751,295,Orchard Oriole (Adult Male),Orchard Oriole,0,Orchard Oriole Adult Male,class_name_only,Adult Male,12,5,needs_normalization|shared_variant_descriptor
+752,296,Purple Martin (Adult male),Purple Martin,0,Purple Martin Adult male,class_name_only,Adult male,9,3,needs_normalization|shared_variant_descriptor
+753,297,American Robin (Adult),American Robin,0,American Robin Adult,class_name_only,Adult,7,4,compact_verified
+754,298,Phainopepla (Female/juvenile),Phainopepla,0,Phainopepla Female or juvenile,class_name_only,Female or juvenile,8,2,needs_normalization|shared_variant_descriptor
+755,299,Snow Bunting (Breeding adult),Snow Bunting,0,Snow Bunting Breeding adult,class_name_only,Breeding adult,15,5,needs_normalization|shared_variant_descriptor
+756,300,Common Yellowthroat (Adult Male),Common Yellowthroat,0,Common Yellowthroat Adult Male,class_name_only,Adult Male,10,5,needs_normalization|shared_variant_descriptor
+757,301,American Redstart (Adult Male),American Redstart,0,American Redstart Adult Male,class_name_only,Adult Male,13,4,needs_normalization|shared_variant_descriptor
+758,302,Magnolia Warbler (Breeding male),Magnolia Warbler,0,Magnolia Warbler Breeding male,class_name_only,Breeding male,15,5,needs_normalization|shared_variant_descriptor
+759,303,Bay-breasted Warbler (Breeding male),Bay-breasted Warbler,0,Bay-breasted Warbler Breeding male,class_name_only,Breeding male,16,5,needs_normalization|shared_variant_descriptor
+760,304,Chestnut-sided Warbler (Breeding male),Chestnut-sided Warbler,0,Chestnut-sided Warbler Breeding male,class_name_only,Breeding male,10,5,needs_normalization|shared_variant_descriptor
+761,305,Blackpoll Warbler (Breeding male),Blackpoll Warbler,0,Blackpoll Warbler Breeding male,class_name_only,Breeding male,10,5,needs_normalization|shared_variant_descriptor
+762,306,Black-throated Blue Warbler (Adult Male),Black-throated Blue Warbler,0,Black-throated Blue Warbler Adult Male,class_name_only,Adult Male,10,5,needs_normalization|shared_variant_descriptor
+763,307,Lark Bunting (Breeding male),Lark Bunting,0,Lark Bunting Breeding male,class_name_only,Breeding male,8,5,needs_normalization|shared_variant_descriptor
+764,308,White-throated Sparrow (White-striped),White-throated Sparrow,0,White-throated Sparrow White striped,class_name_only,White striped,12,5,needs_normalization|shared_variant_descriptor
+765,309,Harris's Sparrow (Adult),Harris's Sparrow,0,Harris's Sparrow Adult,class_name_only,Adult,13,5,needs_normalization|shared_variant_descriptor
+766,310,White-crowned Sparrow (Adult),White-crowned Sparrow,0,White-crowned Sparrow Adult,class_name_only,Adult,4,2,needs_normalization|shared_variant_descriptor
+767,311,Golden-crowned Sparrow (Adult),Golden-crowned Sparrow,0,Golden-crowned Sparrow Adult,class_name_only,Adult,9,4,needs_normalization|shared_variant_descriptor
+768,312,Dark-eyed Junco (Oregon),Dark-eyed Junco,0,Dark-eyed Junco Oregon,class_name_only,Oregon,7,5,compact_verified
+769,313,Chipping Sparrow (Breeding),Chipping Sparrow,0,Chipping Sparrow Breeding,class_name_only,Breeding,9,5,needs_normalization|shared_variant_descriptor
+770,314,Scarlet Tanager (Breeding Male),Scarlet Tanager,0,Scarlet Tanager Breeding Male,class_name_only,Breeding Male,9,2,needs_normalization|shared_variant_descriptor
+771,315,Western Tanager (Breeding Male),Western Tanager,0,Western Tanager Breeding Male,class_name_only,Breeding Male,10,2,needs_normalization|shared_variant_descriptor
+772,316,Northern Cardinal (Adult Male),Northern Cardinal,0,Northern Cardinal Adult Male,class_name_only,Adult Male,9,3,needs_normalization|shared_variant_descriptor
+773,317,Rose-breasted Grosbeak (Adult Male),Rose-breasted Grosbeak,0,Rose-breasted Grosbeak Adult Male,class_name_only,Adult Male,11,5,needs_normalization|shared_variant_descriptor
+774,318,Black-headed Grosbeak (Adult Male),Black-headed Grosbeak,0,Black-headed Grosbeak Adult Male,class_name_only,Adult Male,13,5,needs_normalization|shared_variant_descriptor
+775,319,Blue Grosbeak (Adult Male),Blue Grosbeak,0,Blue Grosbeak Adult Male,class_name_only,Adult Male,10,4,needs_normalization|shared_variant_descriptor
+776,320,Lazuli Bunting (Adult Male),Lazuli Bunting,0,Lazuli Bunting Adult Male,class_name_only,Adult Male,12,5,needs_normalization|shared_variant_descriptor
+777,321,Indigo Bunting (Adult Male),Indigo Bunting,0,Indigo Bunting Adult Male,class_name_only,Adult Male,11,4,needs_normalization|shared_variant_descriptor
+778,322,Painted Bunting (Adult Male),Painted Bunting,0,Painted Bunting Adult Male,class_name_only,Adult Male,8,2,needs_normalization|shared_variant_descriptor
+779,323,Bobolink (Breeding male),Bobolink,0,Bobolink Breeding male,class_name_only,Breeding male,10,3,needs_normalization|shared_variant_descriptor
+780,324,Red-winged Blackbird (Male),Red-winged Blackbird,0,Red-winged Blackbird Male,class_name_only,Male,8,3,needs_normalization|shared_variant_descriptor
+781,325,Yellow-headed Blackbird (Adult Male),Yellow-headed Blackbird,0,Yellow-headed Blackbird Adult Male,class_name_only,Adult Male,9,4,needs_normalization|shared_variant_descriptor
+782,326,Brewer's Blackbird (Female/Juvenile),Brewer's Blackbird,0,Brewer's Blackbird Female or Juvenile,class_name_only,Female or Juvenile,11,1,needs_normalization|shared_variant_descriptor
+783,327,Brown-headed Cowbird (Male),Brown-headed Cowbird,0,Brown-headed Cowbird Male,class_name_only,Male,2,1,needs_normalization|shared_variant_descriptor
+784,328,Hooded Oriole (Adult male),Hooded Oriole,0,Hooded Oriole Adult male,class_name_only,Adult male,12,5,needs_normalization|shared_variant_descriptor
+785,329,Bullock's Oriole (Adult male),Bullock's Oriole,0,Bullock's Oriole Adult male,class_name_only,Adult male,12,5,needs_normalization|shared_variant_descriptor
+786,330,Baltimore Oriole (Adult male),Baltimore Oriole,0,Baltimore Oriole Adult male,class_name_only,Adult male,9,3,needs_normalization|shared_variant_descriptor
+787,331,Pine Grosbeak (Adult Male),Pine Grosbeak,0,Pine Grosbeak Adult Male,class_name_only,Adult Male,10,5,needs_normalization|shared_variant_descriptor
+788,332,Purple Finch (Adult Male),Purple Finch,0,Purple Finch Adult Male,class_name_only,Adult Male,9,3,needs_normalization|shared_variant_descriptor
+789,333,Cassin's Finch (Adult Male),Cassin's Finch,0,Cassin's Finch Adult Male,class_name_only,Adult Male,10,2,needs_normalization|shared_variant_descriptor
+790,334,House Finch (Adult Male),House Finch,0,House Finch Adult Male,class_name_only,Adult Male,8,5,needs_normalization|shared_variant_descriptor
+791,335,Red Crossbill (Adult Male),Red Crossbill,0,Red Crossbill Adult Male,class_name_only,Adult Male,7,5,needs_normalization|shared_variant_descriptor
+792,336,White-winged Crossbill (Adult Male),White-winged Crossbill,0,White-winged Crossbill Adult Male,class_name_only,Adult Male,9,5,needs_normalization|shared_variant_descriptor
+793,337,Lesser Goldfinch (Adult Male),Lesser Goldfinch,0,Lesser Goldfinch Adult Male,class_name_only,Adult Male,14,5,needs_normalization|shared_variant_descriptor
+794,338,American Goldfinch (Breeding Male),American Goldfinch,0,American Goldfinch Breeding Male,class_name_only,Breeding Male,14,5,needs_normalization|shared_variant_descriptor
+795,339,Evening Grosbeak (Adult Male),Evening Grosbeak,0,Evening Grosbeak Adult Male,class_name_only,Adult Male,12,3,needs_normalization|shared_variant_descriptor
+796,340,House Sparrow (Male),House Sparrow,0,House Sparrow Male,class_name_only,Male,12,3,needs_normalization|shared_variant_descriptor
+797,341,Vermilion Flycatcher (Adult male),Vermilion Flycatcher,0,Vermilion Flycatcher Adult male,class_name_only,Adult male,8,2,needs_normalization|shared_variant_descriptor
+798,342,Yellow-rumped Warbler (Winter/juvenile Myrtle),Yellow-rumped Warbler,0,Yellow-rumped Warbler Winter or juvenile Myrtle,class_name_only,Winter or juvenile Myrtle,12,4,needs_normalization|shared_variant_descriptor
+799,343,Northwestern Crow,Northwestern Crow,0,Northwestern Crow,class_name_only,,3,0,needs_normalization
+800,344,Fish Crow,Fish Crow,0,Fish Crow,class_name_only,,7,3,needs_normalization
+801,345,Chihuahuan Raven,Chihuahuan Raven,0,Chihuahuan Raven,class_name_only,,3,1,needs_normalization
+802,346,Common Raven,Common Raven,0,Common Raven,class_name_only,,5,2,needs_normalization
+803,347,Horned Lark,Horned Lark,0,Horned Lark,class_name_only,,11,5,needs_normalization
+804,348,Tree Swallow,Tree Swallow,0,Tree Swallow,class_name_only,,10,5,needs_normalization
+805,349,Violet-green Swallow,Violet-green Swallow,0,Violet-green Swallow,class_name_only,,8,4,needs_normalization
+806,350,Northern Rough-winged Swallow,Northern Rough-winged Swallow,0,Northern Rough-winged Swallow,class_name_only,,9,5,needs_normalization
+807,351,Bank Swallow,Bank Swallow,0,Bank Swallow,class_name_only,,8,5,needs_normalization
+808,352,Cliff Swallow,Cliff Swallow,0,Cliff Swallow,class_name_only,,12,5,needs_normalization
+809,353,Cave Swallow,Cave Swallow,0,Cave Swallow,class_name_only,,8,5,needs_normalization
+810,354,Barn Swallow,Barn Swallow,0,Barn Swallow,class_name_only,,10,5,needs_normalization
+811,355,Carolina Chickadee,Carolina Chickadee,0,Carolina Chickadee,class_name_only,,6,2,needs_normalization
+812,356,Black-capped Chickadee,Black-capped Chickadee,0,Black-capped Chickadee,class_name_only,,9,4,needs_normalization
+813,357,Mountain Chickadee,Mountain Chickadee,0,Mountain Chickadee,class_name_only,,10,5,needs_normalization
+814,358,Chestnut-backed Chickadee,Chestnut-backed Chickadee,0,Chestnut-backed Chickadee,class_name_only,,8,4,needs_normalization
+815,359,Boreal Chickadee,Boreal Chickadee,0,Boreal Chickadee,class_name_only,,7,5,needs_normalization
+816,360,Bridled Titmouse,Bridled Titmouse,0,Bridled Titmouse,class_name_only,,8,5,needs_normalization
+817,361,Oak Titmouse,Oak Titmouse,0,Oak Titmouse,class_name_only,,4,1,needs_normalization
+818,362,Juniper Titmouse,Juniper Titmouse,0,Juniper Titmouse,class_name_only,,10,3,needs_normalization
+819,363,Tufted Titmouse,Tufted Titmouse,0,Tufted Titmouse,class_name_only,,6,5,needs_normalization
+820,364,Black-crested Titmouse,Black-crested Titmouse,0,Black-crested Titmouse,class_name_only,,10,5,needs_normalization
+821,365,Verdin,Verdin,0,Verdin,class_name_only,,7,4,needs_normalization
+822,366,Bushtit,Bushtit,0,Bushtit,class_name_only,,8,3,needs_normalization
+823,367,Red-breasted Nuthatch,Red-breasted Nuthatch,0,Red-breasted Nuthatch,class_name_only,,10,5,needs_normalization
+824,368,White-breasted Nuthatch,White-breasted Nuthatch,0,White-breasted Nuthatch,class_name_only,,10,5,needs_normalization
+825,369,Pygmy Nuthatch,Pygmy Nuthatch,0,Pygmy Nuthatch,class_name_only,,12,5,needs_normalization
+826,370,Brown-headed Nuthatch,Brown-headed Nuthatch,0,Brown-headed Nuthatch,class_name_only,,12,5,needs_normalization
+827,371,Brown Creeper,Brown Creeper,0,Brown Creeper,class_name_only,,11,5,needs_normalization
+828,372,Cactus Wren,Cactus Wren,0,Cactus Wren,class_name_only,,11,5,needs_normalization
+829,373,Canyon Wren,Canyon Wren,0,Canyon Wren,class_name_only,,6,3,needs_normalization
+830,374,Carolina Wren,Carolina Wren,0,Carolina Wren,class_name_only,,11,5,needs_normalization
+831,375,Bewick's Wren,Bewick's Wren,0,Bewick's Wren,class_name_only,,8,4,needs_normalization
+832,376,House Wren,House Wren,0,House Wren,class_name_only,,10,4,needs_normalization
+833,377,Pacific Wren,Pacific Wren,0,Pacific Wren,class_name_only,,5,1,needs_normalization
+834,378,Winter Wren,Winter Wren,0,Winter Wren,class_name_only,,5,4,needs_normalization
+835,379,Marsh Wren,Marsh Wren,0,Marsh Wren,class_name_only,,9,4,needs_normalization
+836,380,Blue-gray Gnatcatcher,Blue-gray Gnatcatcher,0,Blue-gray Gnatcatcher,class_name_only,,9,5,needs_normalization
+837,381,Black-tailed Gnatcatcher,Black-tailed Gnatcatcher,0,Black-tailed Gnatcatcher,class_name_only,,12,5,needs_normalization
+838,382,American Dipper,American Dipper,0,American Dipper,class_name_only,,13,5,needs_normalization
+839,383,Golden-crowned Kinglet,Golden-crowned Kinglet,0,Golden-crowned Kinglet,class_name_only,,13,5,needs_normalization
+840,384,Ruby-crowned Kinglet,Ruby-crowned Kinglet,0,Ruby-crowned Kinglet,class_name_only,,8,5,needs_normalization
+841,385,Wrentit,Wrentit,0,Wrentit,class_name_only,,8,2,needs_normalization
+842,386,Eastern Bluebird,Eastern Bluebird,0,Eastern Bluebird,class_name_only,,12,5,needs_normalization
+843,387,Western Bluebird,Western Bluebird,0,Western Bluebird,class_name_only,,7,4,needs_normalization
+844,388,Mountain Bluebird,Mountain Bluebird,0,Mountain Bluebird,class_name_only,,11,5,needs_normalization
+845,389,Townsend's Solitaire,Townsend's Solitaire,0,Townsend's Solitaire,class_name_only,,12,5,needs_normalization
+846,390,Veery,Veery,0,Veery,class_name_only,,9,4,needs_normalization
+847,391,Swainson's Thrush,Swainson's Thrush,0,Swainson's Thrush,class_name_only,,9,4,needs_normalization
+848,392,Hermit Thrush,Hermit Thrush,0,Hermit Thrush,class_name_only,,9,5,needs_normalization
+849,393,Wood Thrush,Wood Thrush,0,Wood Thrush,class_name_only,,8,4,needs_normalization
+850,394,Varied Thrush,Varied Thrush,0,Varied Thrush,class_name_only,,13,5,needs_normalization
+851,395,Gray Catbird,Gray Catbird,0,Gray Catbird,class_name_only,,10,5,needs_normalization
+852,396,Northern Mockingbird,Northern Mockingbird,0,Northern Mockingbird,class_name_only,,8,3,needs_normalization
+853,397,Brown Thrasher,Brown Thrasher,0,Brown Thrasher,class_name_only,,8,4,needs_normalization
+854,398,Curve-billed Thrasher,Curve-billed Thrasher,0,Curve-billed Thrasher,class_name_only,,8,3,needs_normalization
+855,399,California Thrasher,California Thrasher,0,California Thrasher,class_name_only,,8,4,needs_normalization
+856,400,European Starling (Nonbreeding Adult),European Starling,0,European Starling Nonbreeding Adult,class_name_only,Nonbreeding Adult,7,2,needs_normalization|shared_variant_descriptor
+857,401,American Pipit,American Pipit,0,American Pipit,class_name_only,,7,5,needs_normalization
+858,402,Bohemian Waxwing,Bohemian Waxwing,0,Bohemian Waxwing,class_name_only,,4,1,needs_normalization
+859,403,Cedar Waxwing,Cedar Waxwing,0,Cedar Waxwing,class_name_only,,8,5,needs_normalization
+860,404,Ovenbird,Ovenbird,0,Ovenbird,class_name_only,,11,5,needs_normalization
+861,405,Louisiana Waterthrush,Louisiana Waterthrush,0,Louisiana Waterthrush,class_name_only,,7,4,needs_normalization
+862,406,Northern Waterthrush,Northern Waterthrush,0,Northern Waterthrush,class_name_only,,9,5,needs_normalization
+863,407,Blue-winged Warbler,Blue-winged Warbler,0,Blue-winged Warbler,class_name_only,,9,5,needs_normalization
+864,408,Black-and-white Warbler,Black-and-white Warbler,0,Black-and-white Warbler,class_name_only,,10,5,needs_normalization
+865,409,Prothonotary Warbler,Prothonotary Warbler,0,Prothonotary Warbler,class_name_only,,10,5,needs_normalization
+866,410,Tennessee Warbler,Tennessee Warbler,0,Tennessee Warbler,class_name_only,,10,5,needs_normalization
+867,411,Orange-crowned Warbler,Orange-crowned Warbler,0,Orange-crowned Warbler,class_name_only,,9,5,needs_normalization
+868,412,Nashville Warbler,Nashville Warbler,0,Nashville Warbler,class_name_only,,13,5,needs_normalization
+869,413,MacGillivray's Warbler,MacGillivray's Warbler,0,MacGillivray's Warbler,class_name_only,,11,5,needs_normalization
+870,414,Mourning Warbler,Mourning Warbler,0,Mourning Warbler,class_name_only,,13,5,needs_normalization
+871,415,Hooded Warbler,Hooded Warbler,0,Hooded Warbler,class_name_only,,11,5,needs_normalization
+872,416,Cape May Warbler,Cape May Warbler,0,Cape May Warbler,class_name_only,,10,5,needs_normalization
+873,417,Northern Parula,Northern Parula,0,Northern Parula,class_name_only,,9,5,needs_normalization
+874,418,Blackburnian Warbler,Blackburnian Warbler,0,Blackburnian Warbler,class_name_only,,6,3,needs_normalization
+875,419,Yellow Warbler,Yellow Warbler,0,Yellow Warbler,class_name_only,,7,5,needs_normalization
+876,420,Palm Warbler,Palm Warbler,0,Palm Warbler,class_name_only,,7,5,needs_normalization
+877,421,Pine Warbler,Pine Warbler,0,Pine Warbler,class_name_only,,9,5,needs_normalization
+878,422,Yellow-throated Warbler,Yellow-throated Warbler,0,Yellow-throated Warbler,class_name_only,,10,5,needs_normalization
+879,423,Prairie Warbler,Prairie Warbler,0,Prairie Warbler,class_name_only,,12,5,needs_normalization
+880,424,Black-throated Gray Warbler,Black-throated Gray Warbler,0,Black-throated Gray Warbler,class_name_only,,9,5,needs_normalization
+881,425,Townsend's Warbler,Townsend's Warbler,0,Townsend's Warbler,class_name_only,,11,5,needs_normalization
+882,426,Hermit Warbler,Hermit Warbler,0,Hermit Warbler,class_name_only,,9,5,needs_normalization
+883,427,Black-throated Green Warbler,Black-throated Green Warbler,0,Black-throated Green Warbler,class_name_only,,12,5,needs_normalization
+884,428,Canada Warbler,Canada Warbler,0,Canada Warbler,class_name_only,,5,5,needs_normalization
+885,429,Wilson's Warbler,Wilson's Warbler,0,Wilson's Warbler,class_name_only,,10,5,needs_normalization
+886,430,Yellow-breasted Chat,Yellow-breasted Chat,0,Yellow-breasted Chat,class_name_only,,8,5,needs_normalization
+887,431,Green-tailed Towhee,Green-tailed Towhee,0,Green-tailed Towhee,class_name_only,,10,5,needs_normalization
+888,432,Spotted Towhee,Spotted Towhee,0,Spotted Towhee,class_name_only,,5,3,needs_normalization
+889,433,Eastern Towhee,Eastern Towhee,0,Eastern Towhee,class_name_only,,8,5,needs_normalization
+890,434,Rufous-crowned Sparrow,Rufous-crowned Sparrow,0,Rufous-crowned Sparrow,class_name_only,,9,5,needs_normalization
+891,435,Canyon Towhee,Canyon Towhee,0,Canyon Towhee,class_name_only,,7,3,needs_normalization
+892,436,California Towhee,California Towhee,0,California Towhee,class_name_only,,6,2,needs_normalization
+893,437,Abert's Towhee,Abert's Towhee,0,Abert's Towhee,class_name_only,,6,5,needs_normalization
+894,438,American Tree Sparrow,American Tree Sparrow,0,American Tree Sparrow,class_name_only,,9,5,needs_normalization
+895,439,Clay-colored Sparrow,Clay-colored Sparrow,0,Clay-colored Sparrow,class_name_only,,9,5,needs_normalization
+896,440,Brewer's Sparrow,Brewer's Sparrow,0,Brewer's Sparrow,class_name_only,,6,4,needs_normalization
+897,441,Field Sparrow,Field Sparrow,0,Field Sparrow,class_name_only,,12,5,needs_normalization
+898,442,Vesper Sparrow,Vesper Sparrow,0,Vesper Sparrow,class_name_only,,10,5,needs_normalization
+899,443,Lark Sparrow,Lark Sparrow,0,Lark Sparrow,class_name_only,,8,5,needs_normalization
+900,444,Savannah Sparrow,Savannah Sparrow,0,Savannah Sparrow,class_name_only,,9,5,needs_normalization
+901,445,Fox Sparrow (Sooty),Fox Sparrow,0,Fox Sparrow Sooty,class_name_only,Sooty,7,3,needs_normalization|shared_variant_descriptor
+902,446,Song Sparrow,Song Sparrow,0,Song Sparrow,class_name_only,,6,3,needs_normalization
+903,447,Lincoln's Sparrow,Lincoln's Sparrow,0,Lincoln's Sparrow,class_name_only,,9,4,needs_normalization
+904,448,Swamp Sparrow,Swamp Sparrow,0,Swamp Sparrow,class_name_only,,9,5,needs_normalization
+905,449,Dark-eyed Junco (Pink-sided),Dark-eyed Junco,0,Dark-eyed Junco Pink sided,class_name_only,Pink sided,4,3,compact_verified
+906,450,Summer Tanager (Female),Summer Tanager,0,Summer Tanager Female,class_name_only,Female,12,1,needs_normalization|shared_variant_descriptor
+907,451,Pyrrhuloxia,Pyrrhuloxia,0,Pyrrhuloxia,class_name_only,,15,5,needs_normalization
+908,452,Dickcissel,Dickcissel,0,Dickcissel,class_name_only,,12,5,needs_normalization
+909,453,Eastern Meadowlark,Eastern Meadowlark,0,Eastern Meadowlark,class_name_only,,8,5,needs_normalization
+910,454,Western Meadowlark,Western Meadowlark,0,Western Meadowlark,class_name_only,,9,5,needs_normalization
+911,455,Rusty Blackbird,Rusty Blackbird,0,Rusty Blackbird,class_name_only,,8,5,needs_normalization
+912,456,Common Grackle,Common Grackle,0,Common Grackle,class_name_only,,9,2,needs_normalization
+913,457,Boat-tailed Grackle,Boat-tailed Grackle,0,Boat-tailed Grackle,class_name_only,,12,5,needs_normalization
+914,458,Great-tailed Grackle,Great-tailed Grackle,0,Great-tailed Grackle,class_name_only,,17,5,needs_normalization
+915,459,Bronzed Cowbird,Bronzed Cowbird,0,Bronzed Cowbird,class_name_only,,5,3,needs_normalization
+916,460,Orchard Oriole (Immature Male),Orchard Oriole,0,Orchard Oriole Immature Male,class_name_only,Immature Male,12,5,needs_normalization|shared_variant_descriptor
+917,461,Gray-crowned Rosy-Finch,Gray-crowned Rosy-Finch,0,Gray-crowned Rosy-Finch,class_name_only,,10,5,needs_normalization
+918,462,Black Rosy-Finch,Black Rosy-Finch,0,Black Rosy-Finch,class_name_only,,5,4,needs_normalization
+919,463,Brown-capped Rosy-Finch,Brown-capped Rosy-Finch,0,Brown-capped Rosy-Finch,class_name_only,,13,5,needs_normalization
+920,464,Common Redpoll,Common Redpoll,0,Common Redpoll,class_name_only,,10,5,needs_normalization
+921,465,Hoary Redpoll,Hoary Redpoll,0,Hoary Redpoll,class_name_only,,10,5,needs_normalization
+922,466,Pine Siskin,Pine Siskin,0,Pine Siskin,class_name_only,,5,5,needs_normalization
+923,467,Western Wood-Pewee,Western Wood-Pewee,0,Western Wood-Pewee,class_name_only,,7,4,needs_normalization
+924,468,Eastern Wood-Pewee,Eastern Wood-Pewee,0,Eastern Wood-Pewee,class_name_only,,11,5,needs_normalization
+925,469,Least Flycatcher,Least Flycatcher,0,Least Flycatcher,class_name_only,,5,4,needs_normalization
+926,470,Pacific-slope Flycatcher,Pacific-slope Flycatcher,0,Pacific-slope Flycatcher,class_name_only,,11,5,needs_normalization
+927,471,Cordilleran Flycatcher,Cordilleran Flycatcher,0,Cordilleran Flycatcher,class_name_only,,11,5,needs_normalization
+928,472,Black Phoebe,Black Phoebe,0,Black Phoebe,class_name_only,,8,5,needs_normalization
+929,473,Eastern Phoebe,Eastern Phoebe,0,Eastern Phoebe,class_name_only,,11,5,needs_normalization
+930,474,Say's Phoebe,Say's Phoebe,0,Say's Phoebe,class_name_only,,10,5,needs_normalization
+931,475,Ash-throated Flycatcher,Ash-throated Flycatcher,0,Ash-throated Flycatcher,class_name_only,,11,5,needs_normalization
+932,476,Great Crested Flycatcher,Great Crested Flycatcher,0,Great Crested Flycatcher,class_name_only,,10,5,needs_normalization
+933,477,Cassin's Kingbird,Cassin's Kingbird,0,Cassin's Kingbird,class_name_only,,8,4,needs_normalization
+934,478,Western Kingbird,Western Kingbird,0,Western Kingbird,class_name_only,,9,5,needs_normalization
+935,479,Eastern Kingbird,Eastern Kingbird,0,Eastern Kingbird,class_name_only,,7,3,needs_normalization
+936,480,Scissor-tailed Flycatcher,Scissor-tailed Flycatcher,0,Scissor-tailed Flycatcher,class_name_only,,7,5,needs_normalization
+937,481,Loggerhead Shrike,Loggerhead Shrike,0,Loggerhead Shrike,class_name_only,,12,5,needs_normalization
+938,482,Northern Shrike,Northern Shrike,0,Northern Shrike,class_name_only,,11,5,needs_normalization
+939,483,White-eyed Vireo,White-eyed Vireo,0,White-eyed Vireo,class_name_only,,10,5,needs_normalization
+940,484,Bell's Vireo,Bell's Vireo,0,Bell's Vireo,class_name_only,,7,4,needs_normalization
+941,485,Yellow-throated Vireo,Yellow-throated Vireo,0,Yellow-throated Vireo,class_name_only,,7,2,needs_normalization
+942,486,Plumbeous Vireo,Plumbeous Vireo,0,Plumbeous Vireo,class_name_only,,6,5,needs_normalization
+943,487,Cassin's Vireo,Cassin's Vireo,0,Cassin's Vireo,class_name_only,,13,5,needs_normalization
+944,488,Blue-headed Vireo,Blue-headed Vireo,0,Blue-headed Vireo,class_name_only,,7,3,needs_normalization
+945,489,Hutton's Vireo,Hutton's Vireo,0,Hutton's Vireo,class_name_only,,7,4,needs_normalization
+946,490,Warbling Vireo,Warbling Vireo,0,Warbling Vireo,class_name_only,,16,5,needs_normalization
+947,491,Red-eyed Vireo,Red-eyed Vireo,0,Red-eyed Vireo,class_name_only,,13,5,needs_normalization
+948,492,Gray Jay,Gray Jay,0,Gray Jay,class_name_only,,10,5,needs_normalization
+949,493,Steller's Jay,Steller's Jay,0,Steller's Jay,class_name_only,,7,3,needs_normalization
+950,494,Blue Jay,Blue Jay,0,Blue Jay,class_name_only,,5,4,needs_normalization
+951,495,Florida Scrub-Jay,Florida Scrub-Jay,0,Florida Scrub-Jay,class_name_only,,9,5,needs_normalization
+952,496,Western Scrub-Jay,Western Scrub-Jay,0,Western Scrub-Jay,class_name_only,,0,0,missing_descriptor
+953,497,Mexican Jay,Mexican Jay,0,Mexican Jay,class_name_only,,10,4,needs_normalization
+954,498,Clark's Nutcracker,Clark's Nutcracker,0,Clark's Nutcracker,class_name_only,,7,5,needs_normalization
+955,499,Black-billed Magpie,Black-billed Magpie,0,Black-billed Magpie,class_name_only,,4,3,needs_normalization
+956,500,Yellow-billed Magpie,Yellow-billed Magpie,0,Yellow-billed Magpie,class_name_only,,7,3,needs_normalization
+957,501,American Crow,American Crow,0,American Crow,class_name_only,,3,0,needs_normalization
+958,502,Yellow-rumped Warbler (Breeding Audubon's),Yellow-rumped Warbler,0,Yellow-rumped Warbler Breeding Audubon's,class_name_only,Breeding Audubon's,12,4,needs_normalization|shared_variant_descriptor
+959,503,Purple Martin (Female/juvenile),Purple Martin,0,Purple Martin Female or juvenile,class_name_only,Female or juvenile,9,3,needs_normalization|shared_variant_descriptor
+960,504,American Robin (Juvenile),American Robin,0,American Robin Juvenile,class_name_only,Juvenile,5,3,compact_verified
+961,505,Phainopepla (Male),Phainopepla,0,Phainopepla Male,class_name_only,Male,8,2,needs_normalization|shared_variant_descriptor
+962,506,Snow Bunting (Nonbreeding),Snow Bunting,0,Snow Bunting Nonbreeding,class_name_only,Nonbreeding,15,5,needs_normalization|shared_variant_descriptor
+963,507,Common Yellowthroat (Female/immature male),Common Yellowthroat,0,Common Yellowthroat Female or immature male,class_name_only,Female or immature male,10,5,needs_normalization|shared_variant_descriptor
+964,508,American Redstart (Female/juvenile),American Redstart,0,American Redstart Female or juvenile,class_name_only,Female or juvenile,13,4,needs_normalization|shared_variant_descriptor
+965,509,Magnolia Warbler (Female/immature male),Magnolia Warbler,0,Magnolia Warbler Female or immature male,class_name_only,Female or immature male,15,5,needs_normalization|shared_variant_descriptor
+966,510,"Bay-breasted Warbler (Female, Nonbreeding male, Immature)",Bay-breasted Warbler,0,"Bay-breasted Warbler Female, Nonbreeding male, Immature",class_name_only,"Female, Nonbreeding male, Immature",16,5,needs_normalization|shared_variant_descriptor
+967,511,Chestnut-sided Warbler (Female/immature male),Chestnut-sided Warbler,0,Chestnut-sided Warbler Female or immature male,class_name_only,Female or immature male,10,5,needs_normalization|shared_variant_descriptor
+968,512,Blackpoll Warbler (Female/juvenile),Blackpoll Warbler,0,Blackpoll Warbler Female or juvenile,class_name_only,Female or juvenile,10,5,needs_normalization|shared_variant_descriptor
+969,513,Black-throated Blue Warbler (Female/Immature male),Black-throated Blue Warbler,0,Black-throated Blue Warbler Female or Immature male,class_name_only,Female or Immature male,10,5,needs_normalization|shared_variant_descriptor
+970,514,Lark Bunting (Female/Nonbreeding male),Lark Bunting,0,Lark Bunting Female or Nonbreeding male,class_name_only,Female or Nonbreeding male,8,5,needs_normalization|shared_variant_descriptor
+971,515,White-throated Sparrow (Tan-striped/immature),White-throated Sparrow,0,White-throated Sparrow Tan striped or immature,class_name_only,Tan striped or immature,12,5,needs_normalization|shared_variant_descriptor
+972,516,Harris's Sparrow (Immature),Harris's Sparrow,0,Harris's Sparrow Immature,class_name_only,Immature,13,5,needs_normalization|shared_variant_descriptor
+973,517,White-crowned Sparrow (Immature),White-crowned Sparrow,0,White-crowned Sparrow Immature,class_name_only,Immature,4,2,needs_normalization|shared_variant_descriptor
+974,518,Golden-crowned Sparrow (Immature),Golden-crowned Sparrow,0,Golden-crowned Sparrow Immature,class_name_only,Immature,9,4,needs_normalization|shared_variant_descriptor
+975,519,Dark-eyed Junco (White-winged),Dark-eyed Junco,0,Dark-eyed Junco White winged,class_name_only,White winged,4,5,compact_verified
+976,520,Chipping Sparrow (Immature/nonbreeding adult),Chipping Sparrow,0,Chipping Sparrow Immature or nonbreeding adult,class_name_only,Immature or nonbreeding adult,9,5,needs_normalization|shared_variant_descriptor
+977,521,Scarlet Tanager (Female/Nonbreeding Male),Scarlet Tanager,0,Scarlet Tanager Female or Nonbreeding Male,class_name_only,Female or Nonbreeding Male,9,2,needs_normalization|shared_variant_descriptor
+978,522,Western Tanager (Female/Nonbreeding Male),Western Tanager,0,Western Tanager Female or Nonbreeding Male,class_name_only,Female or Nonbreeding Male,10,2,needs_normalization|shared_variant_descriptor
+979,523,Northern Cardinal (Female/Juvenile),Northern Cardinal,0,Northern Cardinal Female or Juvenile,class_name_only,Female or Juvenile,9,3,needs_normalization|shared_variant_descriptor
+980,524,Rose-breasted Grosbeak (Female/immature male),Rose-breasted Grosbeak,0,Rose-breasted Grosbeak Female or immature male,class_name_only,Female or immature male,11,5,needs_normalization|shared_variant_descriptor
+981,525,Black-headed Grosbeak (Female/immature male),Black-headed Grosbeak,0,Black-headed Grosbeak Female or immature male,class_name_only,Female or immature male,13,5,needs_normalization|shared_variant_descriptor
+982,526,Blue Grosbeak (Female/juvenile),Blue Grosbeak,0,Blue Grosbeak Female or juvenile,class_name_only,Female or juvenile,10,4,needs_normalization|shared_variant_descriptor
+983,527,Lazuli Bunting (Female/juvenile),Lazuli Bunting,0,Lazuli Bunting Female or juvenile,class_name_only,Female or juvenile,12,5,needs_normalization|shared_variant_descriptor
+984,528,Indigo Bunting (Female/juvenile),Indigo Bunting,0,Indigo Bunting Female or juvenile,class_name_only,Female or juvenile,11,4,needs_normalization|shared_variant_descriptor
+985,529,Painted Bunting (Female/juvenile),Painted Bunting,0,Painted Bunting Female or juvenile,class_name_only,Female or juvenile,8,2,needs_normalization|shared_variant_descriptor
+986,530,Bobolink (Female/juvenile/nonbreeding male),Bobolink,0,Bobolink Female or juvenile or nonbreeding male,class_name_only,Female or juvenile or nonbreeding male,10,3,needs_normalization|shared_variant_descriptor
+987,531,Red-winged Blackbird (Female/juvenile),Red-winged Blackbird,0,Red-winged Blackbird Female or juvenile,class_name_only,Female or juvenile,8,3,needs_normalization|shared_variant_descriptor
+988,532,Yellow-headed Blackbird (Female/Immature Male),Yellow-headed Blackbird,0,Yellow-headed Blackbird Female or Immature Male,class_name_only,Female or Immature Male,9,4,needs_normalization|shared_variant_descriptor
+989,533,Brewer's Blackbird (Male),Brewer's Blackbird,0,Brewer's Blackbird Male,class_name_only,Male,11,1,needs_normalization|shared_variant_descriptor
+990,534,Brown-headed Cowbird (Female/Juvenile),Brown-headed Cowbird,0,Brown-headed Cowbird Female or Juvenile,class_name_only,Female or Juvenile,2,1,needs_normalization|shared_variant_descriptor
+991,535,Hooded Oriole (Female/Immature male),Hooded Oriole,0,Hooded Oriole Female or Immature male,class_name_only,Female or Immature male,12,5,needs_normalization|shared_variant_descriptor
+992,536,Bullock's Oriole (Female/Immature male),Bullock's Oriole,0,Bullock's Oriole Female or Immature male,class_name_only,Female or Immature male,12,5,needs_normalization|shared_variant_descriptor
+993,537,Baltimore Oriole (Female/Immature male),Baltimore Oriole,0,Baltimore Oriole Female or Immature male,class_name_only,Female or Immature male,9,3,needs_normalization|shared_variant_descriptor
+994,538,Pine Grosbeak (Female/juvenile),Pine Grosbeak,0,Pine Grosbeak Female or juvenile,class_name_only,Female or juvenile,10,5,needs_normalization|shared_variant_descriptor
+995,539,Purple Finch (Female/immature),Purple Finch,0,Purple Finch Female or immature,class_name_only,Female or immature,9,3,needs_normalization|shared_variant_descriptor
+996,540,Cassin's Finch (Female/immature),Cassin's Finch,0,Cassin's Finch Female or immature,class_name_only,Female or immature,10,2,needs_normalization|shared_variant_descriptor
+997,541,House Finch (Female/immature),House Finch,0,House Finch Female or immature,class_name_only,Female or immature,8,5,needs_normalization|shared_variant_descriptor
+998,542,Red Crossbill (Female/juvenile),Red Crossbill,0,Red Crossbill Female or juvenile,class_name_only,Female or juvenile,7,5,needs_normalization|shared_variant_descriptor
+999,543,White-winged Crossbill (Female/juvenile),White-winged Crossbill,0,White-winged Crossbill Female or juvenile,class_name_only,Female or juvenile,9,5,needs_normalization|shared_variant_descriptor
+1000,544,Lesser Goldfinch (Female/juvenile),Lesser Goldfinch,0,Lesser Goldfinch Female or juvenile,class_name_only,Female or juvenile,14,5,needs_normalization|shared_variant_descriptor
+1001,545,American Goldfinch (Female/Nonbreeding Male),American Goldfinch,0,American Goldfinch Female or Nonbreeding Male,class_name_only,Female or Nonbreeding Male,14,5,needs_normalization|shared_variant_descriptor
+1002,546,Evening Grosbeak (Female/Juvenile),Evening Grosbeak,0,Evening Grosbeak Female or Juvenile,class_name_only,Female or Juvenile,12,3,needs_normalization|shared_variant_descriptor
+1003,547,House Sparrow (Female/Juvenile),House Sparrow,0,House Sparrow Female or Juvenile,class_name_only,Female or Juvenile,12,3,needs_normalization|shared_variant_descriptor
+1004,548,"Vermilion Flycatcher (Female, immature)",Vermilion Flycatcher,0,"Vermilion Flycatcher Female, immature",class_name_only,"Female, immature",8,2,needs_normalization|shared_variant_descriptor
+1005,549,European Starling (Juvenile),European Starling,0,European Starling Juvenile,class_name_only,Juvenile,7,2,needs_normalization|shared_variant_descriptor
+1006,550,Fox Sparrow (Thick-billed/Slate-colored),Fox Sparrow,0,Fox Sparrow Thick billed or Slate colored,class_name_only,Thick billed or Slate colored,7,3,needs_normalization|shared_variant_descriptor
+1007,551,Summer Tanager (Immature Male),Summer Tanager,0,Summer Tanager Immature Male,class_name_only,Immature Male,12,1,needs_normalization|shared_variant_descriptor
+1008,552,Orchard Oriole (Female/Juvenile),Orchard Oriole,0,Orchard Oriole Female or Juvenile,class_name_only,Female or Juvenile,12,5,needs_normalization|shared_variant_descriptor
+1009,553,Yellow-rumped Warbler (Winter/juvenile Audubon's),Yellow-rumped Warbler,0,Yellow-rumped Warbler Winter or juvenile Audubon's,class_name_only,Winter or juvenile Audubon's,12,4,needs_normalization|shared_variant_descriptor
+1010,554,Dark-eyed Junco (Red-backed/Gray-headed),Dark-eyed Junco,0,Dark-eyed Junco Red backed or Gray headed,class_name_only,Red backed or Gray headed,3,3,compact_verified
