@@ -1,0 +1,14 @@
+{
+  "model": "openai/clip-vit-base-patch32",
+  "device": "cuda",
+  "dtype": "float16",
+  "prompts": "/data/nabirds_runs/reports/milestone3/external_traits/nabirds_external_trait_prompts.csv",
+  "prompt_aggregation": "mean",
+  "num_classes": 555,
+  "num_prompt_rows": 1665,
+  "feature_dim": 512,
+  "text_padding": "auto",
+  "text_max_length": 64,
+  "output": "/data/nabirds_runs/runs/milestone3_external_traits/vlm_text_features/openai_clip_vit_base_patch32_nabirds_external_trait_prompts_mean_text_features.pt",
+  "elapsed_seconds": 0.665
+}

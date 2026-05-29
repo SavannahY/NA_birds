@@ -1,0 +1,12 @@
+{
+  "class_prompts": "reports/milestone2/nabirds_class_prompts.csv",
+  "external_traits": "reports/milestone3/external_traits/bird_traits.jsonl",
+  "match_counts": {
+    "matched_with_traits": 517,
+    "matched_without_traits": 38,
+    "missing_base_species": 0
+  },
+  "num_classes": 555,
+  "output": "reports/milestone3/external_traits/nabirds_external_trait_matches.csv",
+  "unique_base_species_with_external_rows": 404
+}

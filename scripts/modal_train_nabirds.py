@@ -267,6 +267,72 @@ def _build_descriptor_prompts_in_place(
     )
 
 
+def _build_external_trait_prompts_in_place(
+    *,
+    class_prompts: Path,
+    out_dir: Path,
+    prompt_max_traits: int,
+    crawler_extra_args: Optional[Sequence[str]],
+) -> dict[str, str]:
+    out_dir.mkdir(parents=True, exist_ok=True)
+    cache_dir = DEFAULT_WORK_ROOT / "reports" / ".cache" / "external_traits"
+    traits_path = out_dir / "bird_traits.jsonl"
+    crawl_summary = out_dir / "external_trait_crawl_summary.json"
+    matches_path = out_dir / "nabirds_external_trait_matches.csv"
+    match_summary = out_dir / "external_trait_match_summary.json"
+    prompts_path = out_dir / "nabirds_external_trait_prompts.csv"
+    prompt_summary = out_dir / "external_trait_prompt_summary.json"
+
+    crawler_args = [
+        "scripts/crawl_external_bird_traits.py",
+        "--class-prompts",
+        str(class_prompts),
+        "--output",
+        str(traits_path),
+        "--summary",
+        str(crawl_summary),
+        "--cache-dir",
+        str(cache_dir),
+    ]
+    crawler_args.extend(_split_extra_args(crawler_extra_args))
+    _run_python(crawler_args)
+    _run_python(
+        [
+            "scripts/match_external_traits_to_nabirds.py",
+            "--class-prompts",
+            str(class_prompts),
+            "--external-traits",
+            str(traits_path),
+            "--output",
+            str(matches_path),
+            "--summary",
+            str(match_summary),
+        ]
+    )
+    _run_python(
+        [
+            "scripts/build_external_trait_prompts.py",
+            "--matches",
+            str(matches_path),
+            "--output",
+            str(prompts_path),
+            "--summary",
+            str(prompt_summary),
+            "--max-traits",
+            str(prompt_max_traits),
+        ]
+    )
+    return {
+        "traits": str(traits_path),
+        "crawl_summary": str(crawl_summary),
+        "matches": str(matches_path),
+        "match_summary": str(match_summary),
+        "prompts": str(prompts_path),
+        "prompt_summary": str(prompt_summary),
+        "cache_dir": str(cache_dir),
+    }
+
+
 def _ensure_manifests(
     *,
     dataset_root: Path,
@@ -320,6 +386,39 @@ def build_descriptor_prompts(
         "summary": str(output_dir / "descriptor_prompt_summary.json"),
         "manifest_dir": str(manifests),
     }
+
+
+@app.function(**_modal_options(gpu=None, timeout=12 * 60 * 60, cpu=2.0, memory=8192))
+def build_external_trait_prompts(
+    dataset_root: str = str(DEFAULT_DATASET_ROOT),
+    archive_path: str = str(DEFAULT_ARCHIVE),
+    manifest_dir: str = str(DEFAULT_MANIFEST_DIR),
+    out_dir: str = str(DEFAULT_MILESTONE3_DIR / "external_traits"),
+    prompt_max_traits: int = 5,
+    rebuild_manifests: bool = False,
+    crawler_extra_args: Optional[Sequence[str]] = None,
+) -> dict[str, str]:
+    """Crawl public source traits, match them to NABirds, and build VLM prompts."""
+
+    _reload_volume()
+    _ensure_output_dirs()
+    dataset = _ensure_dataset(dataset_root, archive_path)
+    manifests = Path(manifest_dir)
+    _ensure_manifests(
+        dataset_root=dataset,
+        manifest_dir=manifests,
+        val_fraction=0.15,
+        seed=231,
+        rebuild=rebuild_manifests,
+    )
+    paths = _build_external_trait_prompts_in_place(
+        class_prompts=manifests / "nabirds_class_prompts.csv",
+        out_dir=Path(out_dir),
+        prompt_max_traits=prompt_max_traits,
+        crawler_extra_args=crawler_extra_args,
+    )
+    _commit_volume()
+    return {**paths, "manifest_dir": str(manifests)}
 
 
 def _commit_volume() -> None:
@@ -1374,9 +1473,11 @@ def _help_text() -> str:
     return f"""Usage:
   modal run scripts/modal_train_nabirds.py --task build-manifests
   modal run scripts/modal_train_nabirds.py --task build-descriptor-prompts
+  modal run scripts/modal_train_nabirds.py --task build-external-trait-prompts --extra-args "--limit 32"
   modal run scripts/modal_train_nabirds.py --task vlm-smoke
   modal run scripts/modal_train_nabirds.py --task vlm-full
   modal run scripts/modal_train_nabirds.py --task vlm-full --prompts /data/nabirds_runs/reports/milestone3/nabirds_descriptor_prompts.csv
+  modal run scripts/modal_train_nabirds.py --task vlm-full --prompts /data/nabirds_runs/reports/milestone3/external_traits/nabirds_external_trait_prompts.csv
   modal run scripts/modal_train_nabirds.py --task eval-visual --checkpoint /data/nabirds_runs/runs/visual_baseline/<run>/best.pt
   modal run scripts/modal_train_nabirds.py --task eval-fused --checkpoint /data/nabirds_runs/runs/fused_full_crop/<run>/best.pt
   modal run scripts/modal_train_nabirds.py --task eval-part-hierarchy --checkpoint /data/nabirds_runs/runs/part_hierarchy_fused/<run>/best.pt
@@ -1467,6 +1568,22 @@ def main(
                 manifest_dir=manifest_dir,
                 out_dir=str(DEFAULT_MILESTONE3_DIR),
                 rebuild_manifests=rebuild_manifests,
+            )
+        )
+        return
+
+    if task_normalized in {"build-external-trait-prompts", "external-trait-prompts", "crawl-external-traits"}:
+        print(
+            _invoke(
+                build_external_trait_prompts,
+                background,
+                dataset_root=dataset_root,
+                archive_path=archive_path,
+                manifest_dir=manifest_dir,
+                out_dir=str(DEFAULT_MILESTONE3_DIR / "external_traits"),
+                prompt_max_traits=5,
+                rebuild_manifests=rebuild_manifests,
+                crawler_extra_args=extra,
             )
         )
         return

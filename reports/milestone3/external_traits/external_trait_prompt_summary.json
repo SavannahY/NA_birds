@@ -1,0 +1,8 @@
+{
+  "classes_with_external_traits": 517,
+  "matches": "reports/milestone3/external_traits/nabirds_external_trait_matches.csv",
+  "max_traits": 5,
+  "output": "reports/milestone3/external_traits/nabirds_external_trait_prompts.csv",
+  "prompt_rows": 1665,
+  "unique_targets": 555
+}

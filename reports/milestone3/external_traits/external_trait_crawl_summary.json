@@ -1,0 +1,25 @@
+{
+  "cache_dir": "/data/nabirds_runs/reports/.cache/external_traits",
+  "class_prompts": "/data/nabirds_runs/reports/milestone2/nabirds_class_prompts.csv",
+  "crawl_timestamp_utc": "2026-05-29T22:39:45+00:00",
+  "output": "/data/nabirds_runs/reports/milestone3/external_traits/bird_traits.jsonl",
+  "raw_cache_note": "Raw API JSON is cached locally for reproducibility; do not commit cache files.",
+  "rows_written": 404,
+  "source_config": {
+    "eol_allow_ambiguous": false,
+    "eol_texts": 25,
+    "gbif_allow_fuzzy": false,
+    "gbif_min_confidence": 90,
+    "max_traits": 12,
+    "max_traits_per_source": 12,
+    "sources": [
+      "wikipedia"
+    ],
+    "verify_tls": true
+  },
+  "source_status_counts": {
+    "wikipedia:no_visual_traits": 32,
+    "wikipedia:ok": 372
+  },
+  "species_count": 404
+}
